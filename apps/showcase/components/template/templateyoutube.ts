@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Input, NgModule, ViewEncapsulation } from '@angular/core';
-import { SharedModule } from 'primeng/api';
-import { Dialog } from 'primeng/dialog';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { SharedModule } from '@pixel/primeng/api';
+import { Dialog } from '@pixel/primeng/dialog';
 
 @Component({
     selector: 'template-youtube',

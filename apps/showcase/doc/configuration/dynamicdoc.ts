@@ -13,7 +13,7 @@ import { Component } from '@angular/core';
 export class DynamicDoc {
     code: Code = {
         typescript: `import { Component, OnInit } from '@angular/core';
-import { PrimeNG } from 'primeng/config';
+import { PrimeNG } from '@pixel/primeng/config';
 
 @Component({
     selector: 'app-root',

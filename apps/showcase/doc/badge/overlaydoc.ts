@@ -44,7 +44,7 @@ export class OverlayDoc {
     </p-overlaybadge>
 </div>`,
         typescript: `import { Component } from '@angular/core';
-import { OverlayBadgeModule } from 'primeng/overlaybadge';
+import { OverlayBadgeModule } from '@pixel/primeng/overlaybadge';
 
 @Component({
     selector: 'badge-overlay-demo',

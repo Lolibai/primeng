@@ -1,6 +1,6 @@
 import { booleanAttribute, Directive, ElementRef, HostListener, Input, NgModule, NgZone, OnDestroy, Renderer2 } from '@angular/core';
+import { VoidListener } from '@pixel/primeng/ts-helpers';
 import { addClass, hasClass, removeClass } from '@primeuix/utils';
-import { VoidListener } from 'primeng/ts-helpers';
 
 /**
  * StyleClass manages css classes declaratively to during enter/leave animations or just to toggle classes on an element.

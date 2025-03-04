@@ -52,8 +52,8 @@ export class FormDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { Message } from 'primeng/message';
-import { InputTextModule } from 'primeng/inputtext';
+import { Message } from '@pixel/primeng/message';
+import { InputTextModule } from '@pixel/primeng/inputtext';
 
 @Component({
     selector: 'message-form-demo',

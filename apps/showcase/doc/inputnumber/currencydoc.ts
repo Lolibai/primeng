@@ -74,9 +74,9 @@ export class CurrencyDoc {
 </p-fluid>`,
 
         typescript: `import { Component } from '@angular/core';
-import { InputNumber } from 'primeng/inputnumber';
+import { InputNumber } from '@pixel/primeng/inputnumber';
 import { FormsModule } from '@angular/forms';
-import { Fluid } from 'primeng/fluid';
+import { Fluid } from '@pixel/primeng/fluid';
 
 @Component({
     selector: 'input-number-currency-demo',

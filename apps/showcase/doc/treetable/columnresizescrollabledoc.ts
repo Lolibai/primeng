@@ -1,7 +1,7 @@
 import { Code } from '@/domain/code';
 import { NodeService } from '@/service/nodeservice';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { TreeNode } from 'primeng/api';
+import { TreeNode } from '@pixel/primeng/api';
 
 interface Column {
     field: string;
@@ -120,9 +120,9 @@ export class ResizeScrollableDoc {
 </div>`,
 
         typescript: `import { Component, OnInit } from '@angular/core';
-import { TreeNode } from 'primeng/api';
+import { TreeNode } from '@pixel/primeng/api';
 import { NodeService } from '@/service/nodeservice';
-import { TreeTableModule } from 'primeng/treetable';
+import { TreeTableModule } from '@pixel/primeng/treetable';
 import { CommonModule } from '@angular/common';
 
 interface Column {

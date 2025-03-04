@@ -31,6 +31,15 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { BlockableUI, FilterMetadata, FilterService, PrimeTemplate, ScrollerOptions, SharedModule, SortMeta, TreeNode, TreeTableNode } from '@pixel/primeng/api';
+import { BaseComponent } from '@pixel/primeng/basecomponent';
+import { Checkbox } from '@pixel/primeng/checkbox';
+import { DomHandler } from '@pixel/primeng/dom';
+import { ArrowDownIcon, ArrowUpIcon, CheckIcon, ChevronDownIcon, ChevronRightIcon, MinusIcon, SortAltIcon, SortAmountDownIcon, SortAmountUpAltIcon, SpinnerIcon } from '@pixel/primeng/icons';
+import { PaginatorModule } from '@pixel/primeng/paginator';
+import { Ripple } from '@pixel/primeng/ripple';
+import { Scroller } from '@pixel/primeng/scroller';
+import { Nullable, VoidListener } from '@pixel/primeng/ts-helpers';
 import {
     addClass,
     calculateScrollbarHeight,
@@ -53,15 +62,6 @@ import {
     reorderArray,
     resolveFieldData
 } from '@primeuix/utils';
-import { BlockableUI, FilterMetadata, FilterService, PrimeTemplate, ScrollerOptions, SharedModule, SortMeta, TreeNode, TreeTableNode } from 'primeng/api';
-import { BaseComponent } from 'primeng/basecomponent';
-import { Checkbox } from 'primeng/checkbox';
-import { DomHandler } from 'primeng/dom';
-import { ArrowDownIcon, ArrowUpIcon, CheckIcon, ChevronDownIcon, ChevronRightIcon, MinusIcon, SortAltIcon, SortAmountDownIcon, SortAmountUpAltIcon, SpinnerIcon } from 'primeng/icons';
-import { PaginatorModule } from 'primeng/paginator';
-import { Ripple } from 'primeng/ripple';
-import { Scroller } from 'primeng/scroller';
-import { Nullable, VoidListener } from 'primeng/ts-helpers';
 import { Subject, Subscription } from 'rxjs';
 import { TreeTableStyle } from './style/treetablestyle';
 import {

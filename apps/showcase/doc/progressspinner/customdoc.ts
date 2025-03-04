@@ -24,7 +24,7 @@ export class CustomDoc {
     <p-progress-spinner strokeWidth="8" fill="transparent" animationDuration=".5s" [style]="{ width: '50px', height: '50px' }" />
 </div>`,
         typescript: `import { Component } from '@angular/core';
-import { ProgressSpinner } from 'primeng/progressspinner';
+import { ProgressSpinner } from '@pixel/primeng/progressspinner';
 
 @Component({
     selector: 'progress-spinner-custom-demo',

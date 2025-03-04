@@ -1,6 +1,6 @@
 import { Code } from '@/domain/code';
 import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
+import { MenuItem } from '@pixel/primeng/api';
 
 @Component({
     selector: 'breadcrumb-router-demo',
@@ -73,8 +73,8 @@ export class RouterDoc implements OnInit {
 </div>`,
 
         typescript: `import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
-import { Breadcrumb } from 'primeng/breadcrumb';
+import { MenuItem } from '@pixel/primeng/api';
+import { Breadcrumb } from '@pixel/primeng/breadcrumb';
 import { RouterModule } from '@angular/router';
 
 @Component({

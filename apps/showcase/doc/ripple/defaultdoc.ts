@@ -42,7 +42,7 @@ export class DefaultDoc {
     <div pRipple class="ripple-box">Default</div>
 </div>`,
         typescript: `import { Component } from '@angular/core';
-import { Ripple } from 'primeng/ripple';
+import { Ripple } from '@pixel/primeng/ripple';
 
 @Component({
     selector: 'ripple-default-demo',

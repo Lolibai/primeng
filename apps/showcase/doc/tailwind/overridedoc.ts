@@ -26,7 +26,7 @@ export class OverrideDoc {
     };
 
     code2: Code = {
-        basic: `import { PrimeNG } from 'primeng/config';
+        basic: `import { PrimeNG } from '@pixel/primeng/config';
 import Aura from '@primeng/themes/aura';
 @Component({...})
 export class AppComponent() {

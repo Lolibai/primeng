@@ -19,8 +19,8 @@ import { Component } from '@angular/core';
 })
 export class TargetDoc {
     code: Code = {
-        basic: `import { OverlayOptions } from 'primeng/api';
-import { PrimeNG } from 'primeng/config';
+        basic: `import { OverlayOptions } from '@pixel/primeng/api';
+import { PrimeNG } from '@pixel/primeng/config';
 
 this.primeng.overlayOptions: OverlayOptions = {
     appendTo: 'body'

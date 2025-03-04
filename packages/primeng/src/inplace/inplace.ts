@@ -1,11 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { AfterContentInit, booleanAttribute, ChangeDetectionStrategy, Component, ContentChild, ContentChildren, EventEmitter, inject, Input, NgModule, Output, QueryList, TemplateRef, ViewEncapsulation } from '@angular/core';
-import { PrimeTemplate, SharedModule } from 'primeng/api';
-import { BaseComponent } from 'primeng/basecomponent';
-import { ButtonModule } from 'primeng/button';
-import { TimesIcon } from 'primeng/icons';
+import { PrimeTemplate, SharedModule } from '@pixel/primeng/api';
+import { BaseComponent } from '@pixel/primeng/basecomponent';
+import { ButtonModule } from '@pixel/primeng/button';
+import { TimesIcon } from '@pixel/primeng/icons';
+import { Ripple } from '@pixel/primeng/ripple';
 import { InplaceStyle } from './style/inplacestyle';
-import { Ripple } from 'primeng/ripple';
 
 @Component({
     selector: 'p-inplacedisplay, p-inplaceDisplay',

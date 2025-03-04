@@ -255,11 +255,11 @@ export class ExpandableRowGroupDoc {
         typescript: `import { Component, OnInit } from '@angular/core';
 import { Customer } from '@/domain/customer';
 import { CustomerService } from '@/service/customerservice';
-import { TableModule } from 'primeng/table';
+import { TableModule } from '@pixel/primeng/table';
 import { HttpClientModule } from '@angular/common/http';
-import { ButtonModule } from 'primeng/button';
-import { Ripple } from 'primeng/ripple';
-import { Tag } from 'primeng/tag';
+import { ButtonModule } from '@pixel/primeng/button';
+import { Ripple } from '@pixel/primeng/ripple';
+import { Tag } from '@pixel/primeng/tag';
 
 @Component({
     selector: 'table-expandable-row-group-demo',

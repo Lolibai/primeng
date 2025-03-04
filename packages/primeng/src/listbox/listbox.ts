@@ -24,17 +24,17 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { ControlValueAccessor, FormsModule, NG_VALUE_ACCESSOR } from '@angular/forms';
+import { FilterService, Footer, Header, PrimeTemplate, ScrollerOptions, SharedModule } from '@pixel/primeng/api';
+import { BaseComponent } from '@pixel/primeng/basecomponent';
+import { Checkbox } from '@pixel/primeng/checkbox';
+import { IconField } from '@pixel/primeng/iconfield';
+import { BlankIcon, CheckIcon, SearchIcon } from '@pixel/primeng/icons';
+import { InputIcon } from '@pixel/primeng/inputicon';
+import { InputText } from '@pixel/primeng/inputtext';
+import { Ripple } from '@pixel/primeng/ripple';
+import { Scroller, ScrollerLazyLoadEvent } from '@pixel/primeng/scroller';
+import { Nullable } from '@pixel/primeng/ts-helpers';
 import { equals, findLastIndex, findSingle, focus, getFirstFocusableElement, isEmpty, isNotEmpty, isPrintableCharacter, resolveFieldData, uuid } from '@primeuix/utils';
-import { FilterService, Footer, Header, PrimeTemplate, ScrollerOptions, SharedModule } from 'primeng/api';
-import { BaseComponent } from 'primeng/basecomponent';
-import { Checkbox } from 'primeng/checkbox';
-import { IconField } from 'primeng/iconfield';
-import { BlankIcon, CheckIcon, SearchIcon } from 'primeng/icons';
-import { InputIcon } from 'primeng/inputicon';
-import { InputText } from 'primeng/inputtext';
-import { Ripple } from 'primeng/ripple';
-import { Scroller, ScrollerLazyLoadEvent } from 'primeng/scroller';
-import { Nullable } from 'primeng/ts-helpers';
 import { Subscription } from 'rxjs';
 import { ListboxChangeEvent, ListboxClickEvent, ListboxDoubleClickEvent, ListboxFilterEvent, ListboxFilterOptions, ListboxSelectAllChangeEvent } from './listbox.interface';
 import { ListBoxStyle } from './style/listboxstyle';

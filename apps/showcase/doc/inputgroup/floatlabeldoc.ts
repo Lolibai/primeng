@@ -107,11 +107,11 @@ export class FloatLabelDoc {
 
         typescript: `import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { InputGroupModule } from 'primeng/inputgroup';
-import { InputGroupAddonModule } from 'primeng/inputgroupaddon';
-import { InputTextModule } from 'primeng/inputtext';
-import { InputNumberModule } from 'primeng/inputnumber';
-import { FloatLabelModule } from 'primeng/floatlabel';
+import { InputGroupModule } from '@pixel/primeng/inputgroup';
+import { InputGroupAddonModule } from '@pixel/primeng/inputgroupaddon';
+import { InputTextModule } from '@pixel/primeng/inputtext';
+import { InputNumberModule } from '@pixel/primeng/inputnumber';
+import { FloatLabelModule } from '@pixel/primeng/floatlabel';
 
 @Component({
     selector: 'input-group-float-label-demo',

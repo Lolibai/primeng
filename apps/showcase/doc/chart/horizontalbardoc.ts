@@ -113,7 +113,7 @@ export class HorizontalBarDoc implements OnInit {
         typescript: `import { isPlatformBrowser } from '@angular/common';
 import { ChangeDetectorRef, Component, effect, inject, OnInit, PLATFORM_ID } from '@angular/core';
 import { AppConfigService } from '@/service/appconfigservice';
-import { ChartModule } from 'primeng/chart';
+import { ChartModule } from '@pixel/primeng/chart';
 
 @Component({
     selector: 'chart-horizontal-bar-demo',

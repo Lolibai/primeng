@@ -81,7 +81,7 @@ export class LoaderDoc {
 </div>`,
 
         typescript: `import { Component, OnInit } from '@angular/core';
-import { ScrollerModule } from 'primeng/scroller';
+import { ScrollerModule } from '@pixel/primeng/scroller';
 
 @Component({
     selector: 'scroller-loader-demo',

@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { Tag } from 'primeng/tag';`
+        typescript: `import { Tag } from '@pixel/primeng/tag';`
     };
 }

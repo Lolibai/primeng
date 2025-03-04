@@ -64,7 +64,7 @@ export class TabmenuDoc {
         typescript: `import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { TabsModule } from 'primeng/tabs';
+import { TabsModule } from '@pixel/primeng/tabs';
 
 @Component({
     selector: 'tabs-tabmenu-demo',

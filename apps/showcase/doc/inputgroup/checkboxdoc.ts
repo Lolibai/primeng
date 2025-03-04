@@ -77,11 +77,11 @@ export class CheckboxDoc {
 
         typescript: `import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { InputGroup } from 'primeng/inputgroup';
-import { InputGroupAddonModule } from 'primeng/inputgroupaddon';
-import { InputTextModule } from 'primeng/inputtext';
-import { Checkbox } from 'primeng/checkbox';
-import { RadioButton } from 'primeng/radiobutton';
+import { InputGroup } from '@pixel/primeng/inputgroup';
+import { InputGroupAddonModule } from '@pixel/primeng/inputgroupaddon';
+import { InputTextModule } from '@pixel/primeng/inputtext';
+import { Checkbox } from '@pixel/primeng/checkbox';
+import { RadioButton } from '@pixel/primeng/radiobutton';
 
 @Component({
     selector: 'input-group-checkbox-demo',

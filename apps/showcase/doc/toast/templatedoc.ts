@@ -1,6 +1,6 @@
 import { Code } from '@/domain/code';
 import { Component } from '@angular/core';
-import { MessageService } from 'primeng/api';
+import { MessageService } from '@pixel/primeng/api';
 
 @Component({
     selector: 'template-doc',
@@ -82,11 +82,11 @@ export class TemplateDoc {
     <p-button (click)="showConfirm()" label="View" />
 </div>`,
         typescript: `import { Component } from '@angular/core';
-import { MessageService } from 'primeng/api';
-import { Toast } from 'primeng/toast';
-import { ButtonModule } from 'primeng/button';
-import { Ripple } from 'primeng/ripple';
-import { AvatarModule } from 'primeng/avatar';
+import { MessageService } from '@pixel/primeng/api';
+import { Toast } from '@pixel/primeng/toast';
+import { ButtonModule } from '@pixel/primeng/button';
+import { Ripple } from '@pixel/primeng/ripple';
+import { AvatarModule } from '@pixel/primeng/avatar';
 
 @Component({
     selector: 'toast-template-demo',

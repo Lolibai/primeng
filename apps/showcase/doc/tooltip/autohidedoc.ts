@@ -28,8 +28,8 @@ export class AutoHideDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { Tooltip } from 'primeng/tooltip';
-import { InputTextModule } from 'primeng/inputtext';
+import { Tooltip } from '@pixel/primeng/tooltip';
+import { InputTextModule } from '@pixel/primeng/inputtext';
 
 @Component({
     selector: 'tooltip-auto-hide-demo',

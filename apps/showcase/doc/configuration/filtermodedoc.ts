@@ -12,7 +12,7 @@ import { Component } from '@angular/core';
 })
 export class FilterModeDoc {
     code: Code = {
-        typescript: `import { PrimeNG } from 'primeng/config';
+        typescript: `import { PrimeNG } from '@pixel/primeng/config';
 
 @Component({
     selector: 'app-root',

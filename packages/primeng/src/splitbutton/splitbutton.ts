@@ -19,15 +19,15 @@ import {
     ViewChild,
     ViewEncapsulation
 } from '@angular/core';
+import { MenuItem, PrimeTemplate, SharedModule, TooltipOptions } from '@pixel/primeng/api';
+import { AutoFocus } from '@pixel/primeng/autofocus';
+import { BaseComponent } from '@pixel/primeng/basecomponent';
+import { ButtonDirective } from '@pixel/primeng/button';
+import { ChevronDownIcon } from '@pixel/primeng/icons';
+import { Ripple } from '@pixel/primeng/ripple';
+import { TieredMenu } from '@pixel/primeng/tieredmenu';
+import { TooltipModule } from '@pixel/primeng/tooltip';
 import { uuid } from '@primeuix/utils';
-import { MenuItem, PrimeTemplate, SharedModule, TooltipOptions } from 'primeng/api';
-import { AutoFocus } from 'primeng/autofocus';
-import { BaseComponent } from 'primeng/basecomponent';
-import { ButtonDirective } from 'primeng/button';
-import { ChevronDownIcon } from 'primeng/icons';
-import { Ripple } from 'primeng/ripple';
-import { TieredMenu } from 'primeng/tieredmenu';
-import { TooltipModule } from 'primeng/tooltip';
 import { ButtonProps, MenuButtonProps } from './splitbutton.interface';
 import { SplitButtonStyle } from './style/splitbuttonstyle';
 

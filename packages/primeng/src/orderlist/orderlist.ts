@@ -20,14 +20,14 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { FilterService, PrimeTemplate, SharedModule } from '@pixel/primeng/api';
+import { BaseComponent } from '@pixel/primeng/basecomponent';
+import { ButtonDirective, ButtonProps } from '@pixel/primeng/button';
+import { AngleDoubleDownIcon, AngleDoubleUpIcon, AngleDownIcon, AngleUpIcon } from '@pixel/primeng/icons';
+import { Listbox } from '@pixel/primeng/listbox';
+import { Ripple } from '@pixel/primeng/ripple';
+import { Nullable } from '@pixel/primeng/ts-helpers';
 import { find, findIndexInList, findSingle, hasClass, insertIntoOrderedArray, isHidden, scrollInView, setAttribute, uuid } from '@primeuix/utils';
-import { FilterService, PrimeTemplate, SharedModule } from 'primeng/api';
-import { BaseComponent } from 'primeng/basecomponent';
-import { ButtonDirective, ButtonProps } from 'primeng/button';
-import { AngleDoubleDownIcon, AngleDoubleUpIcon, AngleDownIcon, AngleUpIcon, SearchIcon } from 'primeng/icons';
-import { Listbox } from 'primeng/listbox';
-import { Ripple } from 'primeng/ripple';
-import { Nullable } from 'primeng/ts-helpers';
 import { OrderListFilterEvent, OrderListFilterOptions, OrderListSelectionChangeEvent } from './orderlist.interface';
 import { OrderListStyle } from './style/orderliststyle';
 

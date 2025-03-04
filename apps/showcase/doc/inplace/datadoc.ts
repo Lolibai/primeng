@@ -110,8 +110,8 @@ export class DataDoc {
         typescript: `import { Component } from '@angular/core';
 import { Car } from '@/domain/car';
 import { CarService } from '@/service/carservice';
-import { InplaceModule } from 'primeng/inplace';
-import { TableModule } from 'primeng/table';
+import { InplaceModule } from '@pixel/primeng/inplace';
+import { TableModule } from '@pixel/primeng/table';
 
 @Component({
     selector: 'inplace-data-demo',

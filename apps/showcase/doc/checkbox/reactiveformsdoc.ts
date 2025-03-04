@@ -41,7 +41,7 @@ export class ReactiveFormsDoc implements OnInit {
 
         typescript: `import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
-import { Checkbox } from 'primeng/checkbox';
+import { Checkbox } from '@pixel/primeng/checkbox';
 
 @Component({
     selector: 'checkbox-reactive-forms-demo',

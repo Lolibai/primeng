@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { TreeNode } from 'primeng/api';
+import { TreeNode } from '@pixel/primeng/api';
 
 @Injectable()
 export class NodeService {

@@ -1,6 +1,6 @@
 import { Code } from '@/domain/code';
 import { Component } from '@angular/core';
-import { MessageService } from 'primeng/api';
+import { MessageService } from '@pixel/primeng/api';
 
 interface UploadEvent {
     originalEvent: Event;
@@ -58,10 +58,10 @@ export class BasicDoc {
     <p-button label="Upload" (onClick)="fu.upload()" severity="secondary" />
 </div>`,
         typescript: `import { Component } from '@angular/core';
-import { MessageService } from 'primeng/api';
-import { FileUpload } from 'primeng/fileupload';
-import { ToastModule } from 'primeng/toast';
-import { ButtonModule } from 'primeng/button';
+import { MessageService } from '@pixel/primeng/api';
+import { FileUpload } from '@pixel/primeng/fileupload';
+import { ToastModule } from '@pixel/primeng/toast';
+import { ButtonModule } from '@pixel/primeng/button';
 
 interface UploadEvent {
     originalEvent: Event;

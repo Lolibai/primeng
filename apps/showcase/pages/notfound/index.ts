@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
-import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { ButtonModule } from '@pixel/primeng/button';
 
 @Component({
     standalone: true,

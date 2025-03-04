@@ -2,7 +2,7 @@ import { Car } from '@/domain/car';
 import { Code } from '@/domain/code';
 import { CarService } from '@/service/carservice';
 import { Component } from '@angular/core';
-import { MessageService } from 'primeng/api';
+import { MessageService } from '@pixel/primeng/api';
 
 @Component({
     selector: 'datatable-doc',
@@ -107,11 +107,11 @@ export class DataTableDoc {
     </div>
 </div>`,
         typescript: `import { Component, Input } from '@angular/core';
-import { MessageService } from 'primeng/api';
+import { MessageService } from '@pixel/primeng/api';
 import { Car } from '@/domain/car';
 import { CarService } from '@/service/carservice';
-import { Defer } from 'primeng/defer';
-import { ToastModule } from 'primeng/toast';
+import { Defer } from '@pixel/primeng/defer';
+import { ToastModule } from '@pixel/primeng/toast';
 
 @Component({
     selector: 'defer-data-table-demo',

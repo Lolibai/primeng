@@ -24,15 +24,15 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { MegaMenuItem, PrimeTemplate, SharedModule } from '@pixel/primeng/api';
+import { BadgeModule } from '@pixel/primeng/badge';
+import { BaseComponent } from '@pixel/primeng/basecomponent';
+import { AngleDownIcon, AngleRightIcon, BarsIcon } from '@pixel/primeng/icons';
+import { Ripple } from '@pixel/primeng/ripple';
+import { TooltipModule } from '@pixel/primeng/tooltip';
+import { VoidListener } from '@pixel/primeng/ts-helpers';
+import { ZIndexUtils } from '@pixel/primeng/utils';
 import { findLastIndex, findSingle, focus, isEmpty, isNotEmpty, isPrintableCharacter, isTouchDevice, resolve, uuid } from '@primeuix/utils';
-import { MegaMenuItem, PrimeTemplate, SharedModule } from 'primeng/api';
-import { BadgeModule } from 'primeng/badge';
-import { BaseComponent } from 'primeng/basecomponent';
-import { AngleDownIcon, AngleRightIcon, BarsIcon } from 'primeng/icons';
-import { Ripple } from 'primeng/ripple';
-import { TooltipModule } from 'primeng/tooltip';
-import { VoidListener } from 'primeng/ts-helpers';
-import { ZIndexUtils } from 'primeng/utils';
 import { MegaMenuStyle } from './style/megamenustyle';
 
 @Component({

@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { Select } from 'primeng/select';`
+        typescript: `import { Select } from '@pixel/primeng/select';`
     };
 }

@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { PasswordModule } from 'primeng/password';`
+        typescript: `import { PasswordModule } from '@pixel/primeng/password';`
     };
 }

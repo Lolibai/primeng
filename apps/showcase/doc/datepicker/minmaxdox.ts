@@ -45,7 +45,7 @@ export class MinMaxDoc {
 
         typescript: `import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { DatePicker } from 'primeng/datepicker';
+import { DatePicker } from '@pixel/primeng/datepicker';
 
 @Component({
     selector: 'datepicker-minmax-demo',

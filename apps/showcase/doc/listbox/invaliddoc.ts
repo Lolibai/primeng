@@ -42,7 +42,7 @@ export class InvalidDoc implements OnInit {
 
         typescript: `import { Component, ngOnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { Listbox } from 'primeng/listbox';
+import { Listbox } from '@pixel/primeng/listbox';
 
 interface City {
     name: string,

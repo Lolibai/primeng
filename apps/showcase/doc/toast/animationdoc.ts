@@ -1,6 +1,6 @@
 import { Code } from '@/domain/code';
 import { Component } from '@angular/core';
-import { MessageService } from 'primeng/api';
+import { MessageService } from '@pixel/primeng/api';
 
 @Component({
     selector: 'animation-doc',
@@ -31,10 +31,10 @@ export class AnimationDoc {
     <p-button pRipple (click)="show()" label="Show" />
 </div>`,
         typescript: `import { Component } from '@angular/core';
-import { MessageService } from 'primeng/api';
-import { ToastModule } from 'primeng/toast';
-import { ButtonModule } from 'primeng/button';
-import { RippleModule } from 'primeng/ripple';
+import { MessageService } from '@pixel/primeng/api';
+import { ToastModule } from '@pixel/primeng/toast';
+import { ButtonModule } from '@pixel/primeng/button';
+import { RippleModule } from '@pixel/primeng/ripple';
 
 @Component({
     selector: 'toast-animation-demo',

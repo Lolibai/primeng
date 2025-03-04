@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { AfterContentInit, ChangeDetectionStrategy, Component, ContentChild, ContentChildren, inject, Input, NgModule, QueryList, signal, TemplateRef, ViewEncapsulation } from '@angular/core';
+import { BlockableUI, Footer, Header, PrimeTemplate, SharedModule } from '@pixel/primeng/api';
+import { BaseComponent } from '@pixel/primeng/basecomponent';
 import { equals } from '@primeuix/utils';
-import { BlockableUI, Footer, Header, PrimeTemplate, SharedModule } from 'primeng/api';
-import { BaseComponent } from 'primeng/basecomponent';
 import { CardStyle } from './style/cardstyle';
 
 /**

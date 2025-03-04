@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { TreeTableModule } from 'primeng/treetable';`
+        typescript: `import { TreeTableModule } from '@pixel/primeng/treetable';`
     };
 }

@@ -114,7 +114,7 @@ export class SizesDoc {
 
         typescript: `import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { CascadeSelect } from 'primeng/cascadeselect';
+import { CascadeSelect } from '@pixel/primeng/cascadeselect';
 
 @Component({
     selector: 'cascade-select-sizes-demo',

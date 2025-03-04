@@ -33,9 +33,9 @@ export class IftaLabelDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { PasswordModule } from 'primeng/password';
+import { PasswordModule } from '@pixel/primeng/password';
 import { FormsModule } from '@angular/forms';
-import { IftaLabelModule } from 'primeng/iftalabel';
+import { IftaLabelModule } from '@pixel/primeng/iftalabel';
 
 @Component({
     selector: 'password-iftalabel-demo',

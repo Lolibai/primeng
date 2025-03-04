@@ -33,7 +33,7 @@ export class BasicDoc {
     <p-chip label="Thriller" [removable]="true" />
 </div>`,
         typescript: `import { Component } from '@angular/core';
-import { Chip } from 'primeng/chip';
+import { Chip } from '@pixel/primeng/chip';
 
 @Component({
     selector: 'chip-basic-demo',

@@ -1,33 +1,33 @@
-import { Component, computed, inject } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { DrawerModule } from 'primeng/drawer';
 import { AppConfigService } from '@/service/appconfigservice';
 import { DesignerService } from '@/service/designerservice';
-import { TabsModule } from 'primeng/tabs';
-import { SelectButtonModule } from 'primeng/selectbutton';
-import { DividerModule } from 'primeng/divider';
-import { ButtonModule } from 'primeng/button';
-import { TagModule } from 'primeng/tag';
-import { AccordionModule } from 'primeng/accordion';
+import { CommonModule } from '@angular/common';
+import { Component, computed, inject } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { AccordionModule } from '@pixel/primeng/accordion';
+import { MessageService } from '@pixel/primeng/api';
+import { ButtonModule } from '@pixel/primeng/button';
+import { PrimeNG } from '@pixel/primeng/config';
+import { DividerModule } from '@pixel/primeng/divider';
+import { DrawerModule } from '@pixel/primeng/drawer';
+import { FileUploadModule } from '@pixel/primeng/fileupload';
+import { SelectButtonModule } from '@pixel/primeng/selectbutton';
+import { SkeletonModule } from '@pixel/primeng/skeleton';
+import { TabsModule } from '@pixel/primeng/tabs';
+import { TagModule } from '@pixel/primeng/tag';
+import { ToastModule } from '@pixel/primeng/toast';
+import { $dt, updatePreset, usePreset } from '@primeng/themes';
 import Aura from '@primeng/themes/aura';
 import Lara from '@primeng/themes/lara';
 import Material from '@primeng/themes/material';
 import Nora from '@primeng/themes/nora';
-import { PrimeNG } from 'primeng/config';
-import { FormsModule } from '@angular/forms';
-import { $dt, updatePreset, usePreset } from '@primeng/themes';
-import { MessageService } from 'primeng/api';
-import { FileUploadModule } from 'primeng/fileupload';
 import { DesignBorderRadius } from './primitive/designborderradius';
 import { DesignColors } from './primitive/designcolors';
-import { DesignGeneral } from './semantic/designgeneral';
+import { DesignCS } from './semantic/colorscheme/designcs';
 import { DesignFormField } from './semantic/designformfield';
+import { DesignGeneral } from './semantic/designgeneral';
 import { DesignList } from './semantic/designlist';
 import { DesignNavigation } from './semantic/designnavigation';
 import { DesignOverlay } from './semantic/designoverlay';
-import { DesignCS } from './semantic/colorscheme/designcs';
-import { ToastModule } from 'primeng/toast';
-import { SkeletonModule } from 'primeng/skeleton';
 
 const presets = {
     Aura,
@@ -474,7 +474,7 @@ export class AppDesignerComponent {
         const theme = JSON.stringify(this.preset, null, 4).replace(/"([^"]+)":/g, '$1:');
         const textContent = `import { ApplicationConfig } from '@angular/core';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { providePrimeNG } from 'primeng/config';
+import { providePrimeNG } from '@pixel/primeng/config';
 import ${basePreset} from "@primeng/themes/${basePreset.toLowerCase()}";
 import { definePreset } from "@primeng/themes";
 

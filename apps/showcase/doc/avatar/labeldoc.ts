@@ -74,8 +74,8 @@ export class LabelDoc {
     </div>
 </div>`,
         typescript: `import { Component } from '@angular/core';
-import { AvatarModule } from 'primeng/avatar';
-import { OverlayBadgeModule } from 'primeng/overlaybadge';
+import { AvatarModule } from '@pixel/primeng/avatar';
+import { OverlayBadgeModule } from '@pixel/primeng/overlaybadge';
 
 @Component({
     selector: 'avatar-label-demo',

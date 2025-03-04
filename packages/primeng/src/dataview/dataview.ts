@@ -18,12 +18,12 @@ import {
     TemplateRef,
     ViewEncapsulation
 } from '@angular/core';
+import { BlockableUI, FilterService, Footer, Header, SharedModule, TranslationKeys } from '@pixel/primeng/api';
+import { BaseComponent } from '@pixel/primeng/basecomponent';
+import { SpinnerIcon } from '@pixel/primeng/icons';
+import { PaginatorModule } from '@pixel/primeng/paginator';
+import { Nullable } from '@pixel/primeng/ts-helpers';
 import { resolveFieldData } from '@primeuix/utils';
-import { BlockableUI, FilterService, Footer, Header, SharedModule, TranslationKeys } from 'primeng/api';
-import { BaseComponent } from 'primeng/basecomponent';
-import { SpinnerIcon } from 'primeng/icons';
-import { PaginatorModule } from 'primeng/paginator';
-import { Nullable } from 'primeng/ts-helpers';
 import { Subscription } from 'rxjs';
 import { DataViewLayoutChangeEvent, DataViewLazyLoadEvent, DataViewPageEvent, DataViewPaginatorState, DataViewSortEvent } from './dataview.interface';
 import { DataViewStyle } from './style/dataviewstyle';

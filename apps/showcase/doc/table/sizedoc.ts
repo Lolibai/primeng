@@ -119,8 +119,8 @@ export class SizeDoc {
         typescript: `import { Component } from '@angular/core';
 import { Product } from '@/domain/product';
 import { ProductService } from '@/service/productservice';
-import { TableModule } from 'primeng/table';
-import { SelectButton } from 'primeng/selectbutton';
+import { TableModule } from '@pixel/primeng/table';
+import { SelectButton } from '@pixel/primeng/selectbutton';
 import { CommonModule } from '@angular/common';
 
 @Component({

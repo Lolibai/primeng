@@ -86,9 +86,9 @@ export class PositionedDoc implements OnInit {
 </div>`,
         typescript: `import { Component, OnInit } from '@angular/core';
 import { PhotoService } from '@/service/photoservice';
-import { GalleriaModule } from 'primeng/galleria';
-import { RadioButton } from 'primeng/radiobutton';
-import { Checkbox } from 'primeng/checkbox';
+import { GalleriaModule } from '@pixel/primeng/galleria';
+import { RadioButton } from '@pixel/primeng/radiobutton';
+import { Checkbox } from '@pixel/primeng/checkbox';
 import { FormsModule } from '@angular/forms';
 
 @Component({

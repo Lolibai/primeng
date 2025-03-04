@@ -40,7 +40,7 @@ export class DateTemplateDoc {
 
         typescript: `import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { DatePickerModule } from 'primeng/datepicker';
+import { DatePickerModule } from '@pixel/primeng/datepicker';
 
 @Component({
     selector: 'datepicker-datetemplate-demo',

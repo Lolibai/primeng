@@ -70,9 +70,9 @@ export class FloatlabelDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { InputNumber } from 'primeng/inputnumber';
+import { InputNumber } from '@pixel/primeng/inputnumber';
 import { FormsModule } from '@angular/forms';
-import { FloatLabel } from 'primeng/floatlabel';
+import { FloatLabel } from '@pixel/primeng/floatlabel';
 
 @Component({
     selector: 'input-number-float-label-demo',

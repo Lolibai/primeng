@@ -42,8 +42,8 @@ export class FilterDoc {
 
         typescript: `import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { SliderModule } from 'primeng/slider';
-import { SelectButtonModule } from 'primeng/selectbutton';
+import { SliderModule } from '@pixel/primeng/slider';
+import { SelectButtonModule } from '@pixel/primeng/selectbutton';
 
 @Component({
     selector: 'slider-filter-demo',

@@ -115,7 +115,7 @@ export class DragDropDoc implements OnInit {
         typescript: `import { Component, OnInit } from '@angular/core';
 import { Product } from '@/domain/product';
 import { ProductService } from '@/service/productservice';
-import { OrderList } from 'primeng/orderlist';
+import { OrderList } from '@pixel/primeng/orderlist';
 
 @Component({
     selector: 'orderlist-drag-drop-demo',

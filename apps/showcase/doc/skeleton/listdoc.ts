@@ -137,7 +137,7 @@ export class ListDoc {
     </div>
 </div>`,
         typescript: `import { Component } from '@angular/core';
-import { Skeleton } from 'primeng/skeleton';
+import { Skeleton } from '@pixel/primeng/skeleton';
 
 @Component({
     selector: 'skeleton-list-demo,

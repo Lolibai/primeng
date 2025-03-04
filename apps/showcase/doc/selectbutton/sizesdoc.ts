@@ -40,7 +40,7 @@ export class SizesDoc {
 
         typescript: `import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { SelectButton } from 'primeng/selectbutton';
+import { SelectButton } from '@pixel/primeng/selectbutton';
 
 @Component({
     selector: 'select-button-sizes-demo',

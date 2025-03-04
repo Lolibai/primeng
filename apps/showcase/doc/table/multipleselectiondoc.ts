@@ -122,10 +122,10 @@ export class MultipleSelectionDoc {
         typescript: `import { Component, OnInit } from '@angular/core';
 import { Product } from '@/domain/product';
 import { ProductService } from '@/service/productservice';
-import { TableModule } from 'primeng/table';
+import { TableModule } from '@pixel/primeng/table';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { ToggleSwitchModule } from 'primeng/toggleswitch';
+import { ToggleSwitchModule } from '@pixel/primeng/toggleswitch';
 
 @Component({
     selector: 'table-multiple-selection-demo',

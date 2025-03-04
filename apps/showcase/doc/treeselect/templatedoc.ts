@@ -72,8 +72,8 @@ export class TemplateDoc {
         typescript: `import { Component } from '@angular/core';
 import { NodeService } from '@/service/nodeservice';
 import { FormsModule } from '@angular/forms';
-import { TreeSelect } from 'primeng/treeselect';
-import { ButtonModule } from 'primeng/button';
+import { TreeSelect } from '@pixel/primeng/treeselect';
+import { ButtonModule } from '@pixel/primeng/button';
 
 @Component({
     selector: 'tree-select-template-demo',

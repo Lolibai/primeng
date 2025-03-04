@@ -2,17 +2,17 @@ import { AppConfigService } from '@/service/appconfigservice';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { Component, computed, inject, PLATFORM_ID } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { ButtonModule } from '@pixel/primeng/button';
+import { PrimeNG } from '@pixel/primeng/config';
+import { InputSwitchModule } from '@pixel/primeng/inputswitch';
+import { RadioButtonModule } from '@pixel/primeng/radiobutton';
+import { SelectButton } from '@pixel/primeng/selectbutton';
+import { ToggleSwitchModule } from '@pixel/primeng/toggleswitch';
 import { $t, updatePreset, updateSurfacePalette } from '@primeng/themes';
 import Aura from '@primeng/themes/aura';
 import Lara from '@primeng/themes/lara';
 import Material from '@primeng/themes/material';
 import Nora from '@primeng/themes/nora';
-import { ButtonModule } from 'primeng/button';
-import { PrimeNG } from 'primeng/config';
-import { InputSwitchModule } from 'primeng/inputswitch';
-import { RadioButtonModule } from 'primeng/radiobutton';
-import { SelectButton } from 'primeng/selectbutton';
-import { ToggleSwitchModule } from 'primeng/toggleswitch';
 
 const presets = {
     Aura,

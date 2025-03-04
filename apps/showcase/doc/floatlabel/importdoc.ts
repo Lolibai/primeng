@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { FloatLabel } from 'primeng/floatlabel';`
+        typescript: `import { FloatLabel } from '@pixel/primeng/floatlabel';`
     };
 }

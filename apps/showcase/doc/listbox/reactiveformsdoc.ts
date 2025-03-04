@@ -49,7 +49,7 @@ export class ReactiveFormsDoc implements OnInit {
 
         typescript: `import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
-import { Listbox } from 'primeng/listbox';
+import { Listbox } from '@pixel/primeng/listbox';
 
 interface City {
     name: string,

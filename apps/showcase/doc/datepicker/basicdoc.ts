@@ -24,7 +24,7 @@ export class BasicDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { DatePicker } from 'primeng/datepicker';
+import { DatePicker } from '@pixel/primeng/datepicker';
 import { FormsModule } from '@angular/forms';
 
 @Component({

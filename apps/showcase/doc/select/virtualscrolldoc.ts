@@ -1,6 +1,6 @@
 import { Code } from '@/domain/code';
 import { Component } from '@angular/core';
-import { SelectItem } from 'primeng/api';
+import { SelectItem } from '@pixel/primeng/api';
 
 @Component({
     selector: 'select-virtualscroll-demo',
@@ -36,10 +36,10 @@ export class VirtualScrollDoc {
     <p-select [options]="items" [(ngModel)]="selectedItem" placeholder="Select Item" [virtualScroll]="true" [virtualScrollItemSize]="38" class="w-full md:w-56" />
 </div>`,
 
-        typescript: `import { SelectItem } from 'primeng/api';
+        typescript: `import { SelectItem } from '@pixel/primeng/api';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { Select } from 'primeng/select';
+import { Select } from '@pixel/primeng/select';
 
 @Component({
     selector: 'select-virtualscroll-demo',

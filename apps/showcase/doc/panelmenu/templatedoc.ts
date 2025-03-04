@@ -1,6 +1,6 @@
 import { Code } from '@/domain/code';
 import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
+import { MenuItem } from '@pixel/primeng/api';
 
 @Component({
     selector: 'template-doc',
@@ -147,10 +147,10 @@ export class TemplateDoc implements OnInit {
 </div>`,
 
         typescript: `import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
-import { PanelMenu } from 'primeng/panelmenu';
-import { BadgeModule } from 'primeng/badge';
-import { Ripple } from 'primeng/ripple';
+import { MenuItem } from '@pixel/primeng/api';
+import { PanelMenu } from '@pixel/primeng/panelmenu';
+import { BadgeModule } from '@pixel/primeng/badge';
+import { Ripple } from '@pixel/primeng/ripple';
 import { CommonModule } from '@angular/common';
 
 @Component({

@@ -49,11 +49,11 @@ export class IftaLabelDoc {
 
         typescript: `import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { InputGroupModule } from 'primeng/inputgroup';
-import { InputGroupAddonModule } from 'primeng/inputgroupaddon';
-import { SelectModule } from 'primeng/select';
-import { IftaLabelModule } from 'primeng/iftalabel';
-import { InputNumberModule } from 'primeng/inputnumber';
+import { InputGroupModule } from '@pixel/primeng/inputgroup';
+import { InputGroupAddonModule } from '@pixel/primeng/inputgroupaddon';
+import { SelectModule } from '@pixel/primeng/select';
+import { IftaLabelModule } from '@pixel/primeng/iftalabel';
+import { InputNumberModule } from '@pixel/primeng/inputnumber';
 
 @Component({
     selector: 'input-group-ifta-label-demo',

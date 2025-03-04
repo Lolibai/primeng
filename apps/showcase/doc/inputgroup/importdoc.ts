@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { InputGroup } from 'primeng/inputgroup';
-import { InputGroupAddonModule } from 'primeng/inputgroupaddon';`
+        typescript: `import { InputGroup } from '@pixel/primeng/inputgroup';
+import { InputGroupAddonModule } from '@pixel/primeng/inputgroupaddon';`
     };
 }

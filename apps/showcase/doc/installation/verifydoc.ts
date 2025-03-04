@@ -19,7 +19,7 @@ import { Component } from '@angular/core';
 })
 export class VerifyDoc {
     code1: Code = {
-        typescript: `import { ButtonModule } from 'primeng/button';`
+        typescript: `import { ButtonModule } from '@pixel/primeng/button';`
     };
 
     code2: Code = {

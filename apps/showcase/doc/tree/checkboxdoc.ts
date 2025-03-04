@@ -1,7 +1,7 @@
 import { Code } from '@/domain/code';
 import { NodeService } from '@/service/nodeservice';
 import { Component, OnInit } from '@angular/core';
-import { TreeNode } from 'primeng/api';
+import { TreeNode } from '@pixel/primeng/api';
 
 @Component({
     selector: 'checkbox-doc',
@@ -34,9 +34,9 @@ export class CheckboxDoc implements OnInit {
 </div>`,
 
         typescript: `import { Component, OnInit } from '@angular/core';
-import { TreeNode } from 'primeng/api';
+import { TreeNode } from '@pixel/primeng/api';
 import { NodeService } from '@/service/nodeservice';
-import { Tree } from 'primeng/tree';
+import { Tree } from '@pixel/primeng/tree';
 
 @Component({
     selector: 'tree-checkbox-demo',

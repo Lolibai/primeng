@@ -5,6 +5,7 @@ import {
     ChangeDetectionStrategy,
     Component,
     ContentChild,
+    ContentChildren,
     ElementRef,
     EventEmitter,
     Input,
@@ -13,21 +14,20 @@ import {
     OnDestroy,
     OnInit,
     Output,
+    QueryList,
     TemplateRef,
     ViewChild,
     ViewEncapsulation,
     booleanAttribute,
     inject,
-    numberAttribute,
-    ContentChildren,
-    QueryList
+    numberAttribute
 } from '@angular/core';
+import { MessageService, PrimeTemplate, SharedModule, ToastMessageOptions } from '@pixel/primeng/api';
+import { BaseComponent } from '@pixel/primeng/basecomponent';
+import { Button } from '@pixel/primeng/button';
+import { CheckIcon, ExclamationTriangleIcon, InfoCircleIcon, TimesCircleIcon, TimesIcon } from '@pixel/primeng/icons';
+import { ZIndexUtils } from '@pixel/primeng/utils';
 import { isEmpty, setAttribute, uuid } from '@primeuix/utils';
-import { MessageService, PrimeTemplate, SharedModule, ToastMessageOptions } from 'primeng/api';
-import { BaseComponent } from 'primeng/basecomponent';
-import { Button } from 'primeng/button';
-import { CheckIcon, ExclamationTriangleIcon, InfoCircleIcon, TimesCircleIcon, TimesIcon } from 'primeng/icons';
-import { ZIndexUtils } from 'primeng/utils';
 import { Subscription } from 'rxjs';
 import { ToastStyle } from './style/toaststyle';
 import { ToastCloseEvent, ToastItemCloseEvent, ToastPositionType } from './toast.interface';

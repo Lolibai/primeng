@@ -2,8 +2,8 @@ import { Code } from '@/domain/code';
 import { Product } from '@/domain/product';
 import { ProductService } from '@/service/productservice';
 import { ChangeDetectorRef, Component, OnInit, ViewChild } from '@angular/core';
-import { MessageService } from 'primeng/api';
-import { Popover } from 'primeng/popover';
+import { MessageService } from '@pixel/primeng/api';
+import { Popover } from '@pixel/primeng/popover';
 
 @Component({
     selector: 'data-table-doc',
@@ -270,14 +270,14 @@ export class DataTableDoc implements OnInit {
 </div>`,
 
         typescript: `import { ChangeDetectorRef, Component, OnInit, ViewChild } from '@angular/core';
-import { MessageService } from 'primeng/api';
-import { Popover } from 'primeng/popover';
-import { PopoverModule } from 'primeng/popover';
+import { MessageService } from '@pixel/primeng/api';
+import { Popover } from '@pixel/primeng/popover';
+import { PopoverModule } from '@pixel/primeng/popover';
 import { Product } from '@/domain/product';
 import { ProductService } from '@/service/productservice';
-import { TableModule } from 'primeng/table';
-import { ButtonModule } from 'primeng/button';
-import { TagModule } from 'primeng/tag';
+import { TableModule } from '@pixel/primeng/table';
+import { ButtonModule } from '@pixel/primeng/button';
+import { TagModule } from '@pixel/primeng/tag';
 
 @Component({
     selector: 'popover-data-table-demo',

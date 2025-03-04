@@ -11,8 +11,8 @@ import { Component } from '@angular/core';
 export class AppendToDoc {
     code: Code = {
         typescript: `
-import { OverlayOptions } from 'primeng/api';
-import { PrimeNG } from 'primeng/config';
+import { OverlayOptions } from '@pixel/primeng/api';
+import { PrimeNG } from '@pixel/primeng/config';
 
 this.primeng.overlayOptions: OverlayOptions = {
     appendTo: 'body'

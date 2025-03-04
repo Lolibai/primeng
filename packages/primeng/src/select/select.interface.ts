@@ -1,5 +1,5 @@
 import { TemplateRef } from '@angular/core';
-import { ScrollerOptions } from 'primeng/api';
+import { ScrollerOptions } from '@pixel/primeng/api';
 import { Select } from './select';
 /**
  * Filter callbacks of the select.

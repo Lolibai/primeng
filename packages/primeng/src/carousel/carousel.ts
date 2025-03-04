@@ -20,12 +20,12 @@ import {
     ViewChild,
     ViewEncapsulation
 } from '@angular/core';
+import { Footer, Header, PrimeTemplate, SharedModule } from '@pixel/primeng/api';
+import { BaseComponent } from '@pixel/primeng/basecomponent';
+import { Button, ButtonProps } from '@pixel/primeng/button';
+import { ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon, ChevronUpIcon } from '@pixel/primeng/icons';
+import { Ripple } from '@pixel/primeng/ripple';
 import { find, findSingle, getAttribute, setAttribute, uuid } from '@primeuix/utils';
-import { Footer, Header, PrimeTemplate, SharedModule } from 'primeng/api';
-import { BaseComponent } from 'primeng/basecomponent';
-import { Button, ButtonProps } from 'primeng/button';
-import { ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon, ChevronUpIcon } from 'primeng/icons';
-import { Ripple } from 'primeng/ripple';
 import { CarouselPageEvent, CarouselResponsiveOptions } from './carousel.interface';
 import { CarouselStyle } from './style/carouselstyle';
 

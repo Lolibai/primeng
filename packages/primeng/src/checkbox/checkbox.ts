@@ -22,11 +22,11 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { ControlValueAccessor, FormControl, NG_VALUE_ACCESSOR, NgControl } from '@angular/forms';
+import { PrimeTemplate, SharedModule } from '@pixel/primeng/api';
+import { BaseComponent } from '@pixel/primeng/basecomponent';
+import { CheckIcon, MinusIcon } from '@pixel/primeng/icons';
+import { Nullable } from '@pixel/primeng/ts-helpers';
 import { contains, equals } from '@primeuix/utils';
-import { PrimeTemplate, SharedModule } from 'primeng/api';
-import { BaseComponent } from 'primeng/basecomponent';
-import { CheckIcon, MinusIcon } from 'primeng/icons';
-import { Nullable } from 'primeng/ts-helpers';
 import { CheckboxChangeEvent } from './checkbox.interface';
 import { CheckboxStyle } from './style/checkboxstyle';
 

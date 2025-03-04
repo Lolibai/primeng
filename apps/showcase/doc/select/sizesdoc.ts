@@ -52,7 +52,7 @@ export class SizesDoc implements OnInit {
 
         typescript: `import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { SelectModule } from 'primeng/select';
+import { SelectModule } from '@pixel/primeng/select';
 
 interface City {
     name: string;

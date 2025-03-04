@@ -1,6 +1,6 @@
 import { Code } from '@/domain/code';
 import { Component } from '@angular/core';
-import { MenuItem, MessageService } from 'primeng/api';
+import { MenuItem, MessageService } from '@pixel/primeng/api';
 
 @Component({
     selector: 'nested-doc',
@@ -161,9 +161,9 @@ export class NestedDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { MenuItem, MessageService } from 'primeng/api';
-import { SplitButton } from 'primeng/splitbutton';
-import { ToastModule } from 'primeng/toast';
+import { MenuItem, MessageService } from '@pixel/primeng/api';
+import { SplitButton } from '@pixel/primeng/splitbutton';
+import { ToastModule } from '@pixel/primeng/toast';
 
 @Component({
     selector: 'split-button-nested-demo',

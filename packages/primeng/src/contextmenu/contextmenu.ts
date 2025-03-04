@@ -27,6 +27,14 @@ import {
     ViewRef
 } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { MenuItem, OverlayService, PrimeTemplate, SharedModule } from '@pixel/primeng/api';
+import { BadgeModule } from '@pixel/primeng/badge';
+import { BaseComponent } from '@pixel/primeng/basecomponent';
+import { AngleRightIcon } from '@pixel/primeng/icons';
+import { Ripple } from '@pixel/primeng/ripple';
+import { TooltipModule } from '@pixel/primeng/tooltip';
+import { VoidListener } from '@pixel/primeng/ts-helpers';
+import { ZIndexUtils } from '@pixel/primeng/utils';
 import {
     appendChild,
     calculateScrollbarWidth,
@@ -47,14 +55,6 @@ import {
     resolve,
     uuid
 } from '@primeuix/utils';
-import { MenuItem, OverlayService, PrimeTemplate, SharedModule } from 'primeng/api';
-import { BadgeModule } from 'primeng/badge';
-import { BaseComponent } from 'primeng/basecomponent';
-import { AngleRightIcon } from 'primeng/icons';
-import { Ripple } from 'primeng/ripple';
-import { TooltipModule } from 'primeng/tooltip';
-import { VoidListener } from 'primeng/ts-helpers';
-import { ZIndexUtils } from 'primeng/utils';
 import { ContextMenuStyle } from './style/contextmenustyle';
 
 @Component({

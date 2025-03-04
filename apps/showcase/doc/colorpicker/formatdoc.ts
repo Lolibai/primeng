@@ -61,7 +61,7 @@ export class FormatDoc {
 
         typescript: `import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { ColorPicker } from 'primeng/colorpicker';
+import { ColorPicker } from '@pixel/primeng/colorpicker';
 
 @Component({
     selector: 'color-picker-format-demo',

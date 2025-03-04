@@ -1,7 +1,7 @@
 import { AfterViewInit, booleanAttribute, Directive, ElementRef, EventEmitter, HostListener, Input, NgModule, NgZone, OnDestroy, Output, Renderer2 } from '@angular/core';
+import { DomHandler } from '@pixel/primeng/dom';
+import { VoidListener } from '@pixel/primeng/ts-helpers';
 import { addClass, removeClass } from '@primeuix/utils';
-import { DomHandler } from 'primeng/dom';
-import { VoidListener } from 'primeng/ts-helpers';
 
 /**
  * pDraggable directive apply draggable behavior to any element.

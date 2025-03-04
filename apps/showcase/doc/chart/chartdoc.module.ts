@@ -3,7 +3,7 @@ import { AppDocModule } from '@/components/doc/app.doc.module';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { ChartModule } from 'primeng/chart';
+import { ChartModule } from '@pixel/primeng/chart';
 import { AccessibilityDoc } from './accessibilitydoc';
 import { BasicDoc } from './basicdoc';
 import { ChartjsDoc } from './chartjsdoc';

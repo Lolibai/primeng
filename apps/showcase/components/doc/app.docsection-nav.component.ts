@@ -2,8 +2,8 @@ import { Doc } from '@/domain/doc';
 import { DOCUMENT, isPlatformBrowser, Location } from '@angular/common';
 import { Component, DestroyRef, ElementRef, inject, input, OnInit, PLATFORM_ID, signal, ViewChild } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
-import { DomHandler } from 'primeng/dom';
-import { ObjectUtils } from 'primeng/utils';
+import { DomHandler } from '@pixel/primeng/dom';
+import { ObjectUtils } from '@pixel/primeng/utils';
 import { fromEvent } from 'rxjs';
 
 @Component({

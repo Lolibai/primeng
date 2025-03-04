@@ -218,10 +218,10 @@ export class LoadingDoc {
         typescript: `import { Component } from '@angular/core';
 import { Product } from '@/domain/product';
 import { ProductService } from '@/service/productservice';
-import { DataView } from 'primeng/dataview';
+import { DataView } from '@pixel/primeng/dataview';
 import { CommonModule } from '@angular/common';
-import { Skeleton } from 'primeng/skeleton';
-import { SelectButton } from 'primeng/selectbutton';
+import { Skeleton } from '@pixel/primeng/skeleton';
+import { SelectButton } from '@pixel/primeng/selectbutton';
 import { signal } from '@angular/core';
 
 @Component({

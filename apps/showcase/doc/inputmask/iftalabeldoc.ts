@@ -33,9 +33,9 @@ export class IftaLabelDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { InputMaskModule } from 'primeng/inputmask';
+import { InputMaskModule } from '@pixel/primeng/inputmask';
 import { FormsModule } from '@angular/forms';
-import { IftaLabelModule } from 'primeng/iftalabel';
+import { IftaLabelModule } from '@pixel/primeng/iftalabel';
 
 @Component({
     selector: 'input-mask-iftalabel-demo',

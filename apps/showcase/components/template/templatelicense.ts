@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Input, NgModule, ViewEncapsulation } from '@angular/core';
-import { SharedModule } from 'primeng/api';
-import { ButtonModule } from 'primeng/button';
+import { SharedModule } from '@pixel/primeng/api';
+import { ButtonModule } from '@pixel/primeng/button';
 
 @Component({
     selector: 'template-license',

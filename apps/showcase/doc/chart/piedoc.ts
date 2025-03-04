@@ -77,7 +77,7 @@ export class PieDoc implements OnInit {
     <p-chart type="pie" [data]="data" [options]="options" class="w-full md:w-[30rem]" />
 </div>`,
         typescript: `import { ChangeDetectorRef, Component, effect, inject, OnInit, PLATFORM_ID } from '@angular/core';
-import { ChartModule } from 'primeng/chart';
+import { ChartModule } from '@pixel/primeng/chart';
 import { AppConfigService } from '@/service/appconfigservice';
 
 @Component({

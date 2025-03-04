@@ -98,7 +98,7 @@ export class VerticalScrollDoc {
         typescript: `import { Component, OnInit } from '@angular/core';
 import { Customer } from '@/domain/customer';
 import { CustomerService } from '@/service/customerservice';
-import { TableModule } from 'primeng/table';
+import { TableModule } from '@pixel/primeng/table';
 import { HttpClientModule } from '@angular/common/http';
 
 @Component({

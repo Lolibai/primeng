@@ -4,6 +4,7 @@ import {
     ChangeDetectionStrategy,
     Component,
     ContentChild,
+    ContentChildren,
     ElementRef,
     EventEmitter,
     Inject,
@@ -12,6 +13,7 @@ import {
     OnDestroy,
     OnInit,
     Output,
+    QueryList,
     Renderer2,
     TemplateRef,
     ViewChild,
@@ -23,20 +25,18 @@ import {
     inject,
     input,
     numberAttribute,
-    signal,
-    ContentChildren,
-    QueryList
+    signal
 } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { MenuItem, OverlayService, PrimeTemplate, SharedModule } from '@pixel/primeng/api';
+import { BaseComponent } from '@pixel/primeng/basecomponent';
+import { ConnectedOverlayScrollHandler } from '@pixel/primeng/dom';
+import { AngleRightIcon } from '@pixel/primeng/icons';
+import { Ripple } from '@pixel/primeng/ripple';
+import { TooltipModule } from '@pixel/primeng/tooltip';
+import { Nullable, VoidListener } from '@pixel/primeng/ts-helpers';
+import { ZIndexUtils } from '@pixel/primeng/utils';
 import { absolutePosition, appendChild, findLastIndex, findSingle, focus, isEmpty, isNotEmpty, isPrintableCharacter, isTouchDevice, nestedPosition, relativePosition, resolve, uuid } from '@primeuix/utils';
-import { MenuItem, OverlayService, PrimeTemplate, SharedModule } from 'primeng/api';
-import { BaseComponent } from 'primeng/basecomponent';
-import { ConnectedOverlayScrollHandler } from 'primeng/dom';
-import { AngleRightIcon } from 'primeng/icons';
-import { Ripple } from 'primeng/ripple';
-import { TooltipModule } from 'primeng/tooltip';
-import { Nullable, VoidListener } from 'primeng/ts-helpers';
-import { ZIndexUtils } from 'primeng/utils';
 import { TieredMenuStyle } from './style/tieredmenustyle';
 
 @Component({

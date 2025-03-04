@@ -1,10 +1,10 @@
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { AfterContentInit, AfterViewInit, ChangeDetectionStrategy, Component, computed, ContentChild, ContentChildren, effect, ElementRef, forwardRef, inject, QueryList, signal, TemplateRef, ViewChild, ViewEncapsulation } from '@angular/core';
+import { PrimeTemplate, SharedModule } from '@pixel/primeng/api';
+import { BaseComponent } from '@pixel/primeng/basecomponent';
+import { ChevronLeftIcon, ChevronRightIcon } from '@pixel/primeng/icons';
+import { RippleModule } from '@pixel/primeng/ripple';
 import { findSingle, getHeight, getOffset, getOuterWidth, getWidth, isRTL } from '@primeuix/utils';
-import { PrimeTemplate, SharedModule } from 'primeng/api';
-import { BaseComponent } from 'primeng/basecomponent';
-import { ChevronLeftIcon, ChevronRightIcon } from 'primeng/icons';
-import { RippleModule } from 'primeng/ripple';
 import { Tabs } from './tabs';
 
 /**

@@ -22,8 +22,8 @@ export class DelayDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { Tooltip } from 'primeng/tooltip';
-import { ButtonModule } from 'primeng/button';
+import { Tooltip } from '@pixel/primeng/tooltip';
+import { ButtonModule } from '@pixel/primeng/button';
 
 @Component({
     selector: 'tooltip-delay-demo',

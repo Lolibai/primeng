@@ -4,7 +4,7 @@ import { provideHttpClient, withFetch } from '@angular/common/http';
 import { ApplicationConfig } from '@angular/core';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { provideRouter, withEnabledBlockingInitialNavigation, withInMemoryScrolling } from '@angular/router';
-import { providePrimeNG } from 'primeng/config';
+import { providePrimeNG } from '@pixel/primeng/config';
 
 export const appConfig: ApplicationConfig = {
     providers: [

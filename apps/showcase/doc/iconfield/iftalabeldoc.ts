@@ -42,11 +42,11 @@ export class IftaLabelDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { InputIconModule } from 'primeng/inputicon';
-import { IconFieldModule } from 'primeng/iconfield';
-import { InputTextModule } from 'primeng/inputtext';
+import { InputIconModule } from '@pixel/primeng/inputicon';
+import { IconFieldModule } from '@pixel/primeng/iconfield';
+import { InputTextModule } from '@pixel/primeng/inputtext';
 import { FormsModule } from '@angular/forms';
-import { IftaLabelModule } from 'primeng/iftalabel';
+import { IftaLabelModule } from '@pixel/primeng/iftalabel';
 
 @Component({
     selector: 'iconfield-ifta-label-demo',

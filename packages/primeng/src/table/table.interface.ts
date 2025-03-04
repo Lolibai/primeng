@@ -1,6 +1,6 @@
 import { TemplateRef } from '@angular/core';
-import { FilterMetadata, LazyLoadMeta } from 'primeng/api';
-import { ButtonProps } from 'primeng/button';
+import { FilterMetadata, LazyLoadMeta } from '@pixel/primeng/api';
+import { ButtonProps } from '@pixel/primeng/button';
 import { Table } from './table';
 /**
  * Custom select event.

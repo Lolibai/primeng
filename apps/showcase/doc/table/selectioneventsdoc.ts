@@ -2,7 +2,7 @@ import { Code } from '@/domain/code';
 import { Product } from '@/domain/product';
 import { ProductService } from '@/service/productservice';
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component } from '@angular/core';
-import { MessageService } from 'primeng/api';
+import { MessageService } from '@pixel/primeng/api';
 
 @Component({
     selector: 'selection-events-doc',
@@ -118,11 +118,11 @@ export class SelectionEventsDoc {
     </p-table>
 </div>`,
         typescript: `import { Component, Input, OnInit } from '@angular/core';
-import { MessageService } from 'primeng/api';
+import { MessageService } from '@pixel/primeng/api';
 import { Product } from '@/domain/product';
 import { ProductService } from '@/service/productservice';
-import { TableModule } from 'primeng/table';
-import { ToastModule } from 'primeng/toast';
+import { TableModule } from '@pixel/primeng/table';
+import { ToastModule } from '@pixel/primeng/toast';
 
 @Component({
     selector: 'table-selection-events-demo',

@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { ImageCompareModule } from 'primeng/imagecompare';`
+        typescript: `import { ImageCompareModule } from '@pixel/primeng/imagecompare';`
     };
 }

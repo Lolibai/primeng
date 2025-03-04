@@ -3,9 +3,9 @@ import { AppConfigService } from '@/service/appconfigservice';
 import { CommonModule } from '@angular/common';
 import { afterNextRender, Component, computed, ElementRef, OnDestroy } from '@angular/core';
 import { NavigationEnd, Router, RouterModule } from '@angular/router';
-import { AutoComplete } from 'primeng/autocomplete';
-import { DomHandler } from 'primeng/dom';
-import { StyleClass } from 'primeng/styleclass';
+import { AutoComplete } from '@pixel/primeng/autocomplete';
+import { DomHandler } from '@pixel/primeng/dom';
+import { StyleClass } from '@pixel/primeng/styleclass';
 import { Subscription } from 'rxjs';
 import { AppMenuItemComponent } from './app.menuitem.component';
 

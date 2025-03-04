@@ -38,8 +38,8 @@ export class IftaLabelDoc {
 
         typescript: `import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { AutoCompleteModule } from 'primeng/autocomplete';
-import { IftaLabelModule } from 'primeng/iftalabel';
+import { AutoCompleteModule } from '@pixel/primeng/autocomplete';
+import { IftaLabelModule } from '@pixel/primeng/iftalabel';
 
 interface AutoCompleteCompleteEvent {
     originalEvent: Event;

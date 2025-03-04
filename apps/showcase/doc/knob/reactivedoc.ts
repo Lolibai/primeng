@@ -37,8 +37,8 @@ export class ReactiveDoc {
 
         typescript: `import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { Knob } from 'primeng/knob';
-import { ButtonModule } from 'primeng/button';
+import { Knob } from '@pixel/primeng/knob';
+import { ButtonModule } from '@pixel/primeng/button';
 
 @Component({
     selector: 'knob-reactive-demo',

@@ -1,6 +1,6 @@
 import { Code } from '@/domain/code';
 import { Component, ViewChild } from '@angular/core';
-import { Popover } from 'primeng/popover';
+import { Popover } from '@pixel/primeng/popover';
 
 @Component({
     selector: 'basic-doc',
@@ -94,9 +94,9 @@ export class SelectDataDoc {
 </div>`,
 
         typescript: `import { Component, ViewChild } from '@angular/core';
-import { Popover } from 'primeng/popover';
-import { PopoverModule } from 'primeng/popover';
-import { ButtonModule } from 'primeng/button';
+import { Popover } from '@pixel/primeng/popover';
+import { PopoverModule } from '@pixel/primeng/popover';
+import { ButtonModule } from '@pixel/primeng/button';
 import { CommonModule } from '@angular/common';
 
 @Component({

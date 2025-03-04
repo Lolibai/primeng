@@ -4,11 +4,11 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { ImageCompareModule } from '@pixel/primeng/imagecompare';
 import { AccessibilityDoc } from './accessibilitydoc';
 import { BasicDoc } from './basicdoc';
-import { ResponsiveDoc } from './responsivedoc';
 import { ImportDoc } from './importdoc';
-import { ImageCompareModule } from 'primeng/imagecompare';
+import { ResponsiveDoc } from './responsivedoc';
 
 @NgModule({
     imports: [CommonModule, RouterModule, AppCodeModule, AppDocModule, FormsModule, ImageCompareModule],

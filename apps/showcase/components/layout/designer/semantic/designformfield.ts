@@ -1,9 +1,9 @@
-import { Component, inject } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { DesignTokenField } from '../app.designtokenfield.component';
-import { FieldsetModule } from 'primeng/fieldset';
-import { FormsModule } from '@angular/forms';
 import { DesignerService } from '@/service/designerservice';
+import { CommonModule } from '@angular/common';
+import { Component, inject } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { FieldsetModule } from '@pixel/primeng/fieldset';
+import { DesignTokenField } from '../app.designtokenfield.component';
 
 @Component({
     selector: 'design-form-field',

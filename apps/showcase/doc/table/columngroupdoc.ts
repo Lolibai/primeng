@@ -128,7 +128,7 @@ export class ColumnGroupDoc {
     </p-table>
 </div>`,
         typescript: `import { Component, OnInit } from '@angular/core';
-import { TableModule } from 'primeng/table';
+import { TableModule } from '@pixel/primeng/table';
 import { CommonModule } from '@angular/common';
 
 @Component({

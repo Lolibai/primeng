@@ -20,14 +20,14 @@ import {
     TemplateRef,
     ViewEncapsulation
 } from '@angular/core';
+import { Confirmation, ConfirmationService, ConfirmEventType, Footer, PrimeTemplate, SharedModule, TranslationKeys } from '@pixel/primeng/api';
+import { BaseComponent } from '@pixel/primeng/basecomponent';
+import { Button } from '@pixel/primeng/button';
+import { Dialog } from '@pixel/primeng/dialog';
+import { CheckIcon, TimesIcon } from '@pixel/primeng/icons';
+import { Ripple } from '@pixel/primeng/ripple';
+import { Nullable } from '@pixel/primeng/ts-helpers';
 import { findSingle, setAttribute, uuid } from '@primeuix/utils';
-import { Confirmation, ConfirmationService, ConfirmEventType, Footer, PrimeTemplate, SharedModule, TranslationKeys } from 'primeng/api';
-import { BaseComponent } from 'primeng/basecomponent';
-import { Button } from 'primeng/button';
-import { Dialog } from 'primeng/dialog';
-import { CheckIcon, TimesIcon } from 'primeng/icons';
-import { Ripple } from 'primeng/ripple';
-import { Nullable } from 'primeng/ts-helpers';
 import { Subscription } from 'rxjs';
 import { ConfirmDialogStyle } from './style/confirmdialogstyle';
 

@@ -26,12 +26,12 @@ import {
     TemplateRef,
     ViewEncapsulation
 } from '@angular/core';
+import { BlockableUI, Header, PrimeTemplate, SharedModule } from '@pixel/primeng/api';
+import { BaseComponent } from '@pixel/primeng/basecomponent';
+import { ChevronDownIcon, ChevronUpIcon } from '@pixel/primeng/icons';
+import { Ripple } from '@pixel/primeng/ripple';
+import { transformToBoolean } from '@pixel/primeng/utils';
 import { findSingle, focus, getAttribute, uuid } from '@primeuix/utils';
-import { BlockableUI, Header, PrimeTemplate, SharedModule } from 'primeng/api';
-import { BaseComponent } from 'primeng/basecomponent';
-import { ChevronDownIcon, ChevronUpIcon } from 'primeng/icons';
-import { Ripple } from 'primeng/ripple';
-import { transformToBoolean } from 'primeng/utils';
 import { Subscription } from 'rxjs';
 import { AccordionStyle } from './style/accordionstyle';
 

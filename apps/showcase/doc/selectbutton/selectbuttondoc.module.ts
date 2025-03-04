@@ -3,7 +3,7 @@ import { AppDocModule } from '@/components/doc/app.doc.module';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { SelectButton } from 'primeng/selectbutton';
+import { SelectButton } from '@pixel/primeng/selectbutton';
 import { AccessibilityDoc } from './accessibilitydoc';
 import { BasicDoc } from './basicdoc';
 import { DisabledDoc } from './disableddoc';

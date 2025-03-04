@@ -111,7 +111,7 @@ export class VirtualScrollDoc {
         typescript: `import { Component, OnInit } from '@angular/core';
 import { Car } from '@/domain/car';
 import { CarService } from '@/service/carservice';
-import { TableModule } from 'primeng/table';
+import { TableModule } from '@pixel/primeng/table';
 import { CommonModule } from '@angular/common';
 
 interface Column {

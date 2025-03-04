@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { FocusTrap } from 'primeng/focustrap';`
+        typescript: `import { FocusTrap } from '@pixel/primeng/focustrap';`
     };
 }

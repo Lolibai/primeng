@@ -1,6 +1,6 @@
 import { Code } from '@/domain/code';
 import { Component } from '@angular/core';
-import { MessageService } from 'primeng/api';
+import { MessageService } from '@pixel/primeng/api';
 
 @Component({
     selector: 'toast-multiple-demo',
@@ -36,10 +36,10 @@ export class MultipleDoc {
     <p-button pRipple (click)="show()" label="Multiple" severity="warning" />
 </div>`,
         typescript: `import { Component } from '@angular/core';
-import { MessageService } from 'primeng/api';
-import { ToastModule } from 'primeng/toast';
-import { ButtonModule } from 'primeng/button';
-import { RippleModule } from 'primeng/ripple';
+import { MessageService } from '@pixel/primeng/api';
+import { ToastModule } from '@pixel/primeng/toast';
+import { ButtonModule } from '@pixel/primeng/button';
+import { RippleModule } from '@pixel/primeng/ripple';
 
 @Component({
     selector: 'toast-multiple-demo',

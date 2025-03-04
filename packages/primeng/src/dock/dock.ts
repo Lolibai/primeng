@@ -1,13 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { AfterContentInit, ChangeDetectionStrategy, ChangeDetectorRef, Component, ContentChild, ContentChildren, ElementRef, EventEmitter, inject, Input, NgModule, Output, QueryList, TemplateRef, ViewChild, ViewEncapsulation } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { MenuItem, PrimeTemplate, SharedModule } from '@pixel/primeng/api';
+import { BaseComponent } from '@pixel/primeng/basecomponent';
+import { Ripple } from '@pixel/primeng/ripple';
+import { TooltipModule } from '@pixel/primeng/tooltip';
+import { Nullable } from '@pixel/primeng/ts-helpers';
 import { find, findSingle, resolve, uuid } from '@primeuix/utils';
-import { MenuItem, PrimeTemplate, SharedModule } from 'primeng/api';
-import { BaseComponent } from 'primeng/basecomponent';
-import { Divider } from 'primeng/divider';
-import { Ripple } from 'primeng/ripple';
-import { TooltipModule } from 'primeng/tooltip';
-import { Nullable } from 'primeng/ts-helpers';
 import { DockStyle } from './style/dockstyle';
 
 /**

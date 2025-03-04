@@ -36,7 +36,7 @@ export class TemplateDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { ToggleSwitch } from 'primeng/toggleswitch';
+import { ToggleSwitch } from '@pixel/primeng/toggleswitch';
 import { FormsModule } from '@angular/forms';
 
 @Component({

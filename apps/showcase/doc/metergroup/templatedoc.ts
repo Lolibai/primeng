@@ -131,10 +131,10 @@ export class TemplateDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { MeterGroup } from 'primeng/metergroup';
-import { CardModule } from 'primeng/card';
+import { MeterGroup } from '@pixel/primeng/metergroup';
+import { CardModule } from '@pixel/primeng/card';
 import { CommonModule } from '@angular/common';
-import { ButtonModule } from 'primeng/button';
+import { ButtonModule } from '@pixel/primeng/button';
 
 @Component({
     selector: 'meter-group-template-demo',

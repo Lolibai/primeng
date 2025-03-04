@@ -3,7 +3,7 @@
     "version": 1,
     "newProjectRoot": "projects",
     "projects": {
-        "primeng": {
+        "@pixel/primeng": {
             "root": "src",
             "projectType": "library",
             "architect": {

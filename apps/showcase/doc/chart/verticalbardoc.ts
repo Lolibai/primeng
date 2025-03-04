@@ -109,7 +109,7 @@ export class VerticalBarDoc implements OnInit {
     <p-chart type="bar" [data]="data" [options]="options" class="h-[30rem]" />
 </div>`,
         typescript: `import { Component, OnInit, PLATFORM_ID, ChangeDetectorRef, inject, effect } from '@angular/core';
-import { ChartModule } from 'primeng/chart';
+import { ChartModule } from '@pixel/primeng/chart';
 import { AppConfigService } from '@/service/appconfigservice';
 
 @Component({
@@ -209,7 +209,7 @@ export class ChartVerticalBarDemo implements OnInit {
         module: `
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { ChartModule } from 'primeng/chart';
+import { ChartModule } from '@pixel/primeng/chart';
 import { ChartDemo } from './chartdemo';
 
 @NgModule({

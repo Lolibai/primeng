@@ -45,7 +45,7 @@ export class ReactiveFormsDoc implements OnInit {
 
         typescript: `import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
-import { Select } from 'primeng/select';
+import { Select } from '@pixel/primeng/select';
 
 interface City {
     name: string;

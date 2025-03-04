@@ -22,13 +22,13 @@ import {
     TemplateRef,
     ViewEncapsulation
 } from '@angular/core';
+import { PrimeTemplate, SharedModule } from '@pixel/primeng/api';
+import { AutoFocus } from '@pixel/primeng/autofocus';
+import { BadgeModule } from '@pixel/primeng/badge';
+import { BaseComponent } from '@pixel/primeng/basecomponent';
+import { SpinnerIcon } from '@pixel/primeng/icons';
+import { Ripple } from '@pixel/primeng/ripple';
 import { addClass, findSingle, isEmpty } from '@primeuix/utils';
-import { PrimeTemplate, SharedModule } from 'primeng/api';
-import { AutoFocus } from 'primeng/autofocus';
-import { BadgeModule } from 'primeng/badge';
-import { BaseComponent } from 'primeng/basecomponent';
-import { SpinnerIcon } from 'primeng/icons';
-import { Ripple } from 'primeng/ripple';
 import { ButtonProps } from './button.interface';
 import { ButtonStyle } from './style/buttonstyle';
 

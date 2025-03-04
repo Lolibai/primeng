@@ -22,13 +22,13 @@ import {
     ViewChild,
     ViewEncapsulation
 } from '@angular/core';
+import { BlockableUI, PrimeTemplate, SharedModule } from '@pixel/primeng/api';
+import { BaseComponent } from '@pixel/primeng/basecomponent';
+import { ChevronLeftIcon, ChevronRightIcon, TimesIcon } from '@pixel/primeng/icons';
+import { Ripple } from '@pixel/primeng/ripple';
+import { TooltipModule } from '@pixel/primeng/tooltip';
+import { Nullable } from '@pixel/primeng/ts-helpers';
 import { find, findSingle, focus, getAttribute, getOffset, getOuterWidth, getWidth, uuid } from '@primeuix/utils';
-import { BlockableUI, PrimeTemplate, SharedModule } from 'primeng/api';
-import { BaseComponent } from 'primeng/basecomponent';
-import { ChevronLeftIcon, ChevronRightIcon, TimesIcon } from 'primeng/icons';
-import { Ripple } from 'primeng/ripple';
-import { TooltipModule } from 'primeng/tooltip';
-import { Nullable } from 'primeng/ts-helpers';
 import { Subscription } from 'rxjs';
 import { TabsStyle } from './style/tabsstyle';
 import { TabViewChangeEvent, TabViewCloseEvent } from './tabview.interface';

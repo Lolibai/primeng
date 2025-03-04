@@ -81,7 +81,7 @@ export class FilterDoc implements OnInit {
 
         typescript: `import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { SelectModule } from 'primeng/select';
+import { SelectModule } from '@pixel/primeng/select';
 
 @Component({
     selector: 'select-filter-demo',

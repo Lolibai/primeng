@@ -71,7 +71,7 @@ export class CurrentPageReportDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { PaginatorModule } from 'primeng/paginator';
+import { PaginatorModule } from '@pixel/primeng/paginator';
 
 interface PageEvent {
     first: number;

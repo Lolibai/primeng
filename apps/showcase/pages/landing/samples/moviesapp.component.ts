@@ -1,18 +1,18 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { SelectButton } from 'primeng/selectbutton';
-import { Slider } from 'primeng/slider';
-import { AvatarModule } from 'primeng/avatar';
-import { TooltipModule } from 'primeng/tooltip';
-import { IconField } from 'primeng/iconfield';
-import { InputIcon } from 'primeng/inputicon';
-import { ButtonModule } from 'primeng/button';
-import { InputTextModule } from 'primeng/inputtext';
-import { ProgressBar } from 'primeng/progressbar';
-import { Carousel } from 'primeng/carousel';
-import { OverlayBadgeModule } from 'primeng/overlaybadge';
+import { AvatarModule } from '@pixel/primeng/avatar';
+import { ButtonModule } from '@pixel/primeng/button';
+import { Carousel } from '@pixel/primeng/carousel';
+import { IconField } from '@pixel/primeng/iconfield';
+import { InputIcon } from '@pixel/primeng/inputicon';
+import { InputTextModule } from '@pixel/primeng/inputtext';
+import { OverlayBadgeModule } from '@pixel/primeng/overlaybadge';
+import { ProgressBar } from '@pixel/primeng/progressbar';
+import { SelectButton } from '@pixel/primeng/selectbutton';
+import { Slider } from '@pixel/primeng/slider';
+import { TooltipModule } from '@pixel/primeng/tooltip';
 
 @Component({
     selector: 'movies-app',

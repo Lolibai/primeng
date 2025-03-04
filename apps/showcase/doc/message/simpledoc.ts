@@ -37,7 +37,7 @@ export class SimpleDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { Message } from 'primeng/message';
+import { Message } from '@pixel/primeng/message';
 
 @Component({
     selector: 'message-simple-demo',

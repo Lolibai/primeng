@@ -132,8 +132,8 @@ export class ControlledDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
-import { TabsModule } from 'primeng/tabs';
+import { ButtonModule } from '@pixel/primeng/button';
+import { TabsModule } from '@pixel/primeng/tabs';
 
 @Component({
     selector: 'tabs-controlled-demo',

@@ -1,6 +1,6 @@
 import { Code } from '@/domain/code';
 import { Component } from '@angular/core';
-import { TreeNode } from 'primeng/api';
+import { TreeNode } from '@pixel/primeng/api';
 
 @Component({
     selector: 'basic-doc',
@@ -56,8 +56,8 @@ export class BasicDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { TreeNode } from 'primeng/api';
-import { OrganizationChartModule } from 'primeng/organizationchart';
+import { TreeNode } from '@pixel/primeng/api';
+import { OrganizationChartModule } from '@pixel/primeng/organizationchart';
 
 @Component({
     selector: 'organization-chart-basic-doc',

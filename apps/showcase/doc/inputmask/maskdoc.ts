@@ -58,9 +58,9 @@ export class MaskDoc {
 </p-fluid>`,
 
         typescript: `import { Component } from '@angular/core';
-import { InputMask } from 'primeng/inputmask';
+import { InputMask } from '@pixel/primeng/inputmask';
 import { FormsModule } from '@angular/forms';
-import { Fluid } from 'primeng/fluid';
+import { Fluid } from '@pixel/primeng/fluid';
 
 @Component({
     selector: 'input-mask-mask-demo',

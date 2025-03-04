@@ -25,7 +25,7 @@ export class ReadOnlyDoc {
 
         typescript: `import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { Rating } from 'primeng/rating';
+import { Rating } from '@pixel/primeng/rating';
 
 @Component({
     selector: 'rating-readonly-demo',

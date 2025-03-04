@@ -4,8 +4,8 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
-import { RippleModule } from 'primeng/ripple';
-import { TagModule } from 'primeng/tag';
+import { RippleModule } from '@pixel/primeng/ripple';
+import { TagModule } from '@pixel/primeng/tag';
 
 @Component({
     standalone: true,
@@ -291,7 +291,7 @@ import { TagModule } from 'primeng/tag';
 export class LTSDemo {
     code: Code = {
         typescript: `import { Component } from '@angular/core';
-import { LicenseManager } from 'primeng/api';
+import { LicenseManager } from '@pixel/primeng/api';
 
 @Component({
     selector: 'app-root',

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
+import { BaseIcon } from '@pixel/primeng/icons/baseicon';
 import { uuid } from '@primeuix/utils';
-import { BaseIcon } from 'primeng/icons/baseicon';
 
 @Component({
     selector: 'ThLargeIcon',

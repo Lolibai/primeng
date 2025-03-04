@@ -31,6 +31,18 @@ import {
     ViewRef
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
+import { FilterService, OverlayOptions, PrimeTemplate, ScrollerOptions, SharedModule, TranslationKeys } from '@pixel/primeng/api';
+import { AutoFocus } from '@pixel/primeng/autofocus';
+import { BaseComponent } from '@pixel/primeng/basecomponent';
+import { IconField } from '@pixel/primeng/iconfield';
+import { BlankIcon, CheckIcon, ChevronDownIcon, SearchIcon, TimesIcon } from '@pixel/primeng/icons';
+import { InputIcon } from '@pixel/primeng/inputicon';
+import { InputText } from '@pixel/primeng/inputtext';
+import { Overlay } from '@pixel/primeng/overlay';
+import { Ripple } from '@pixel/primeng/ripple';
+import { Scroller } from '@pixel/primeng/scroller';
+import { Tooltip } from '@pixel/primeng/tooltip';
+import { Nullable } from '@pixel/primeng/ts-helpers';
 import {
     deepEquals,
     equals,
@@ -48,18 +60,6 @@ import {
     unblockBodyScroll,
     uuid
 } from '@primeuix/utils';
-import { FilterService, OverlayOptions, PrimeTemplate, ScrollerOptions, SharedModule, TranslationKeys } from 'primeng/api';
-import { AutoFocus } from 'primeng/autofocus';
-import { BaseComponent } from 'primeng/basecomponent';
-import { IconField } from 'primeng/iconfield';
-import { BlankIcon, CheckIcon, ChevronDownIcon, SearchIcon, TimesIcon } from 'primeng/icons';
-import { InputIcon } from 'primeng/inputicon';
-import { InputText } from 'primeng/inputtext';
-import { Overlay } from 'primeng/overlay';
-import { Ripple } from 'primeng/ripple';
-import { Scroller } from 'primeng/scroller';
-import { Tooltip } from 'primeng/tooltip';
-import { Nullable } from 'primeng/ts-helpers';
 import { SelectChangeEvent, SelectFilterEvent, SelectFilterOptions, SelectLazyLoadEvent } from './select.interface';
 import { SelectStyle } from './style/selectstyle';
 

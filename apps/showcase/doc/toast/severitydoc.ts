@@ -1,6 +1,6 @@
 import { Code } from '@/domain/code';
 import { Component } from '@angular/core';
-import { MessageService } from 'primeng/api';
+import { MessageService } from '@pixel/primeng/api';
 
 @Component({
     selector: 'severity-doc',
@@ -70,10 +70,10 @@ export class SeverityDoc {
     <p-button type="button" pRipple (click)="showContrast()" label="Contrast" severity="contrast" />
 </div>`,
         typescript: `import { Component } from '@angular/core';
-import { MessageService } from 'primeng/api';
-import { Toast } from 'primeng/toast';
-import { ButtonModule } from 'primeng/button';
-import { Ripple } from 'primeng/ripple';
+import { MessageService } from '@pixel/primeng/api';
+import { Toast } from '@pixel/primeng/toast';
+import { ButtonModule } from '@pixel/primeng/button';
+import { Ripple } from '@pixel/primeng/ripple';
 
 @Component({
     selector: 'toast-severity-demo',

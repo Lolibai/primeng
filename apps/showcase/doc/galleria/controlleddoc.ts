@@ -94,8 +94,8 @@ export class ControlledDoc implements OnInit {
 </div>`,
         typescript: `import { Component, OnInit } from '@angular/core';
 import { PhotoService } from '@/service/photoservice';
-import { GalleriaModule } from 'primeng/galleria';
-import { ButtonModule } from 'primeng/button';
+import { GalleriaModule } from '@pixel/primeng/galleria';
+import { ButtonModule } from '@pixel/primeng/button';
 
 @Component({
     selector: 'galleria-controlled-demo',

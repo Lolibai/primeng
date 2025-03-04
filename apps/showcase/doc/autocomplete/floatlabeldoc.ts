@@ -75,8 +75,8 @@ export class FloatLabelDoc {
 
         typescript: `import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { AutoComplete } from 'primeng/autocomplete';
-import { FloatLabel } from 'primeng/floatlabel';
+import { AutoComplete } from '@pixel/primeng/autocomplete';
+import { FloatLabel } from '@pixel/primeng/floatlabel';
 
 interface AutoCompleteCompleteEvent {
     originalEvent: Event;

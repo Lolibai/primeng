@@ -1,7 +1,7 @@
 import { Product } from '@/domain/product';
 import { ProductService } from '@/service/productservice';
 import { Component, OnInit } from '@angular/core';
-import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
+import { DialogService, DynamicDialogRef } from '@pixel/primeng/dynamicdialog';
 import { InfoDemo } from './infodemo';
 @Component({
     template: ` <div class="flex justify-end mt-1 mb-4">

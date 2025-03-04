@@ -1,10 +1,10 @@
-import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DesignTokenField } from '../../app.designtokenfield.component';
-import { FieldsetModule } from 'primeng/fieldset';
+import { Component, Input } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { FieldsetModule } from '@pixel/primeng/fieldset';
 import { palette } from '@primeng/themes';
 import { DesignColorPalette } from '../../app.designcolorpalette.component';
+import { DesignTokenField } from '../../app.designtokenfield.component';
 
 @Component({
     selector: 'design-cs-common',

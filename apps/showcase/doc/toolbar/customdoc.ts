@@ -161,10 +161,10 @@ export class CustomDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { Toolbar } from 'primeng/toolbar';
-import { AvatarModule } from 'primeng/avatar';
-import { SharedModule } from 'primeng/api';
-import { ButtonModule } from 'primeng/button';
+import { Toolbar } from '@pixel/primeng/toolbar';
+import { AvatarModule } from '@pixel/primeng/avatar';
+import { SharedModule } from '@pixel/primeng/api';
+import { ButtonModule } from '@pixel/primeng/button';
 
 @Component({
     selector: 'toolbar-custom-demo',

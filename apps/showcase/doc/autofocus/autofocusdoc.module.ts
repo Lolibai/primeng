@@ -3,8 +3,8 @@ import { AppDocModule } from '@/components/doc/app.doc.module';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { AutoFocus } from 'primeng/autofocus';
-import { InputTextModule } from 'primeng/inputtext';
+import { AutoFocus } from '@pixel/primeng/autofocus';
+import { InputTextModule } from '@pixel/primeng/inputtext';
 import { BasicDoc } from './basicdoc';
 import { ImportDoc } from './importdoc';
 

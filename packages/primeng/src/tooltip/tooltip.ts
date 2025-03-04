@@ -1,11 +1,11 @@
 import { isPlatformBrowser } from '@angular/common';
 import { AfterViewInit, booleanAttribute, Directive, ElementRef, inject, Input, NgModule, NgZone, numberAttribute, OnDestroy, SimpleChanges, TemplateRef, ViewContainerRef } from '@angular/core';
+import { TooltipOptions } from '@pixel/primeng/api';
+import { BaseComponent } from '@pixel/primeng/basecomponent';
+import { ConnectedOverlayScrollHandler } from '@pixel/primeng/dom';
+import { Nullable } from '@pixel/primeng/ts-helpers';
+import { ZIndexUtils } from '@pixel/primeng/utils';
 import { appendChild, fadeIn, findSingle, getOuterHeight, getOuterWidth, getViewport, getWindowScrollLeft, getWindowScrollTop, hasClass, removeChild, uuid } from '@primeuix/utils';
-import { TooltipOptions } from 'primeng/api';
-import { BaseComponent } from 'primeng/basecomponent';
-import { ConnectedOverlayScrollHandler } from 'primeng/dom';
-import { Nullable } from 'primeng/ts-helpers';
-import { ZIndexUtils } from 'primeng/utils';
 import { TooltipStyle } from './style/tooltipstyle';
 
 /**

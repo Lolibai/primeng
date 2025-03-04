@@ -10,8 +10,8 @@ import { Component } from '@angular/core';
 export class EventsDoc {
     code: Code = {
         typescript: `
-import { OverlayOptions, OverlayOnBeforeShowEvent, OverlayOnShowEvent, OverlayOnBeforeHideEvent, OverlayOnHideEvent } from 'primeng/api';
-import { PrimeNG } from 'primeng/config';
+import { OverlayOptions, OverlayOnBeforeShowEvent, OverlayOnShowEvent, OverlayOnBeforeHideEvent, OverlayOnHideEvent } from '@pixel/primeng/api';
+import { PrimeNG } from '@pixel/primeng/config';
 import { AnimationEvent } from '@angular/animations';
 
 this.primeng.overlayOptions: OverlayOptions = {

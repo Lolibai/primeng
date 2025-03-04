@@ -1,6 +1,6 @@
 import { booleanAttribute, ChangeDetectionStrategy, Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
+import { BaseComponent } from '@pixel/primeng/basecomponent';
 import { isEmpty } from '@primeuix/utils';
-import { BaseComponent } from 'primeng/basecomponent';
 import { BaseIconStyle } from './style/baseiconstyle';
 
 @Component({

@@ -38,7 +38,7 @@ export class ReactiveFormsDoc implements OnInit {
 
         typescript: `import { Component } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
-import { DatePicker } from 'primeng/datepicker';
+import { DatePicker } from '@pixel/primeng/datepicker';
 
 @Component({
     selector: 'datepicker-reactive-forms-demo',

@@ -53,9 +53,9 @@ export class InputDoc {
     </p-inplace>
 </div>`,
         typescript: `import { Component } from '@angular/core';
-import { InplaceModule } from 'primeng/inplace';
-import { InputTextModule } from 'primeng/inputtext';
-import { AutoFocusModule } from 'primeng/autofocus';
+import { InplaceModule } from '@pixel/primeng/inplace';
+import { InputTextModule } from '@pixel/primeng/inputtext';
+import { AutoFocusModule } from '@pixel/primeng/autofocus';
 
 @Component({
     selector: 'inplace-input-demo',

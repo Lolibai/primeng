@@ -33,8 +33,8 @@ export class InvalidDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { IftaLabelModule } from 'primeng/iftalabel';
-import { InputTextModule } from 'primeng/inputtext';
+import { IftaLabelModule } from '@pixel/primeng/iftalabel';
+import { InputTextModule } from '@pixel/primeng/inputtext';
 import { FormsModule } from '@angular/forms';
 
 @Component({

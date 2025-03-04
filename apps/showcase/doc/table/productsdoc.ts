@@ -2,8 +2,8 @@ import { Code } from '@/domain/code';
 import { Product } from '@/domain/product';
 import { ProductService } from '@/service/productservice';
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ViewChild } from '@angular/core';
-import { ConfirmationService, MessageService } from 'primeng/api';
-import { Table } from 'primeng/table';
+import { ConfirmationService, MessageService } from '@pixel/primeng/api';
+import { Table } from '@pixel/primeng/table';
 
 interface Column {
     field: string;
@@ -501,29 +501,29 @@ export class ProductsDoc {
     <p-confirmDialog [style]="{ width: '450px' }" />
 </div>`,
         typescript: `import { Component, OnInit } from '@angular/core';
-import { ConfirmationService, MessageService } from 'primeng/api';
+import { ConfirmationService, MessageService } from '@pixel/primeng/api';
 import { Product } from '@/domain/product';
 import { ProductService } from '@/service/productservice';
-import { TableModule } from 'primeng/table';
-import { Dialog } from 'primeng/dialog';
-import { Ripple } from 'primeng/ripple';
-import { ButtonModule } from 'primeng/button';
-import { ToastModule } from 'primeng/toast';
-import { ToolbarModule } from 'primeng/toolbar';
-import { ConfirmDialog } from 'primeng/confirmdialog';
-import { InputTextModule } from 'primeng/inputtext';
-import { TextareaModule } from 'primeng/textarea';
+import { TableModule } from '@pixel/primeng/table';
+import { Dialog } from '@pixel/primeng/dialog';
+import { Ripple } from '@pixel/primeng/ripple';
+import { ButtonModule } from '@pixel/primeng/button';
+import { ToastModule } from '@pixel/primeng/toast';
+import { ToolbarModule } from '@pixel/primeng/toolbar';
+import { ConfirmDialog } from '@pixel/primeng/confirmdialog';
+import { InputTextModule } from '@pixel/primeng/inputtext';
+import { TextareaModule } from '@pixel/primeng/textarea';
 import { CommonModule } from '@angular/common';
-import { FileUpload } from 'primeng/fileupload';
-import { SelectModule } from 'primeng/select';
-import { Tag } from 'primeng/tag';
-import { RadioButton } from 'primeng/radiobutton';
-import { Rating } from 'primeng/rating';
+import { FileUpload } from '@pixel/primeng/fileupload';
+import { SelectModule } from '@pixel/primeng/select';
+import { Tag } from '@pixel/primeng/tag';
+import { RadioButton } from '@pixel/primeng/radiobutton';
+import { Rating } from '@pixel/primeng/rating';
 import { FormsModule } from '@angular/forms';
-import { InputNumber } from 'primeng/inputnumber';
-import { IconFieldModule } from 'primeng/iconfield';
-import { InputIconModule } from 'primeng/inputicon';
-import { Table } from 'primeng/table';
+import { InputNumber } from '@pixel/primeng/inputnumber';
+import { IconFieldModule } from '@pixel/primeng/iconfield';
+import { InputIconModule } from '@pixel/primeng/inputicon';
+import { Table } from '@pixel/primeng/table';
 
 interface Column {
     field: string;

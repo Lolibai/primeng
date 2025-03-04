@@ -37,8 +37,8 @@ export class IftaLabelDoc {
         typescript: `import { Component } from '@angular/core';
 import { NodeService } from '@/service/nodeservice';
 import { FormsModule } from '@angular/forms';
-import { TreeSelectModule } from 'primeng/treeselect';
-import { IftaLabelModule } from 'primeng/iftalabel';
+import { TreeSelectModule } from '@pixel/primeng/treeselect';
+import { IftaLabelModule } from '@pixel/primeng/iftalabel';
 
 @Component({
     selector: 'tree-select-iftalabel-demo',

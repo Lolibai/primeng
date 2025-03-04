@@ -24,7 +24,7 @@ export class MultipleMonthDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { DatePicker } from 'primeng/datepicker';
+import { DatePicker } from '@pixel/primeng/datepicker';
 
 @Component({
     selector: 'datepicker-multiplemonths-demo',

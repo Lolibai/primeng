@@ -1,12 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { AfterContentInit, booleanAttribute, ChangeDetectionStrategy, Component, ContentChild, ContentChildren, EventEmitter, forwardRef, inject, Input, NgModule, Output, QueryList, TemplateRef, ViewEncapsulation } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
-import { PrimeTemplate, SharedModule } from 'primeng/api';
-import { AutoFocus } from 'primeng/autofocus';
-import { BaseComponent } from 'primeng/basecomponent';
-import { InputText } from 'primeng/inputtext';
+import { PrimeTemplate, SharedModule } from '@pixel/primeng/api';
+import { AutoFocus } from '@pixel/primeng/autofocus';
+import { BaseComponent } from '@pixel/primeng/basecomponent';
+import { InputText } from '@pixel/primeng/inputtext';
+import { Nullable } from '@pixel/primeng/ts-helpers';
 import { InputOtpStyle } from './style/inputotpstyle';
-import { Nullable } from 'primeng/ts-helpers';
 
 export const INPUT_OTP_VALUE_ACCESSOR: any = {
     provide: NG_VALUE_ACCESSOR,

@@ -21,14 +21,14 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { Aria, PrimeTemplate, SelectItem, SharedModule } from 'primeng/api';
-import { BaseComponent } from 'primeng/basecomponent';
-import { DropdownChangeEvent } from 'primeng/dropdown';
-import { AngleDoubleLeftIcon, AngleDoubleRightIcon, AngleLeftIcon, AngleRightIcon } from 'primeng/icons';
-import { InputNumber } from 'primeng/inputnumber';
-import { Ripple } from 'primeng/ripple';
-import { Select } from 'primeng/select';
-import { Nullable } from 'primeng/ts-helpers';
+import { Aria, PrimeTemplate, SelectItem, SharedModule } from '@pixel/primeng/api';
+import { BaseComponent } from '@pixel/primeng/basecomponent';
+import { DropdownChangeEvent } from '@pixel/primeng/dropdown';
+import { AngleDoubleLeftIcon, AngleDoubleRightIcon, AngleLeftIcon, AngleRightIcon } from '@pixel/primeng/icons';
+import { InputNumber } from '@pixel/primeng/inputnumber';
+import { Ripple } from '@pixel/primeng/ripple';
+import { Select } from '@pixel/primeng/select';
+import { Nullable } from '@pixel/primeng/ts-helpers';
 import { PaginatorState } from './paginator.interface';
 import { PaginatorStyle } from './style/paginatorstyle';
 

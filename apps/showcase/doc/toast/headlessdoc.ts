@@ -1,6 +1,6 @@
 import { Code } from '@/domain/code';
 import { ChangeDetectorRef, Component } from '@angular/core';
-import { MessageService } from 'primeng/api';
+import { MessageService } from '@pixel/primeng/api';
 
 @Component({
     selector: 'headless-doc',
@@ -141,11 +141,11 @@ export class HeadlessDoc {
     <p-button (click)="showConfirm()" label="Confirm" />
 </div>`,
         typescript: `import { ChangeDetectorRef, Component } from '@angular/core';
-import { MessageService } from 'primeng/api';
-import { Toast } from 'primeng/toast';
-import { ButtonModule } from 'primeng/button';
-import { Ripple } from 'primeng/ripple';
-import { ProgressBar } from 'primeng/progressbar';
+import { MessageService } from '@pixel/primeng/api';
+import { Toast } from '@pixel/primeng/toast';
+import { ButtonModule } from '@pixel/primeng/button';
+import { Ripple } from '@pixel/primeng/ripple';
+import { ProgressBar } from '@pixel/primeng/progressbar';
 
 @Component({
     selector: 'toast-headless-demo',

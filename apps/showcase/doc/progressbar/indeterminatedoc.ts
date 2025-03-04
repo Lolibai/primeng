@@ -1,6 +1,6 @@
 import { Code } from '@/domain/code';
 import { Component } from '@angular/core';
-import { MessageService } from 'primeng/api';
+import { MessageService } from '@pixel/primeng/api';
 
 @Component({
     selector: 'indeterminate-doc',
@@ -22,8 +22,8 @@ export class IndeterminateDoc {
     <p-progressbar mode="indeterminate" [style]="{'height': '6px'}" />
 </div>`,
         typescript: `import { Component } from '@angular/core';
-import { MessageService } from 'primeng/api';
-import { ProgressBar } from 'primeng/progressbar';
+import { MessageService } from '@pixel/primeng/api';
+import { ProgressBar } from '@pixel/primeng/progressbar';
 
 @Component({
     selector: 'progress-bar-indeterminate-demo',

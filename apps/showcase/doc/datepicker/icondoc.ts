@@ -70,9 +70,9 @@ export class IconDoc {
 </p-fluid>`,
 
         typescript: `import { Component } from '@angular/core';
-import { DatePickerModule } from 'primeng/datepicker';
+import { DatePickerModule } from '@pixel/primeng/datepicker';
 import { FormsModule } from '@angular/forms';
-import { FluidModule } from 'primeng/fluid';
+import { FluidModule } from '@pixel/primeng/fluid';
 
 @Component({
     selector: 'datepicker-icon-demo',

@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { RadioButton } from 'primeng/radiobutton';
+import { RadioButton } from '@pixel/primeng/radiobutton';
 import { AccessibilityDoc } from './accessibilitydoc';
 import { DisabledDoc } from './disableddoc';
 import { DynamicDoc } from './dynamicdoc';

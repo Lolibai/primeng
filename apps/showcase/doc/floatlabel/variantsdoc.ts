@@ -51,7 +51,7 @@ export class VariantsDoc {
 
         typescript: `import { Component } from '@angular/core';
 import { FloatLabelModule } from "primeng/floatlabel"
-import { InputTextModule } from 'primeng/inputtext';
+import { InputTextModule } from '@pixel/primeng/inputtext';
 import { FormsModule } from '@angular/forms';
 
 @Component({

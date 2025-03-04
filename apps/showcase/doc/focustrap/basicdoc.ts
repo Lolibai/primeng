@@ -88,14 +88,14 @@ export class BasicDoc {
         <p-button type="submit" label="Submit" class="mt-2" styleClass="w-full" />
 </div>`,
         typescript: `import { Component } from '@angular/core';
-import { FocusTrapModule } from 'primeng/focustrap';
-import { ButtonModule } from 'primeng/button';
+import { FocusTrapModule } from '@pixel/primeng/focustrap';
+import { ButtonModule } from '@pixel/primeng/button';
 import { FormsModule } from '@angular/forms';
-import { InputTextModule } from 'primeng/inputtext';
-import { CheckboxModule } from 'primeng/checkbox';
-import { IconFieldModule } from 'primeng/iconfield';
-import { InputIconModule } from 'primeng/inputicon';
-import { AutoFocusModule } from 'primeng/autofocus';
+import { InputTextModule } from '@pixel/primeng/inputtext';
+import { CheckboxModule } from '@pixel/primeng/checkbox';
+import { IconFieldModule } from '@pixel/primeng/iconfield';
+import { InputIconModule } from '@pixel/primeng/inputicon';
+import { AutoFocusModule } from '@pixel/primeng/autofocus';
 
 @Component({
     selector: 'focus-trap-basic-demo',

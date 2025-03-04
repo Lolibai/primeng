@@ -22,13 +22,13 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { MenuItem, PrimeTemplate, SharedModule, TooltipOptions } from '@pixel/primeng/api';
+import { BaseComponent } from '@pixel/primeng/basecomponent';
+import { ButtonModule, ButtonProps } from '@pixel/primeng/button';
+import { PlusIcon } from '@pixel/primeng/icons';
+import { Ripple } from '@pixel/primeng/ripple';
+import { TooltipModule } from '@pixel/primeng/tooltip';
 import { find, findSingle, focus, hasClass, uuid } from '@primeuix/utils';
-import { MenuItem, PrimeTemplate, SharedModule, TooltipOptions } from 'primeng/api';
-import { BaseComponent } from 'primeng/basecomponent';
-import { ButtonModule, ButtonProps } from 'primeng/button';
-import { PlusIcon } from 'primeng/icons';
-import { Ripple } from 'primeng/ripple';
-import { TooltipModule } from 'primeng/tooltip';
 import { asapScheduler } from 'rxjs';
 import { SpeedDialStyle } from './style/speeddialstyle';
 

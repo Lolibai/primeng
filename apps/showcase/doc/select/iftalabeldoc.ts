@@ -40,8 +40,8 @@ export class IftaLabelDoc implements OnInit {
 
         typescript: `import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { SelectModule } from 'primeng/select';
-import { IftaLabelModule } from 'primeng/iftalabel';
+import { SelectModule } from '@pixel/primeng/select';
+import { IftaLabelModule } from '@pixel/primeng/iftalabel';
 
 interface City {
     name: string;

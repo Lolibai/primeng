@@ -4,7 +4,7 @@ import { DeferDocModule } from '@/doc/defer/deferdoc.module';
 import { ImportDoc } from '@/doc/defer/importdoc';
 import { CarService } from '@/service/carservice';
 import { Component, inject } from '@angular/core';
-import { MessageService } from 'primeng/api';
+import { MessageService } from '@pixel/primeng/api';
 import { Car } from '../domain/car';
 
 @Component({

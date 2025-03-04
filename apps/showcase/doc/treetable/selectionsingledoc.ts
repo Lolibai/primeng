@@ -1,7 +1,7 @@
 import { Code } from '@/domain/code';
 import { NodeService } from '@/service/nodeservice';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { TreeNode } from 'primeng/api';
+import { TreeNode } from '@pixel/primeng/api';
 
 interface Column {
     field: string;
@@ -126,10 +126,10 @@ export class SelectionSingleDoc {
 </div>`,
 
         typescript: `import { Component, OnInit } from '@angular/core';
-import { TreeNode } from 'primeng/api';
+import { TreeNode } from '@pixel/primeng/api';
 import { NodeService } from '@/service/nodeservice';
-import { TreeTableModule } from 'primeng/treetable';
-import { ToggleSwitchModule } from 'primeng/toggleswitch';
+import { TreeTableModule } from '@pixel/primeng/treetable';
+import { ToggleSwitchModule } from '@pixel/primeng/toggleswitch';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 

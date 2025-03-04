@@ -38,7 +38,7 @@ export class ReactiveFormsDoc implements OnInit {
 
         typescript: `import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
-import { Knob } from 'primeng/knob';
+import { Knob } from '@pixel/primeng/knob';
 
 @Component({
     selector: 'knob-reactive-forms-demo',

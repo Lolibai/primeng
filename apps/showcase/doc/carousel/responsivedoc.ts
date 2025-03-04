@@ -127,9 +127,9 @@ export class ResponsiveDoc implements OnInit {
         typescript: `import { Component, OnInit } from '@angular/core';
 import { Product } from '@/domain/product';
 import { ProductService } from '@/service/productservice';
-import { Carousel } from 'primeng/carousel';
-import { ButtonModule } from 'primeng/button';
-import { Tag } from 'primeng/tag';
+import { Carousel } from '@pixel/primeng/carousel';
+import { ButtonModule } from '@pixel/primeng/button';
+import { Tag } from '@pixel/primeng/tag';
 
 @Component({
     selector: 'carousel-responsive-demo',

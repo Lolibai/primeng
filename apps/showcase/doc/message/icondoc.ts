@@ -40,8 +40,8 @@ export class IconDoc implements OnInit {
     </p-message>
 </div>`,
         typescript: `import { Component } from '@angular/core';
-import { MessageModule } from 'primeng/message';
-import { AvatarModule } from 'primeng/avatar';
+import { MessageModule } from '@pixel/primeng/message';
+import { AvatarModule } from '@pixel/primeng/avatar';
 
 @Component({
     selector: 'message-icon-demo',

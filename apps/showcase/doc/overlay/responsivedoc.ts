@@ -36,8 +36,8 @@ export class ResponsiveDoc {
     @ViewChild('docsectiontext', { static: true }) docsectiontext: AppDocSectionTextComponent;
 
     code: Code = {
-        basic: `import { OverlayOptions, ResponsiveOverlayDirectionType } from 'primeng/api';
-import { PrimeNG } from 'primeng/config';
+        basic: `import { OverlayOptions, ResponsiveOverlayDirectionType } from '@pixel/primeng/api';
+import { PrimeNG } from '@pixel/primeng/config';
 
 const responsiveOptions: ResponsiveOverlayOptions = {
     // style?: any;                                     // Style of component in given breakpoint or media query

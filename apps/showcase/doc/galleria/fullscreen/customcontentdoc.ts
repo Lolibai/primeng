@@ -88,7 +88,7 @@ export class FullScreenTemplateDoc implements OnInit {
         typescript: `import { Component, OnInit } from '@angular/core';
 import { PhotoService } from '@/service/photoservice';
 import { PhotoService } from '@/service/photoservice';
-import { GalleriaModule } from 'primeng/galleria';
+import { GalleriaModule } from '@pixel/primeng/galleria';
 import { CommonModule } from '@angular/common';
 
 @Component({

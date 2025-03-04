@@ -120,7 +120,7 @@ export class MultipleColumnsSortDoc {
         typescript: `import { Component, OnInit } from '@angular/core';
 import { Product } from '@/domain/product';
 import { ProductService } from '@/service/productservice';
-import { TableModule } from 'primeng/table';
+import { TableModule } from '@pixel/primeng/table';
 import { CommonModule } from '@angular/common';
 
 @Component({

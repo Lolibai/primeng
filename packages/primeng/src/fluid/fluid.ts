@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, inject, NgModule, ViewEncapsulation } from '@angular/core';
-import { BaseComponent } from 'primeng/basecomponent';
+import { BaseComponent } from '@pixel/primeng/basecomponent';
 import { FluidStyle } from './style/fluidstyle';
 
 /**

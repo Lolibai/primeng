@@ -88,8 +88,8 @@ export class FloatLabelDoc implements OnInit {
 
         typescript: `import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { MultiSelectModule } from 'primeng/multiselect';
-import { FloatLabel } from 'primeng/floatlabel';
+import { MultiSelectModule } from '@pixel/primeng/multiselect';
+import { FloatLabel } from '@pixel/primeng/floatlabel';
 
 interface City {
     name: string,

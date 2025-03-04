@@ -1,6 +1,6 @@
 import { Code } from '@/domain/code';
 import { Component, OnInit } from '@angular/core';
-import { MenuItem, MessageService } from 'primeng/api';
+import { MenuItem, MessageService } from '@pixel/primeng/api';
 
 @Component({
     selector: 'interactive-doc',
@@ -58,9 +58,9 @@ export class InteractiveDoc implements OnInit {
 </div>`,
 
         typescript: `import { Component, OnInit } from '@angular/core';
-import { MenuItem, MessageService } from 'primeng/api';
-import { StepsModule } from 'primeng/steps';
-import { ToastModule } from 'primeng/toast';
+import { MenuItem, MessageService } from '@pixel/primeng/api';
+import { StepsModule } from '@pixel/primeng/steps';
+import { ToastModule } from '@pixel/primeng/toast';
 
 @Component({
     selector: 'steps-interactive-demo',

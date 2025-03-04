@@ -24,7 +24,7 @@ export class SlotCharDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { InputMask } from 'primeng/inputmask';
+import { InputMask } from '@pixel/primeng/inputmask';
 import { FormsModule } from '@angular/forms';
 
 @Component({

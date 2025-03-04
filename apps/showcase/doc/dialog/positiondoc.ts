@@ -115,9 +115,9 @@ export class PositionDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { Dialog } from 'primeng/dialog';
-import { ButtonModule } from 'primeng/button';
-import { InputTextModule } from 'primeng/inputtext';
+import { Dialog } from '@pixel/primeng/dialog';
+import { ButtonModule } from '@pixel/primeng/button';
+import { InputTextModule } from '@pixel/primeng/inputtext';
 
 @Component({
     selector: 'dialog-position-demo',

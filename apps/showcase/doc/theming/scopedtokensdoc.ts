@@ -52,7 +52,7 @@ export class ScopedTokensDoc {
     code = {
         typescript: `import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { ToggleSwitch } from 'primeng/toggleswitch';
+import { ToggleSwitch } from '@pixel/primeng/toggleswitch';
 
 @Component({
     template: \` 

@@ -2,7 +2,7 @@ import { Code } from '@/domain/code';
 import { Product } from '@/domain/product';
 import { ProductService } from '@/service/productservice';
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component } from '@angular/core';
-import { MessageService, SelectItem } from 'primeng/api';
+import { MessageService, SelectItem } from '@pixel/primeng/api';
 
 @Component({
     selector: 'row-edit-doc',
@@ -359,16 +359,16 @@ export class RowEditDoc {
     </p-table>
 </div>`,
         typescript: `import { Component, OnInit } from '@angular/core';
-import { MessageService, SelectItem } from 'primeng/api';
+import { MessageService, SelectItem } from '@pixel/primeng/api';
 import { Product } from '@/domain/product';
 import { ProductService } from '@/service/productservice';
-import { TableModule } from 'primeng/table';
-import { ToastModule } from 'primeng/toast';
+import { TableModule } from '@pixel/primeng/table';
+import { ToastModule } from '@pixel/primeng/toast';
 import { CommonModule } from '@angular/common';
-import { TagModule } from 'primeng/tag';
-import { SelectModule } from 'primeng/select';
-import { ButtonModule } from 'primeng/button';
-import { InputTextModule } from 'primeng/inputtext';
+import { TagModule } from '@pixel/primeng/tag';
+import { SelectModule } from '@pixel/primeng/select';
+import { ButtonModule } from '@pixel/primeng/button';
+import { InputTextModule } from '@pixel/primeng/inputtext';
 
 @Component({
     selector: 'table-row-edit-demo',

@@ -2,7 +2,7 @@ import { Code } from '@/domain/code';
 import { Product } from '@/domain/product';
 import { ProductService } from '@/service/productservice';
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component } from '@angular/core';
-import { MenuItem, MessageService } from 'primeng/api';
+import { MenuItem, MessageService } from '@pixel/primeng/api';
 
 @Component({
     selector: 'context-menu-doc',
@@ -130,14 +130,14 @@ export class ContextMenuDoc {
     <p-toast />
 </div>`,
         typescript: `import { Component, OnInit } from '@angular/core';
-import { MessageService, MenuItem } from 'primeng/api';
+import { MessageService, MenuItem } from '@pixel/primeng/api';
 import { Product } from '@/domain/product';
 import { ProductService } from '@/service/productservice';
-import { TableModule } from 'primeng/table';
-import { ContextMenuModule } from 'primeng/contextmenu';
+import { TableModule } from '@pixel/primeng/table';
+import { ContextMenuModule } from '@pixel/primeng/contextmenu';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
-import { ToastModule } from 'primeng/toast';
+import { ToastModule } from '@pixel/primeng/toast';
 
 @Component({
     selector: 'table-context-menu-demo',

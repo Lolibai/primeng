@@ -19,12 +19,12 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
+import { PrimeTemplate, SharedModule } from '@pixel/primeng/api';
+import { AutoFocus } from '@pixel/primeng/autofocus';
+import { BaseComponent } from '@pixel/primeng/basecomponent';
+import { StarFillIcon, StarIcon } from '@pixel/primeng/icons';
+import { Nullable } from '@pixel/primeng/ts-helpers';
 import { focus, getFirstFocusableElement, uuid } from '@primeuix/utils';
-import { PrimeTemplate, SharedModule } from 'primeng/api';
-import { AutoFocus } from 'primeng/autofocus';
-import { BaseComponent } from 'primeng/basecomponent';
-import { BanIcon, StarFillIcon, StarIcon } from 'primeng/icons';
-import { Nullable } from 'primeng/ts-helpers';
 import { RatingRateEvent } from './rating.interface';
 import { RatingStyle } from './style/ratingstyle';
 

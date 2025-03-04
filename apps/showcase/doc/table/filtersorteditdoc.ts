@@ -297,9 +297,9 @@ export class FilterSortEditDoc {
         typescript: `import { Component, OnInit } from '@angular/core';
 import { Product } from '@/domain/product';
 import { ProductService } from '@/service/productservice';
-import { TableModule } from 'primeng/table';
+import { TableModule } from '@pixel/primeng/table';
 import { CommonModule } from '@angular/common';
-import { InputTextModule } from 'primeng/inputtext';
+import { InputTextModule } from '@pixel/primeng/inputtext';
 
 @Component({
     selector: 'table-filter-sort-edit-demo',

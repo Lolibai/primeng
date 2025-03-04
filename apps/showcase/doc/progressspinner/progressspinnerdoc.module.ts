@@ -3,7 +3,7 @@ import { AppDocModule } from '@/components/doc/app.doc.module';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { ProgressSpinner } from 'primeng/progressspinner';
+import { ProgressSpinner } from '@pixel/primeng/progressspinner';
 import { AccessibilityDoc } from './accessibilitydoc';
 import { BasicDoc } from './basicdoc';
 import { CustomDoc } from './customdoc';

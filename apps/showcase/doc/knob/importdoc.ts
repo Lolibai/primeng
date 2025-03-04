@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { Knob } from 'primeng/knob';`
+        typescript: `import { Knob } from '@pixel/primeng/knob';`
     };
 }

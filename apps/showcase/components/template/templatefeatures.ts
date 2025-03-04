@@ -1,7 +1,7 @@
 import { AppConfigService } from '@/service/appconfigservice';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Input, NgModule, ViewEncapsulation } from '@angular/core';
-import { SharedModule } from 'primeng/api';
+import { SharedModule } from '@pixel/primeng/api';
 
 @Component({
     selector: 'template-features',

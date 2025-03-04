@@ -24,6 +24,16 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
+import { OverlayService, PrimeTemplate, SharedModule, TranslationKeys } from '@pixel/primeng/api';
+import { AutoFocus } from '@pixel/primeng/autofocus';
+import { BaseComponent } from '@pixel/primeng/basecomponent';
+import { Button } from '@pixel/primeng/button';
+import { ConnectedOverlayScrollHandler } from '@pixel/primeng/dom';
+import { CalendarIcon, ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon, ChevronUpIcon, TimesIcon } from '@pixel/primeng/icons';
+import { InputText } from '@pixel/primeng/inputtext';
+import { Ripple } from '@pixel/primeng/ripple';
+import { Nullable, VoidListener } from '@pixel/primeng/ts-helpers';
+import { ZIndexUtils } from '@pixel/primeng/utils';
 import {
     absolutePosition,
     addClass,
@@ -44,16 +54,6 @@ import {
     unblockBodyScroll,
     uuid
 } from '@primeuix/utils';
-import { OverlayService, PrimeTemplate, SharedModule, TranslationKeys } from 'primeng/api';
-import { AutoFocus } from 'primeng/autofocus';
-import { BaseComponent } from 'primeng/basecomponent';
-import { Button } from 'primeng/button';
-import { ConnectedOverlayScrollHandler } from 'primeng/dom';
-import { CalendarIcon, ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon, ChevronUpIcon, TimesIcon } from 'primeng/icons';
-import { InputText } from 'primeng/inputtext';
-import { Ripple } from 'primeng/ripple';
-import { Nullable, VoidListener } from 'primeng/ts-helpers';
-import { ZIndexUtils } from 'primeng/utils';
 import { Subscription } from 'rxjs';
 import { CalendarMonthChangeEvent, CalendarResponsiveOptions, CalendarTypeView, CalendarYearChangeEvent, LocaleSettings, Month, NavigationState } from './calendar.interface';
 import { CalendarStyle } from './style/calendarstyle';

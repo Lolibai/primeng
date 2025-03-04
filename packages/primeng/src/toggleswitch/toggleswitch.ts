@@ -20,9 +20,9 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
-import { PrimeTemplate, SharedModule } from 'primeng/api';
-import { AutoFocus } from 'primeng/autofocus';
-import { BaseComponent } from 'primeng/basecomponent';
+import { PrimeTemplate, SharedModule } from '@pixel/primeng/api';
+import { AutoFocus } from '@pixel/primeng/autofocus';
+import { BaseComponent } from '@pixel/primeng/basecomponent';
 import { ToggleSwitchStyle } from './style/toggleswitchstyle';
 import { ToggleSwitchChangeEvent } from './toggleswitch.interface';
 

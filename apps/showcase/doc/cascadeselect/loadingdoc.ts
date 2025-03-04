@@ -23,7 +23,7 @@ export class LoadingDoc {
 
         typescript: `import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { CascadeSelect } from 'primeng/cascadeselect';
+import { CascadeSelect } from '@pixel/primeng/cascadeselect';
 
 @Component({
     selector: 'cascade-select-loading-demo',

@@ -32,7 +32,7 @@ export class TemplateDoc {
      </p-progressbar>
 </div>`,
         typescript: `import { Component } from '@angular/core';
-import { ProgressBar } from 'primeng/progressbar';
+import { ProgressBar } from '@pixel/primeng/progressbar';
 
 @Component({
     selector: 'progress-bar-template-demo',

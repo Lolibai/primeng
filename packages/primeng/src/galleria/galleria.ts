@@ -30,14 +30,14 @@ import {
     ViewChild,
     ViewEncapsulation
 } from '@angular/core';
+import { PrimeTemplate, SharedModule } from '@pixel/primeng/api';
+import { BaseComponent } from '@pixel/primeng/basecomponent';
+import { FocusTrap } from '@pixel/primeng/focustrap';
+import { ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon, ChevronUpIcon, TimesIcon, WindowMaximizeIcon, WindowMinimizeIcon } from '@pixel/primeng/icons';
+import { Ripple } from '@pixel/primeng/ripple';
+import { VoidListener } from '@pixel/primeng/ts-helpers';
+import { ZIndexUtils } from '@pixel/primeng/utils';
 import { addClass, blockBodyScroll, find, findSingle, focus, getAttribute, removeClass, setAttribute, unblockBodyScroll, uuid } from '@primeuix/utils';
-import { PrimeTemplate, SharedModule } from 'primeng/api';
-import { BaseComponent } from 'primeng/basecomponent';
-import { FocusTrap } from 'primeng/focustrap';
-import { ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon, ChevronUpIcon, TimesIcon, WindowMaximizeIcon, WindowMinimizeIcon } from 'primeng/icons';
-import { Ripple } from 'primeng/ripple';
-import { VoidListener } from 'primeng/ts-helpers';
-import { ZIndexUtils } from 'primeng/utils';
 import { GalleriaResponsiveOptions } from './galleria.interface';
 import { GalleriaStyle } from './style/galleriastyle';
 

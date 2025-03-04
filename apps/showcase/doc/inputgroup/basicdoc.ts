@@ -111,11 +111,11 @@ export class BasicDoc {
 
         typescript: `import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { InputGroupModule } from 'primeng/inputgroup';
-import { InputGroupAddonModule } from 'primeng/inputgroupaddon';
-import { InputTextModule } from 'primeng/inputtext';
-import { SelectModule } from 'primeng/select';
-import { InputNumberModule } from 'primeng/inputnumber';
+import { InputGroupModule } from '@pixel/primeng/inputgroup';
+import { InputGroupAddonModule } from '@pixel/primeng/inputgroupaddon';
+import { InputTextModule } from '@pixel/primeng/inputtext';
+import { SelectModule } from '@pixel/primeng/select';
+import { InputNumberModule } from '@pixel/primeng/inputnumber';
 
 interface City {
     name: string;

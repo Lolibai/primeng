@@ -34,7 +34,7 @@ export class SizesDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { InputTextModule } from 'primeng/inputtext';
+import { InputTextModule } from '@pixel/primeng/inputtext';
 
 @Component({
     selector: 'input-text-sizes-demo',

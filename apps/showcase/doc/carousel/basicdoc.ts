@@ -119,9 +119,9 @@ export class BasicDoc implements OnInit {
         typescript: `import { Component, OnInit } from '@angular/core';
 import { Product } from '@/domain/product';
 import { ProductService } from '@/service/productservice';
-import { CarouselModule } from 'primeng/carousel';
-import { ButtonModule } from 'primeng/button';
-import { TagModule } from 'primeng/tag';
+import { CarouselModule } from '@pixel/primeng/carousel';
+import { ButtonModule } from '@pixel/primeng/button';
+import { TagModule } from '@pixel/primeng/tag';
 
 @Component({
     selector: 'carousel-basic-demo',

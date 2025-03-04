@@ -24,14 +24,14 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
+import { BlockableUI, PrimeTemplate, SharedModule, TranslationKeys } from '@pixel/primeng/api';
+import { BaseComponent } from '@pixel/primeng/basecomponent';
+import { Button, ButtonProps } from '@pixel/primeng/button';
+import { PlusIcon, TimesIcon, UploadIcon } from '@pixel/primeng/icons';
+import { Message } from '@pixel/primeng/message';
+import { ProgressBar } from '@pixel/primeng/progressbar';
+import { VoidListener } from '@pixel/primeng/ts-helpers';
 import { addClass, removeClass } from '@primeuix/utils';
-import { BlockableUI, PrimeTemplate, SharedModule, TranslationKeys } from 'primeng/api';
-import { BaseComponent } from 'primeng/basecomponent';
-import { Button, ButtonProps } from 'primeng/button';
-import { PlusIcon, TimesIcon, UploadIcon } from 'primeng/icons';
-import { Message } from 'primeng/message';
-import { ProgressBar } from 'primeng/progressbar';
-import { VoidListener } from 'primeng/ts-helpers';
 import { Subscription } from 'rxjs';
 import { FileBeforeUploadEvent, FileProgressEvent, FileRemoveEvent, FileSelectEvent, FileSendEvent, FileUploadErrorEvent, FileUploadEvent, FileUploadHandlerEvent, RemoveUploadedFileEvent } from './fileupload.interface';
 import { FileUploadStyle } from './style/fileuploadstyle';

@@ -2,7 +2,7 @@ import { AppConfigService } from '@/service/appconfigservice';
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
-import { RippleModule } from 'primeng/ripple';
+import { RippleModule } from '@pixel/primeng/ripple';
 import { Subscription } from 'rxjs';
 
 @Component({

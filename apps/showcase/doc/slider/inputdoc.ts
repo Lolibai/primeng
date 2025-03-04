@@ -32,8 +32,8 @@ export class InputDoc {
 
         typescript: `import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { Slider } from 'primeng/slider';
-import { InputTextModule } from 'primeng/inputtext';
+import { Slider } from '@pixel/primeng/slider';
+import { InputTextModule } from '@pixel/primeng/inputtext';
 
 @Component({
     selector: 'slider-input-demo',

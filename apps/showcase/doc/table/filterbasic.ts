@@ -2,7 +2,7 @@ import { Code } from '@/domain/code';
 import { Customer, Representative } from '@/domain/customer';
 import { CustomerService } from '@/service/customerservice';
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component } from '@angular/core';
-import { Table } from 'primeng/table';
+import { Table } from '@pixel/primeng/table';
 
 @Component({
     selector: 'filter-basic-doc',
@@ -454,18 +454,18 @@ export class FilterBasicDoc {
 </p-table>
 </div>`,
         typescript: `import { Component, OnInit } from '@angular/core';
-import { Table } from 'primeng/table';
+import { Table } from '@pixel/primeng/table';
 import { Customer, Representative } from '@/domain/customer';
 import { CustomerService } from '@/service/customerservice';
-import { TagModule } from 'primeng/tag';
-import { IconFieldModule } from 'primeng/iconfield';
-import { InputIconModule } from 'primeng/inputicon';
+import { TagModule } from '@pixel/primeng/tag';
+import { IconFieldModule } from '@pixel/primeng/iconfield';
+import { InputIconModule } from '@pixel/primeng/inputicon';
 import { HttpClientModule } from '@angular/common/http';
-import { InputTextModule } from 'primeng/inputtext';
-import { MultiSelectModule } from 'primeng/multiselect';
-import { SelectModule } from 'primeng/select';
+import { InputTextModule } from '@pixel/primeng/inputtext';
+import { MultiSelectModule } from '@pixel/primeng/multiselect';
+import { SelectModule } from '@pixel/primeng/select';
 import { CommonModule } from '@angular/common';
-import { TableModule } from 'primeng/table';
+import { TableModule } from '@pixel/primeng/table';
 
 @Component({
     selector: 'table-filter-basic-demo',

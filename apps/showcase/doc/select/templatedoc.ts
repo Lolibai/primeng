@@ -134,8 +134,8 @@ export class TemplateDoc implements OnInit {
 
         typescript: `import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { SelectModule } from 'primeng/select';
-import { ButtonModule } from 'primeng/button';
+import { SelectModule } from '@pixel/primeng/select';
+import { ButtonModule } from '@pixel/primeng/button';
 
 @Component({
     selector: 'select-group-demo',

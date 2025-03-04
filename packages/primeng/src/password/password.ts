@@ -30,15 +30,15 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
+import { OverlayService, PrimeTemplate, SharedModule, TranslationKeys } from '@pixel/primeng/api';
+import { AutoFocus } from '@pixel/primeng/autofocus';
+import { BaseComponent } from '@pixel/primeng/basecomponent';
+import { ConnectedOverlayScrollHandler, DomHandler } from '@pixel/primeng/dom';
+import { EyeIcon, EyeSlashIcon, TimesIcon } from '@pixel/primeng/icons';
+import { InputText } from '@pixel/primeng/inputtext';
+import { Nullable, VoidListener } from '@pixel/primeng/ts-helpers';
+import { ZIndexUtils } from '@pixel/primeng/utils';
 import { absolutePosition, addClass, getOuterWidth, hasClass, isTouchDevice, relativePosition, removeClass } from '@primeuix/utils';
-import { OverlayService, PrimeTemplate, SharedModule, TranslationKeys } from 'primeng/api';
-import { AutoFocus } from 'primeng/autofocus';
-import { BaseComponent } from 'primeng/basecomponent';
-import { ConnectedOverlayScrollHandler, DomHandler } from 'primeng/dom';
-import { EyeIcon, EyeSlashIcon, TimesIcon } from 'primeng/icons';
-import { InputText } from 'primeng/inputtext';
-import { Nullable, VoidListener } from 'primeng/ts-helpers';
-import { ZIndexUtils } from 'primeng/utils';
 import { Subscription } from 'rxjs';
 import { PasswordStyle } from './style/passwordstyle';
 

@@ -1,9 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { booleanAttribute, ChangeDetectionStrategy, Component, ElementRef, EventEmitter, forwardRef, inject, Input, NgModule, numberAttribute, Output, ViewChild, ViewEncapsulation } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
-import { SharedModule } from 'primeng/api';
-import { AutoFocusModule } from 'primeng/autofocus';
-import { BaseComponent } from 'primeng/basecomponent';
+import { SharedModule } from '@pixel/primeng/api';
+import { AutoFocusModule } from '@pixel/primeng/autofocus';
+import { BaseComponent } from '@pixel/primeng/basecomponent';
 import { InputSwitchChangeEvent } from './inputswitch.interface';
 import { InputSwitchStyle } from './style/inputswitchstyle';
 

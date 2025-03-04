@@ -42,7 +42,7 @@ export class DisabledDoc {
 
         typescript: `import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { Select } from 'primeng/select';
+import { Select } from '@pixel/primeng/select';
 
 interface City {
     name: string;

@@ -98,11 +98,11 @@ export class TemplateDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { SelectItemGroup } from 'primeng/api';
+import { SelectItemGroup } from '@pixel/primeng/api';
 import { CountryService } from '@/service/countryservice';
-import { AutoCompleteModule } from 'primeng/autocomplete';
+import { AutoCompleteModule } from '@pixel/primeng/autocomplete';
 import { FormsModule } from '@angular/forms';
-import { ButtonModule } from 'primeng/button';
+import { ButtonModule } from '@pixel/primeng/button';
 
 interface AutoCompleteCompleteEvent {
     originalEvent: Event;

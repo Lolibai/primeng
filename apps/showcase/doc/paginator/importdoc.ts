@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { PaginatorModule } from 'primeng/paginator';`
+        typescript: `import { PaginatorModule } from '@pixel/primeng/paginator';`
     };
 }

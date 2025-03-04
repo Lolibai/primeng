@@ -23,14 +23,14 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
+import { MenuItem, PrimeTemplate, SharedModule } from '@pixel/primeng/api';
+import { BadgeModule } from '@pixel/primeng/badge';
+import { BaseComponent } from '@pixel/primeng/basecomponent';
+import { ChevronLeftIcon, ChevronRightIcon } from '@pixel/primeng/icons';
+import { Ripple } from '@pixel/primeng/ripple';
+import { TooltipModule } from '@pixel/primeng/tooltip';
+import { Nullable } from '@pixel/primeng/ts-helpers';
 import { findSingle, focus, getAttribute, getOffset, getWidth, resolve } from '@primeuix/utils';
-import { MenuItem, PrimeTemplate, SharedModule } from 'primeng/api';
-import { BadgeModule } from 'primeng/badge';
-import { BaseComponent } from 'primeng/basecomponent';
-import { ChevronLeftIcon, ChevronRightIcon } from 'primeng/icons';
-import { Ripple } from 'primeng/ripple';
-import { TooltipModule } from 'primeng/tooltip';
-import { Nullable } from 'primeng/ts-helpers';
 import { TabMenuStyle } from './style/tabmenustyle';
 
 /**

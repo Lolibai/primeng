@@ -2,13 +2,12 @@ import { AppConfigService } from '@/service/appconfigservice';
 import { CommonModule } from '@angular/common';
 import { Component, computed, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { PrimeNG } from 'primeng/config';
-import { DomHandler } from 'primeng/dom';
+import { PrimeNG } from '@pixel/primeng/config';
+import { DomHandler } from '@pixel/primeng/dom';
 import { AppFooterComponent } from './footer/app.footer.component';
 import { AppMenuComponent } from './menu/app.menu.component';
 import { AppNewsComponent } from './news/app.news.component';
 import { AppTopBarComponent } from './topbar/app.topbar.component';
-import { AppDesignerComponent } from '@/components/layout/designer/app.designer.component';
 
 @Component({
     selector: 'app-main',

@@ -3,7 +3,7 @@ import { AppDocModule } from '@/components/doc/app.doc.module';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { ScrollPanel } from 'primeng/scrollpanel';
+import { ScrollPanel } from '@pixel/primeng/scrollpanel';
 import { AccessibilityDoc } from './accessibilitydoc';
 import { BasicDoc } from './basicdoc';
 import { CusstomDoc } from './customdoc';

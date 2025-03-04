@@ -186,9 +186,9 @@ export class BasicDoc {
         typescript: `import { Component } from '@angular/core';
 import { Product } from '@/domain/product';
 import { ProductService } from '@/service/productservice';
-import { DataView } from 'primeng/dataview';
-import { ButtonModule } from 'primeng/button';
-import { Tag } from 'primeng/tag';
+import { DataView } from '@pixel/primeng/dataview';
+import { ButtonModule } from '@pixel/primeng/button';
+import { Tag } from '@pixel/primeng/tag';
 import { CommonModule } from '@angular/common';
 import { signal } from '@angular/core';
 

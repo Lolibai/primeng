@@ -2,7 +2,7 @@ import { Code } from '@/domain/code';
 import { Product } from '@/domain/product';
 import { ProductService } from '@/service/productservice';
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component } from '@angular/core';
-import { MessageService } from 'primeng/api';
+import { MessageService } from '@pixel/primeng/api';
 
 @Component({
     selector: 'column-selection-doc',
@@ -114,11 +114,11 @@ export class ColumnSelectionDoc {
         typescript: `import { Component, OnInit } from '@angular/core';
 import { Product } from '@/domain/product';
 import { ProductService } from '@/service/productservice';
-import { MessageService } from 'primeng/api';
-import { ButtonModule } from 'primeng/button';
-import { RippleModule } from 'primeng/ripple';
-import { ToastModule } from 'primeng/toast';
-import { TableModule } from 'primeng/table';
+import { MessageService } from '@pixel/primeng/api';
+import { ButtonModule } from '@pixel/primeng/button';
+import { RippleModule } from '@pixel/primeng/ripple';
+import { ToastModule } from '@pixel/primeng/toast';
+import { TableModule } from '@pixel/primeng/table';
 
 @Component({
     selector: 'table-column-selection-demo',

@@ -143,8 +143,8 @@ export class ControlledDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { AccordionModule } from 'primeng/accordion';
-import { ButtonModule } from 'primeng/button';
+import { AccordionModule } from '@pixel/primeng/accordion';
+import { ButtonModule } from '@pixel/primeng/button';
 
 @Component({
     selector: 'accordion-controlled-demo',

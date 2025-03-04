@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { StepperModule } from 'primeng/stepper';`
+        typescript: `import { StepperModule } from '@pixel/primeng/stepper';`
     };
 }

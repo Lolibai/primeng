@@ -24,7 +24,7 @@ export class ButtonDoc {
     <p-button label="Inbox" icon="pi pi-inbox" badge="2" badgeSeverity="contrast" outlined/>
 </div>`,
         typescript: `import { Component } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
+import { ButtonModule } from '@pixel/primeng/button';
 
 @Component({
     selector: 'badge-button-demo',

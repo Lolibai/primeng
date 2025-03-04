@@ -102,7 +102,7 @@ export class TemplateDoc implements OnInit {
         typescript: `import { Component, OnInit } from '@angular/core';
 import { Product } from '@/domain/product';
 import { ProductService } from '@/service/productservice';
-import { OrderListModule } from 'primeng/orderlist';
+import { OrderListModule } from '@pixel/primeng/orderlist';
 
 @Component({
     selector: 'orderlist-template-demo',

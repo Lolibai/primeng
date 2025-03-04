@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { Carousel } from 'primeng/carousel';`
+        typescript: `import { Carousel } from '@pixel/primeng/carousel';`
     };
 }

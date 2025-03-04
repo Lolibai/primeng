@@ -142,11 +142,11 @@ export class BasicDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { Popover } from 'primeng/popover';
-import { InputGroup } from 'primeng/inputgroup';
-import { InputGroupAddonModule } from 'primeng/inputgroupaddon';
-import { ButtonModule } from 'primeng/button';
-import { InputTextModule } from 'primeng/inputtext';
+import { Popover } from '@pixel/primeng/popover';
+import { InputGroup } from '@pixel/primeng/inputgroup';
+import { InputGroupAddonModule } from '@pixel/primeng/inputgroupaddon';
+import { ButtonModule } from '@pixel/primeng/button';
+import { InputTextModule } from '@pixel/primeng/inputtext';
 import { CommonModule } from '@angular/common';
 
 @Component({

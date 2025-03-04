@@ -1,6 +1,6 @@
 import { Code } from '@/domain/code';
 import { Component } from '@angular/core';
-import { SelectItemGroup } from 'primeng/api';
+import { SelectItemGroup } from '@pixel/primeng/api';
 
 interface Country {
     name: string;
@@ -102,9 +102,9 @@ export class GroupDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { SelectItemGroup } from 'primeng/api';
+import { SelectItemGroup } from '@pixel/primeng/api';
 import { FormsModule } from '@angular/forms';
-import { ListboxModule } from 'primeng/listbox';
+import { ListboxModule } from '@pixel/primeng/listbox';
 
 interface Country {
     name: string,

@@ -1,6 +1,6 @@
 {
-    "name": "primeng",
-    "version": "18.0.2",
+    "name": "@pixel/primeng",
+    "version": "18.0.25",
     "author": "PrimeTek Informatics",
     "description": "PrimeNG is an open source UI library for Angular featuring a rich set of 80+ components, a theme designer, various theme alternatives such as Material, Bootstrap, Tailwind, premium templates and professional support. In addition, it integrates with PrimeBlock, which has 370+ ready to use UI blocks to build spectacular applications in no time.",
     "homepage": "https://primeng.org/",
@@ -29,8 +29,8 @@
         "access": "public"
     },
     "scripts": {
-        "build": "NODE_ENV=production INPUT_DIR=src/ OUTPUT_DIR=dist/ pnpm run build:package",
-        "build:package": "pnpm run build:prebuild && ng build primeng && pnpm run build:postbuild",
+        "build": "pwsh -Command \"$env:NODE_ENV='production'; $env:INPUT_DIR='src/'; $env:OUTPUT_DIR='dist/'; pnpm run build:package\"",
+        "build:package": "pnpm run build:prebuild && ng build @pixel/primeng && pnpm run build:postbuild",
         "build:prebuild": "node ./scripts/prebuild.mjs",
         "build:postbuild": "node ./scripts/postbuild.mjs",
         "dev:link": "pnpm link --global && npm link",
@@ -58,7 +58,7 @@
         "rxjs": "^6.0.0 || ^7.8.1"
     },
     "dependencies": {
-        "@primeuix/styled": "catalog:",
-        "@primeuix/utils": "catalog:"
+        "@primeuix/styled": "^0.3.2",
+        "@primeuix/utils": "^0.3.2"
     }
 }

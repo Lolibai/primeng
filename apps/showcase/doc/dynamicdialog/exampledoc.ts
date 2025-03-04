@@ -1,7 +1,7 @@
 import { Code } from '@/domain/code';
 import { Component, OnDestroy } from '@angular/core';
-import { MessageService } from 'primeng/api';
-import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
+import { MessageService } from '@pixel/primeng/api';
+import { DialogService, DynamicDialogRef } from '@pixel/primeng/dynamicdialog';
 import { Footer } from './footer';
 import { ProductListDemo } from './productlistdemo';
 
@@ -40,12 +40,12 @@ export class ExampleDoc implements OnDestroy {
 </div>`,
 
         typescript: `import { Component, OnDestroy } from '@angular/core';
-import { MessageService } from 'primeng/api';
-import { DialogService, DynamicDialog, DynamicDialogRef } from 'primeng/dynamicdialog';
+import { MessageService } from '@pixel/primeng/api';
+import { DialogService, DynamicDialog, DynamicDialogRef } from '@pixel/primeng/dynamicdialog';
 import { ProductListDemo } from './demo/productlistdemo';
 import { Footer } from './demo/footer';
-import { ToastModule } from 'primeng/toast';
-import { ButtonModule } from 'primeng/button';
+import { ToastModule } from '@pixel/primeng/toast';
+import { ButtonModule } from '@pixel/primeng/button';
 
 @Component({
     selector: 'dynamic-dialog-example-demo',
@@ -169,11 +169,11 @@ export interface Product {
             content: `import { Component, OnInit } from '@angular/core';
 import { Product } from '@/domain/product';
 import { ProductService } from '@/service/productservice';
-import { MessageService } from 'primeng/api';
-import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
+import { MessageService } from '@pixel/primeng/api';
+import { DialogService, DynamicDialogRef } from '@pixel/primeng/dynamicdialog';
 import { InfoDemo } from './infodemo';
-import { TableModule } from 'primeng/table'
-import { ButtonModule } from 'primeng/button';
+import { TableModule } from '@pixel/primeng/table'
+import { ButtonModule } from '@pixel/primeng/button';
 
 @Component({
     providers: [DialogService, MessageService, ProductService],
@@ -253,9 +253,9 @@ export class ProductListDemo implements OnInit {
             path: 'src/app/demo/infodemo.ts',
             name: 'InfoDemo',
             content: `import { Component} from '@angular/core';
-import { DialogService, DynamicDialogComponent, DynamicDialogRef } from 'primeng/dynamicdialog';
-import { MessageService } from 'primeng/api';
-import { ButtonModule } from 'primeng/button';
+import { DialogService, DynamicDialogComponent, DynamicDialogRef } from '@pixel/primeng/dynamicdialog';
+import { MessageService } from '@pixel/primeng/api';
+import { ButtonModule } from '@pixel/primeng/button';
 
 @Component({
     providers: [DialogService, MessageService],
@@ -300,8 +300,8 @@ export class InfoDemo {
             path: 'src/app/demo/footer.ts',
             name: 'Footer',
             content: `import { Component } from '@angular/core';
-import { DynamicDialogRef } from 'primeng/dynamicdialog';
-import { ButtonModule } from 'primeng/button';
+import { DynamicDialogRef } from '@pixel/primeng/dynamicdialog';
+import { ButtonModule } from '@pixel/primeng/button';
 
 @Component({
     selector: 'footer',

@@ -43,7 +43,7 @@ export class BasicDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { ImageCompareModule } from 'primeng/imagecompare';
+import { ImageCompareModule } from '@pixel/primeng/imagecompare';
 
 @Component({
     selector: 'image-compare-basic-demo',

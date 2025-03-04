@@ -121,7 +121,7 @@ export class BasicDoc implements OnInit {
 </div>`,
         typescript: `import { Component, OnInit } from '@angular/core';
 import { Product } from '@/domain/product';
-import { DragDropModule } from 'primeng/dragdrop';
+import { DragDropModule } from '@pixel/primeng/dragdrop';
 import { CommonModule } from '@angular/common';
 
 @Component({

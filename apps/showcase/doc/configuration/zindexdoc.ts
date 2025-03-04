@@ -16,7 +16,7 @@ import { Component } from '@angular/core';
 })
 export class ZIndexDoc {
     code: Code = {
-        typescript: `import { PrimeNG } from 'primeng/config';
+        typescript: `import { PrimeNG } from '@pixel/primeng/config';
 
 @Component({
     selector: 'app-root',

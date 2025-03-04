@@ -45,7 +45,7 @@ export class DynamicDoc {
 
         typescript: `import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { CheckboxModule } from 'primeng/checkbox';
+import { CheckboxModule } from '@pixel/primeng/checkbox';
 import { CommonModule } from '@angular/common';
 
 @Component({

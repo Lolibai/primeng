@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { TabsModule } from 'primeng/tabs';`
+        typescript: `import { TabsModule } from '@pixel/primeng/tabs';`
     };
 }

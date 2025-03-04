@@ -1,11 +1,11 @@
-import { Component, EventEmitter, inject, Input, Output, ViewEncapsulation } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { DesignerService } from '@/service/designerservice';
-import { AutoCompleteModule } from 'primeng/autocomplete';
+import { CommonModule } from '@angular/common';
+import { Component, EventEmitter, inject, Input, Output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { TooltipModule } from 'primeng/tooltip';
+import { AutoCompleteModule } from '@pixel/primeng/autocomplete';
+import { TooltipModule } from '@pixel/primeng/tooltip';
+import { UniqueComponentId } from '@pixel/primeng/utils';
 import { $dt } from '@primeng/themes';
-import { UniqueComponentId } from 'primeng/utils';
 
 @Component({
     selector: 'design-token-field',

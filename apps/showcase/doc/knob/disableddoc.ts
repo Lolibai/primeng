@@ -25,7 +25,7 @@ export class DisabledDoc {
 
         typescript: `import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { Knob } from 'primeng/knob';
+import { Knob } from '@pixel/primeng/knob';
 
 @Component({
     selector: 'knob-disabled-demo',

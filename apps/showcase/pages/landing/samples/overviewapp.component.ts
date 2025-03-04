@@ -4,21 +4,21 @@ import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, effect, inject, PLATFORM_ID } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { MenuItem } from 'primeng/api';
-import { AvatarModule } from 'primeng/avatar';
-import { ButtonModule } from 'primeng/button';
-import { ChartModule } from 'primeng/chart';
-import { DatePickerModule } from 'primeng/datepicker';
-import { IconFieldModule } from 'primeng/iconfield';
-import { InputIconModule } from 'primeng/inputicon';
-import { InputTextModule } from 'primeng/inputtext';
-import { MenuModule } from 'primeng/menu';
-import { MeterGroupModule } from 'primeng/metergroup';
-import { OverlayBadgeModule } from 'primeng/overlaybadge';
-import { SelectButtonModule } from 'primeng/selectbutton';
-import { TableModule } from 'primeng/table';
-import { TagModule } from 'primeng/tag';
-import { TooltipModule } from 'primeng/tooltip';
+import { MenuItem } from '@pixel/primeng/api';
+import { AvatarModule } from '@pixel/primeng/avatar';
+import { ButtonModule } from '@pixel/primeng/button';
+import { ChartModule } from '@pixel/primeng/chart';
+import { DatePickerModule } from '@pixel/primeng/datepicker';
+import { IconFieldModule } from '@pixel/primeng/iconfield';
+import { InputIconModule } from '@pixel/primeng/inputicon';
+import { InputTextModule } from '@pixel/primeng/inputtext';
+import { MenuModule } from '@pixel/primeng/menu';
+import { MeterGroupModule } from '@pixel/primeng/metergroup';
+import { OverlayBadgeModule } from '@pixel/primeng/overlaybadge';
+import { SelectButtonModule } from '@pixel/primeng/selectbutton';
+import { TableModule } from '@pixel/primeng/table';
+import { TagModule } from '@pixel/primeng/tag';
+import { TooltipModule } from '@pixel/primeng/tooltip';
 
 @Component({
     selector: 'overview-app',

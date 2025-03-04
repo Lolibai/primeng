@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { AfterContentInit, ChangeDetectionStrategy, Component, ContentChild, ContentChildren, HostBinding, inject, Input, NgModule, QueryList, TemplateRef, ViewEncapsulation } from '@angular/core';
-import { BlockableUI, PrimeTemplate, SharedModule } from 'primeng/api';
-import { BaseComponent } from 'primeng/basecomponent';
-import { Nullable } from 'primeng/ts-helpers';
+import { BlockableUI, PrimeTemplate, SharedModule } from '@pixel/primeng/api';
+import { BaseComponent } from '@pixel/primeng/basecomponent';
+import { Nullable } from '@pixel/primeng/ts-helpers';
 import { TimelineStyle } from './style/timelinestyle';
 
 /**

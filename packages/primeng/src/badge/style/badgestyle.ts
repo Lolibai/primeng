@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
+import { BaseStyle } from '@pixel/primeng/base';
 import { isEmpty, isNotEmpty } from '@primeuix/utils';
-import { BaseStyle } from 'primeng/base';
 
 const theme = ({ dt }) => `
 .p-badge {

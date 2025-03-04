@@ -180,8 +180,8 @@ export class TemplateDoc {
 
         typescript: `import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { CascadeSelectModule } from 'primeng/cascadeselect';
-import { ButtonModule } from 'primeng/button';
+import { CascadeSelectModule } from '@pixel/primeng/cascadeselect';
+import { ButtonModule } from '@pixel/primeng/button';
 
 @Component({
     selector: 'cascade-select-template-demo',

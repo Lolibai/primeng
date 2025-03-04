@@ -3,7 +3,7 @@ import { AppDocModule } from '@/components/doc/app.doc.module';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { SplitterModule } from 'primeng/splitter';
+import { SplitterModule } from '@pixel/primeng/splitter';
 import { AccessibilityDoc } from './accessibilitydoc';
 import { HorizontalDoc } from './horizontaldoc';
 import { ImportDoc } from './importdoc';

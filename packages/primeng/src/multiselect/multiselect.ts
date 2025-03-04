@@ -30,6 +30,21 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { ControlValueAccessor, FormsModule, NG_VALUE_ACCESSOR } from '@angular/forms';
+import { FilterService, Footer, Header, OverlayOptions, OverlayService, PrimeTemplate, ScrollerOptions, SharedModule, TranslationKeys } from '@pixel/primeng/api';
+import { AutoFocus } from '@pixel/primeng/autofocus';
+import { BaseComponent } from '@pixel/primeng/basecomponent';
+import { Checkbox } from '@pixel/primeng/checkbox';
+import { Chip } from '@pixel/primeng/chip';
+import { DomHandler } from '@pixel/primeng/dom';
+import { IconField } from '@pixel/primeng/iconfield';
+import { CheckIcon, ChevronDownIcon, SearchIcon, TimesIcon } from '@pixel/primeng/icons';
+import { InputIcon } from '@pixel/primeng/inputicon';
+import { InputText } from '@pixel/primeng/inputtext';
+import { Overlay } from '@pixel/primeng/overlay';
+import { Ripple } from '@pixel/primeng/ripple';
+import { Scroller } from '@pixel/primeng/scroller';
+import { Tooltip } from '@pixel/primeng/tooltip';
+import { Nullable } from '@pixel/primeng/ts-helpers';
 import {
     deepEquals,
     equals,
@@ -49,21 +64,6 @@ import {
     unblockBodyScroll,
     uuid
 } from '@primeuix/utils';
-import { FilterService, Footer, Header, OverlayOptions, OverlayService, PrimeTemplate, ScrollerOptions, SharedModule, TranslationKeys } from 'primeng/api';
-import { AutoFocus } from 'primeng/autofocus';
-import { BaseComponent } from 'primeng/basecomponent';
-import { Checkbox } from 'primeng/checkbox';
-import { Chip } from 'primeng/chip';
-import { DomHandler } from 'primeng/dom';
-import { IconField } from 'primeng/iconfield';
-import { CheckIcon, ChevronDownIcon, SearchIcon, TimesIcon } from 'primeng/icons';
-import { InputIcon } from 'primeng/inputicon';
-import { InputText } from 'primeng/inputtext';
-import { Overlay } from 'primeng/overlay';
-import { Ripple } from 'primeng/ripple';
-import { Scroller } from 'primeng/scroller';
-import { Tooltip } from 'primeng/tooltip';
-import { Nullable } from 'primeng/ts-helpers';
 import { MultiSelectBlurEvent, MultiSelectChangeEvent, MultiSelectFilterEvent, MultiSelectFilterOptions, MultiSelectFocusEvent, MultiSelectLazyLoadEvent, MultiSelectRemoveEvent, MultiSelectSelectAllChangeEvent } from './multiselect.interface';
 import { MultiSelectStyle } from './style/multiselectstyle';
 

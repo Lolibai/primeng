@@ -33,9 +33,9 @@ export class IftaLabelDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { InputNumberModule } from 'primeng/inputnumber';
+import { InputNumberModule } from '@pixel/primeng/inputnumber';
 import { FormsModule } from '@angular/forms';
-import { IftaLabelModule } from 'primeng/iftalabel';
+import { IftaLabelModule } from '@pixel/primeng/iftalabel';
 
 @Component({
     selector: 'input-number-ifta-label-demo',

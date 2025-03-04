@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BaseStyle } from 'primeng/base';
+import { BaseStyle } from '@pixel/primeng/base';
 /**
  *
  * Dropdown also known as Select, is used to choose an item from a collection of options.
@@ -9,7 +9,7 @@ import { BaseStyle } from 'primeng/base';
  * @module dropdownstyle
  *
  */
-import type { SelectStyle } from 'primeng/select';
+import type { SelectStyle } from '@pixel/primeng/select';
 
 const theme = ({ dt }) => `
 .p-select {

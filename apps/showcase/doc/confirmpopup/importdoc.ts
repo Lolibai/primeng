@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { ConfirmPopupModule } from 'primeng/confirmpopup';`
+        typescript: `import { ConfirmPopupModule } from '@pixel/primeng/confirmpopup';`
     };
 }

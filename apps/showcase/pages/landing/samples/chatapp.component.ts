@@ -1,19 +1,19 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { MenuItem } from 'primeng/api';
-import { BadgeModule } from 'primeng/badge';
-import { ChartModule } from 'primeng/chart';
-import { SelectButton } from 'primeng/selectbutton';
-import { AvatarModule } from 'primeng/avatar';
-import { IconField } from 'primeng/iconfield';
-import { InputIcon } from 'primeng/inputicon';
-import { ButtonModule } from 'primeng/button';
-import { InputTextModule } from 'primeng/inputtext';
-import { MenuModule } from 'primeng/menu';
-import { Textarea } from 'primeng/textarea';
-import { ToggleSwitchModule } from 'primeng/toggleswitch';
+import { MenuItem } from '@pixel/primeng/api';
+import { AvatarModule } from '@pixel/primeng/avatar';
+import { BadgeModule } from '@pixel/primeng/badge';
+import { ButtonModule } from '@pixel/primeng/button';
+import { ChartModule } from '@pixel/primeng/chart';
+import { IconField } from '@pixel/primeng/iconfield';
+import { InputIcon } from '@pixel/primeng/inputicon';
+import { InputTextModule } from '@pixel/primeng/inputtext';
+import { MenuModule } from '@pixel/primeng/menu';
+import { SelectButton } from '@pixel/primeng/selectbutton';
+import { Textarea } from '@pixel/primeng/textarea';
+import { ToggleSwitchModule } from '@pixel/primeng/toggleswitch';
 
 @Component({
     selector: 'chat-app',

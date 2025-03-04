@@ -30,7 +30,7 @@ export class DisabledDoc {
 
         typescript: `import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { Checkbox } from 'primeng/checkbox';
+import { Checkbox } from '@pixel/primeng/checkbox';
 
 @Component({
     selector: 'checkbox-disabled-demo',

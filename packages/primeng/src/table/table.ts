@@ -35,35 +35,34 @@ import {
     ViewChild,
     ViewEncapsulation
 } from '@angular/core';
-import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { FormsModule } from '@angular/forms';
-import { BlockableUI, FilterMatchMode, FilterMetadata, FilterOperator, FilterService, LazyLoadMeta, OverlayService, PrimeTemplate, ScrollerOptions, SelectItem, SharedModule, SortMeta, TableState, TranslationKeys } from 'primeng/api';
-import { BaseComponent } from 'primeng/basecomponent';
-import { Button, ButtonModule } from 'primeng/button';
-import { CheckboxModule } from 'primeng/checkbox';
-import { DatePickerModule } from 'primeng/datepicker';
-import { ConnectedOverlayScrollHandler, DomHandler } from 'primeng/dom';
-import { ArrowDownIcon } from 'primeng/icons/arrowdown';
-import { ArrowUpIcon } from 'primeng/icons/arrowup';
-import { CheckIcon } from 'primeng/icons/check';
-import { FilterIcon } from 'primeng/icons/filter';
-import { FilterSlashIcon } from 'primeng/icons/filterslash';
-import { PlusIcon } from 'primeng/icons/plus';
-import { SortAltIcon } from 'primeng/icons/sortalt';
-import { SortAmountDownIcon } from 'primeng/icons/sortamountdown';
-import { SortAmountUpAltIcon } from 'primeng/icons/sortamountupalt';
-import { SpinnerIcon } from 'primeng/icons/spinner';
-import { TrashIcon } from 'primeng/icons/trash';
-import { InputNumberModule } from 'primeng/inputnumber';
-import { InputTextModule } from 'primeng/inputtext';
-import { PaginatorModule } from 'primeng/paginator';
-import { RadioButton, RadioButtonClickEvent, RadioButtonModule } from 'primeng/radiobutton';
-import { Scroller, ScrollerModule } from 'primeng/scroller';
-import { SelectModule } from 'primeng/select';
-import { SelectButtonModule } from 'primeng/selectbutton';
-import { Nullable, VoidListener } from 'primeng/ts-helpers';
-import { ObjectUtils, UniqueComponentId, ZIndexUtils } from 'primeng/utils';
-import { debounceTime, fromEvent, Subject, Subscription } from 'rxjs';
+import { BlockableUI, FilterMatchMode, FilterMetadata, FilterOperator, FilterService, LazyLoadMeta, OverlayService, PrimeTemplate, ScrollerOptions, SelectItem, SharedModule, SortMeta, TableState, TranslationKeys } from '@pixel/primeng/api';
+import { BaseComponent } from '@pixel/primeng/basecomponent';
+import { Button, ButtonModule } from '@pixel/primeng/button';
+import { CheckboxModule } from '@pixel/primeng/checkbox';
+import { DatePickerModule } from '@pixel/primeng/datepicker';
+import { ConnectedOverlayScrollHandler, DomHandler } from '@pixel/primeng/dom';
+import { ArrowDownIcon } from '@pixel/primeng/icons/arrowdown';
+import { ArrowUpIcon } from '@pixel/primeng/icons/arrowup';
+import { CheckIcon } from '@pixel/primeng/icons/check';
+import { FilterIcon } from '@pixel/primeng/icons/filter';
+import { FilterSlashIcon } from '@pixel/primeng/icons/filterslash';
+import { PlusIcon } from '@pixel/primeng/icons/plus';
+import { SortAltIcon } from '@pixel/primeng/icons/sortalt';
+import { SortAmountDownIcon } from '@pixel/primeng/icons/sortamountdown';
+import { SortAmountUpAltIcon } from '@pixel/primeng/icons/sortamountupalt';
+import { SpinnerIcon } from '@pixel/primeng/icons/spinner';
+import { TrashIcon } from '@pixel/primeng/icons/trash';
+import { InputNumberModule } from '@pixel/primeng/inputnumber';
+import { InputTextModule } from '@pixel/primeng/inputtext';
+import { PaginatorModule } from '@pixel/primeng/paginator';
+import { RadioButton, RadioButtonClickEvent, RadioButtonModule } from '@pixel/primeng/radiobutton';
+import { Scroller, ScrollerModule } from '@pixel/primeng/scroller';
+import { SelectModule } from '@pixel/primeng/select';
+import { SelectButtonModule } from '@pixel/primeng/selectbutton';
+import { Nullable, VoidListener } from '@pixel/primeng/ts-helpers';
+import { ObjectUtils, UniqueComponentId, ZIndexUtils } from '@pixel/primeng/utils';
+import { Subject, Subscription } from 'rxjs';
 import { TableStyle } from './style/tablestyle';
 import {
     ExportCSVOptions,
@@ -3525,7 +3524,7 @@ export class RowGroupHeader {
         '[class.p-datatable-frozen-column-left]': 'alignFrozen === "left"'
     }
 })
-export class FrozenColumn implements OnInit, AfterViewInit {
+export class FrozenColumn implements AfterViewInit {
     @Input() get frozen(): boolean {
         return this._frozen;
     }
@@ -3543,14 +3542,6 @@ export class FrozenColumn implements OnInit, AfterViewInit {
         private destroyRef: DestroyRef
     ) {}
 
-    ngOnInit() {
-        fromEvent(window, 'resize')
-            .pipe(debounceTime(300), takeUntilDestroyed(this.destroyRef))
-            .subscribe(() => {
-                this.recalculateColumns();
-            });
-    }
-
     ngAfterViewInit() {
         this.zone.runOutsideAngular(() => {
             setTimeout(() => {
@@ -3559,6 +3550,7 @@ export class FrozenColumn implements OnInit, AfterViewInit {
         });
     }
 
+    @HostListener('window:resize', ['$event'])
     recalculateColumns() {
         const siblings = DomHandler.siblings(this.el.nativeElement);
         const index = DomHandler.index(this.el.nativeElement);

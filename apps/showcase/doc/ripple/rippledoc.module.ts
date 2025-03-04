@@ -3,7 +3,7 @@ import { AppDocModule } from '@/components/doc/app.doc.module';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { Ripple } from 'primeng/ripple';
+import { Ripple } from '@pixel/primeng/ripple';
 import { AccessibilityDoc } from './accessibilitydoc';
 import { CustomDoc } from './customdoc';
 import { DefaultDoc } from './defaultdoc';

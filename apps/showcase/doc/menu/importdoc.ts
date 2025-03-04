@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { Menu } from 'primeng/menu';`
+        typescript: `import { Menu } from '@pixel/primeng/menu';`
     };
 }

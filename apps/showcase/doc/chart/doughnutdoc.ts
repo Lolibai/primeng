@@ -75,7 +75,7 @@ export class DoughnutDoc implements OnInit {
     <p-chart type="doughnut" [data]="data" [options]="options" class="w-full md:w-[30rem]" />
 </div>`,
         typescript: `import { Component, OnInit, PLATFORM_ID, ChangeDetectorRef, inject, effect } from '@angular/core';
-import { ChartModule } from 'primeng/chart';
+import { ChartModule } from '@pixel/primeng/chart';
 import { AppConfigService } from '@/service/appconfigservice';
 
 @Component({

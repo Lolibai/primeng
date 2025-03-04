@@ -34,8 +34,8 @@ export class DirectiveDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
-import { RippleModule } from 'primeng/ripple';
+import { ButtonModule } from '@pixel/primeng/button';
+import { RippleModule } from '@pixel/primeng/ripple';
 
 @Component({
     selector: 'button-directive-demo',

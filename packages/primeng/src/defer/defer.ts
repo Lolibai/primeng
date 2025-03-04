@@ -1,7 +1,7 @@
 import { isPlatformBrowser } from '@angular/common';
 import { AfterViewInit, ContentChild, Directive, EmbeddedViewRef, EventEmitter, inject, NgModule, OnDestroy, Output, TemplateRef, ViewContainerRef } from '@angular/core';
-import { BaseComponent } from 'primeng/basecomponent';
-import { Nullable } from 'primeng/ts-helpers';
+import { BaseComponent } from '@pixel/primeng/basecomponent';
+import { Nullable } from '@pixel/primeng/ts-helpers';
 
 /**
  * Defer postpones the loading the content that is initially not in the viewport until it becomes visible on scroll.

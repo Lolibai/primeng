@@ -20,7 +20,7 @@ export class BasicDoc {
     <p-progressbar [value]="50" />
 </div>`,
         typescript: `import { Component } from '@angular/core';
-import { ProgressBar } from 'primeng/progressbar';
+import { ProgressBar } from '@pixel/primeng/progressbar';
 
 @Component({
     selector: 'progress-bar-basic-demo',

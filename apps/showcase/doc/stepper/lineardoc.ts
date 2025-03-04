@@ -169,8 +169,8 @@ export class LinearDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { StepperModule } from 'primeng/stepper';
-import { ButtonModule } from 'primeng/button';
+import { StepperModule } from '@pixel/primeng/stepper';
+import { ButtonModule } from '@pixel/primeng/button';
 
 @Component({
     selector: 'stepper-linear-demo-demo',

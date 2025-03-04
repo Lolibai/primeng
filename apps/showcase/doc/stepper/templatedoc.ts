@@ -380,12 +380,12 @@ export class TemplateDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
-import { StepperModule } from 'primeng/stepper';
-import { InputTextModule } from 'primeng/inputtext';
-import { ToggleButton } from 'primeng/togglebutton';
-import { IconField } from 'primeng/iconfield';
-import { InputIcon } from 'primeng/inputicon';
+import { ButtonModule } from '@pixel/primeng/button';
+import { StepperModule } from '@pixel/primeng/stepper';
+import { InputTextModule } from '@pixel/primeng/inputtext';
+import { ToggleButton } from '@pixel/primeng/togglebutton';
+import { IconField } from '@pixel/primeng/iconfield';
+import { InputIcon } from '@pixel/primeng/inputicon';
 import { CommonModule } from '@angular/common';
 
 @Component({

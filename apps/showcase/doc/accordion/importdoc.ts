@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { AccordionModule } from 'primeng/accordion';`
+        typescript: `import { AccordionModule } from '@pixel/primeng/accordion';`
     };
 }

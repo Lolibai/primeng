@@ -1,7 +1,7 @@
 import { Code } from '@/domain/code';
 import { NodeService } from '@/service/nodeservice';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { TreeNode } from 'primeng/api';
+import { TreeNode } from '@pixel/primeng/api';
 
 interface Column {
     field: string;
@@ -201,14 +201,14 @@ export class FilterDoc {
 </div>`,
 
         typescript: `import { Component, OnInit } from '@angular/core';
-import { TreeNode } from 'primeng/api';
+import { TreeNode } from '@pixel/primeng/api';
 import { NodeService } from '@/service/nodeservice';
-import { SelectButton } from 'primeng/selectbutton';
+import { SelectButton } from '@pixel/primeng/selectbutton';
 import { FormsModule } from '@angular/forms';
-import { InputTextModule } from 'primeng/inputtext';
+import { InputTextModule } from '@pixel/primeng/inputtext';
 import { CommonModule } from '@angular/common';
-import { IconFieldModule } from 'primeng/iconfield';
-import { InputIconModule } from 'primeng/inputicon';
+import { IconFieldModule } from '@pixel/primeng/iconfield';
+import { InputIconModule } from '@pixel/primeng/inputicon';
 
 interface Column {
     field: string;

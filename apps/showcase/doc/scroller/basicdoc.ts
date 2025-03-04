@@ -70,7 +70,7 @@ export class BasicDoc {
 </div>`,
 
         typescript: `import { Component, OnInit } from '@angular/core';
-import { ScrollerModule } from 'primeng/scroller';
+import { ScrollerModule } from '@pixel/primeng/scroller';
 
 @Component({
     selector: 'scroller-basic-demo',

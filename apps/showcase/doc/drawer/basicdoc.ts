@@ -44,8 +44,8 @@ export class BasicDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { DrawerModule } from 'primeng/drawer';
-import { ButtonModule } from 'primeng/button';
+import { DrawerModule } from '@pixel/primeng/drawer';
+import { ButtonModule } from '@pixel/primeng/button';
 
 @Component({
     selector: 'drawer-basic-demo',

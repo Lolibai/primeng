@@ -70,9 +70,9 @@ export class FloatLabelDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { PasswordModule } from 'primeng/password';
+import { PasswordModule } from '@pixel/primeng/password';
 import { FormsModule } from '@angular/forms';
-import { FloatLabelModule } from 'primeng/floatlabel';
+import { FloatLabelModule } from '@pixel/primeng/floatlabel';
 
 @Component({
     selector: 'password-floatlabel-demo',

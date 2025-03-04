@@ -1,7 +1,7 @@
 import { Code } from '@/domain/code';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { MenuItem, MessageService } from 'primeng/api';
+import { MenuItem, MessageService } from '@pixel/primeng/api';
 
 @Component({
     selector: 'template-doc',
@@ -203,10 +203,10 @@ export class TemplateDoc implements OnInit {
 </div>`,
 
         typescript: `import { Component, OnInit } from '@angular/core';
-import { MenuItem, MessageService } from 'primeng/api';
-import { SpeedDialModule } from 'primeng/speeddial';
-import { ToastModule } from 'primeng/toast';
-import { ButtonModule } from 'primeng/button';
+import { MenuItem, MessageService } from '@pixel/primeng/api';
+import { SpeedDialModule } from '@pixel/primeng/speeddial';
+import { ToastModule } from '@pixel/primeng/toast';
+import { ButtonModule } from '@pixel/primeng/button';
 import { Router } from '@angular/router';
 
 @Component({

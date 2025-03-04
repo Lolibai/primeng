@@ -29,7 +29,7 @@ export class ImageDoc {
     <p-chip label="Xuxue Feng" image="https://primefaces.org/cdn/primeng/images/demo/avatar/xuxuefeng.png" alt="Avatar image" [removable]="true" />
 </div>`,
         typescript: `import { Component } from '@angular/core';
-import { Chip } from 'primeng/chip';
+import { Chip } from '@pixel/primeng/chip';
 
 @Component({
     selector: 'chip-image-demo',

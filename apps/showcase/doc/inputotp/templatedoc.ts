@@ -56,7 +56,7 @@ export class TemplateDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { InputOtpModule } from 'primeng/inputotp';
+import { InputOtpModule } from '@pixel/primeng/inputotp';
 import { FormsModule } from '@angular/forms';
 
 @Component({

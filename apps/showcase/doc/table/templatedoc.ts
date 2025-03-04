@@ -168,11 +168,11 @@ export class TemplateDoc {
         typescript: `import { Component, OnInit } from '@angular/core';
 import { Product } from '@/domain/product';
 import { ProductService } from '@/service/productservice';
-import { TableModule } from 'primeng/table';
-import { TagModule } from 'primeng/tag';
-import { RatingModule } from 'primeng/rating';
+import { TableModule } from '@pixel/primeng/table';
+import { TagModule } from '@pixel/primeng/tag';
+import { RatingModule } from '@pixel/primeng/rating';
 import { CommonModule } from '@angular/common';
-import { ButtonModule } from 'primeng/button';
+import { ButtonModule } from '@pixel/primeng/button';
 
 @Component({
     selector: 'table-template-demo',

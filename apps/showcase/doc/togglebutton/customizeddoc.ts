@@ -25,7 +25,7 @@ export class CustomizedDoc {
 
         typescript: `import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { ToggleButton } from 'primeng/togglebutton';
+import { ToggleButton } from '@pixel/primeng/togglebutton';
 
 @Component({
     selector: 'toggle-button-customized-demo',

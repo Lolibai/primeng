@@ -1,8 +1,8 @@
-import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DesignTokenField } from '../../app.designtokenfield.component';
-import { FieldsetModule } from 'primeng/fieldset';
+import { Component, Input } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { FieldsetModule } from '@pixel/primeng/fieldset';
+import { DesignTokenField } from '../../app.designtokenfield.component';
 @Component({
     selector: 'design-cs-navigation',
     standalone: true,

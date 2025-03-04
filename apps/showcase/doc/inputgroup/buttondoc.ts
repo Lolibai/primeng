@@ -1,6 +1,6 @@
 import { Code } from '@/domain/code';
 import { Component } from '@angular/core';
-import { MenuItem } from 'primeng/api';
+import { MenuItem } from '@pixel/primeng/api';
 
 @Component({
     selector: 'button-doc',
@@ -93,12 +93,12 @@ export class ButtonDoc {
 
         typescript: `import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { InputGroup } from 'primeng/inputgroup';
-import { InputGroupAddonModule } from 'primeng/inputgroupaddon';
-import { InputTextModule } from 'primeng/inputtext';
-import { ButtonModule } from 'primeng/button';
-import { MenuModule } from 'primeng/menu';
-import { MenuItem } from 'primeng/api';
+import { InputGroup } from '@pixel/primeng/inputgroup';
+import { InputGroupAddonModule } from '@pixel/primeng/inputgroupaddon';
+import { InputTextModule } from '@pixel/primeng/inputtext';
+import { ButtonModule } from '@pixel/primeng/button';
+import { MenuModule } from '@pixel/primeng/menu';
+import { MenuItem } from '@pixel/primeng/api';
 
 @Component({
     selector: 'input-group-button-demo',

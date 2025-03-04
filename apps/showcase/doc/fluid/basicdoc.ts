@@ -74,7 +74,7 @@ export class BasicDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { Fluid } from 'primeng/fluid';
+import { Fluid } from '@pixel/primeng/fluid';
 
 @Component({
     selector: 'fluid-basic-demo',

@@ -1,12 +1,12 @@
 import { animate, AnimationEvent, state, style, transition, trigger } from '@angular/animations';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { AfterContentInit, ChangeDetectionStrategy, Component, ContentChild, ContentChildren, inject, Input, NgModule, numberAttribute, OnDestroy, OnInit, QueryList, TemplateRef, ViewEncapsulation } from '@angular/core';
+import { PrimeTemplate, SharedModule } from '@pixel/primeng/api';
+import { BaseComponent } from '@pixel/primeng/basecomponent';
+import { Button, ButtonProps } from '@pixel/primeng/button';
+import { ChevronUpIcon } from '@pixel/primeng/icons';
+import { ZIndexUtils } from '@pixel/primeng/utils';
 import { getWindowScrollTop } from '@primeuix/utils';
-import { PrimeTemplate, SharedModule } from 'primeng/api';
-import { BaseComponent } from 'primeng/basecomponent';
-import { Button, ButtonProps } from 'primeng/button';
-import { ChevronUpIcon } from 'primeng/icons';
-import { ZIndexUtils } from 'primeng/utils';
 import { ScrollTopStyle } from './style/scrolltopstyle';
 
 /**

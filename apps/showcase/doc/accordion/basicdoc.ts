@@ -124,7 +124,7 @@ At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praese
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { AccordionModule } from 'primeng/accordion';
+import { AccordionModule } from '@pixel/primeng/accordion';
 
 @Component({
     selector: 'accordion-basic-demo',

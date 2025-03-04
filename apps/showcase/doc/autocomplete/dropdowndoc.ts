@@ -32,7 +32,7 @@ export class DropdownDoc {
 
         typescript: `import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { AutoCompleteModule } from 'primeng/autocomplete';
+import { AutoCompleteModule } from '@pixel/primeng/autocomplete';
 
 interface AutoCompleteCompleteEvent {
     originalEvent: Event;

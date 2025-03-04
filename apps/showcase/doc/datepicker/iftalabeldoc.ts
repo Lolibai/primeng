@@ -54,8 +54,8 @@ export class IftaLabelDoc {
 
         typescript: `import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { DatePickerModule } from 'primeng/datepicker';
-import { IftaLabelModule } from 'primeng/iftalabel';
+import { DatePickerModule } from '@pixel/primeng/datepicker';
+import { IftaLabelModule } from '@pixel/primeng/iftalabel';
 
 @Component({
     selector: 'datepicker-ifta-label-demo',

@@ -1,7 +1,7 @@
 import { DOCUMENT } from '@angular/common';
 import { effect, inject, Injectable, signal, untracked } from '@angular/core';
+import { BaseStyle } from '@pixel/primeng/base';
 import { Theme, ThemeService } from '@primeuix/styled';
-import { BaseStyle } from 'primeng/base';
 
 export type ThemeType = { preset?: any; options?: any } | 'none' | boolean | undefined;
 

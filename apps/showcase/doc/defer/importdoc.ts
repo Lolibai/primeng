@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { Defer } from 'primeng/defer';`
+        typescript: `import { Defer } from '@pixel/primeng/defer';`
     };
 }

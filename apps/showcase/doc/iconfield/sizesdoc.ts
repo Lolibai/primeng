@@ -73,9 +73,9 @@ export class SizesDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { InputIcon } from 'primeng/inputicon';
-import { IconField } from 'primeng/iconfield';
-import { InputTextModule } from 'primeng/inputtext';
+import { InputIcon } from '@pixel/primeng/inputicon';
+import { IconField } from '@pixel/primeng/iconfield';
+import { InputTextModule } from '@pixel/primeng/inputtext';
 import { FormsModule } from '@angular/forms';
 
 @Component({

@@ -27,19 +27,19 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
+import { OverlayOptions, OverlayService, PrimeTemplate, ScrollerOptions, SharedModule, TranslationKeys } from '@pixel/primeng/api';
+import { AutoFocus } from '@pixel/primeng/autofocus';
+import { BaseComponent } from '@pixel/primeng/basecomponent';
+import { Chip } from '@pixel/primeng/chip';
+import { PrimeNG } from '@pixel/primeng/config';
+import { ConnectedOverlayScrollHandler } from '@pixel/primeng/dom';
+import { ChevronDownIcon, SpinnerIcon, TimesCircleIcon, TimesIcon } from '@pixel/primeng/icons';
+import { InputText } from '@pixel/primeng/inputtext';
+import { Overlay } from '@pixel/primeng/overlay';
+import { Ripple } from '@pixel/primeng/ripple';
+import { Scroller } from '@pixel/primeng/scroller';
+import { Nullable } from '@pixel/primeng/ts-helpers';
 import { equals, findLastIndex, findSingle, focus, isEmpty, isNotEmpty, resolveFieldData, uuid } from '@primeuix/utils';
-import { OverlayOptions, OverlayService, PrimeTemplate, ScrollerOptions, SharedModule, TranslationKeys } from 'primeng/api';
-import { AutoFocus } from 'primeng/autofocus';
-import { BaseComponent } from 'primeng/basecomponent';
-import { Chip } from 'primeng/chip';
-import { PrimeNG } from 'primeng/config';
-import { ConnectedOverlayScrollHandler } from 'primeng/dom';
-import { ChevronDownIcon, SpinnerIcon, TimesCircleIcon, TimesIcon } from 'primeng/icons';
-import { InputText } from 'primeng/inputtext';
-import { Overlay } from 'primeng/overlay';
-import { Ripple } from 'primeng/ripple';
-import { Scroller } from 'primeng/scroller';
-import { Nullable } from 'primeng/ts-helpers';
 import { AutoCompleteCompleteEvent, AutoCompleteDropdownClickEvent, AutoCompleteLazyLoadEvent, AutoCompleteSelectEvent, AutoCompleteUnselectEvent } from './autocomplete.interface';
 import { AutoCompleteStyle } from './style/autocompletestyle';
 

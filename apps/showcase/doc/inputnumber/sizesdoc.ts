@@ -34,7 +34,7 @@ export class SizesDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { InputNumber } from 'primeng/inputnumber';
+import { InputNumber } from '@pixel/primeng/inputnumber';
 import { FormsModule } from '@angular/forms';
 
 @Component({

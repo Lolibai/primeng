@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { Breadcrumb } from 'primeng/breadcrumb';`
+        typescript: `import { Breadcrumb } from '@pixel/primeng/breadcrumb';`
     };
 }

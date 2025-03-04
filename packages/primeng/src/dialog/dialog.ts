@@ -23,15 +23,15 @@ import {
     ViewEncapsulation,
     ViewRef
 } from '@angular/core';
+import { PrimeTemplate, SharedModule, TranslationKeys } from '@pixel/primeng/api';
+import { BaseComponent } from '@pixel/primeng/basecomponent';
+import { Button, ButtonProps } from '@pixel/primeng/button';
+import { DomHandler } from '@pixel/primeng/dom';
+import { FocusTrap } from '@pixel/primeng/focustrap';
+import { TimesIcon, WindowMaximizeIcon, WindowMinimizeIcon } from '@pixel/primeng/icons';
+import { Nullable, VoidListener } from '@pixel/primeng/ts-helpers';
+import { ZIndexUtils } from '@pixel/primeng/utils';
 import { addClass, appendChild, blockBodyScroll, getOuterHeight, getOuterWidth, getViewport, hasClass, removeClass, setAttribute, unblockBodyScroll, uuid } from '@primeuix/utils';
-import { PrimeTemplate, SharedModule, TranslationKeys } from 'primeng/api';
-import { BaseComponent } from 'primeng/basecomponent';
-import { Button, ButtonProps } from 'primeng/button';
-import { DomHandler } from 'primeng/dom';
-import { FocusTrap } from 'primeng/focustrap';
-import { TimesIcon, WindowMaximizeIcon, WindowMinimizeIcon } from 'primeng/icons';
-import { Nullable, VoidListener } from 'primeng/ts-helpers';
-import { ZIndexUtils } from 'primeng/utils';
 import { DialogStyle } from './style/dialogstyle';
 
 const showAnimation = animation([style({ transform: '{{transform}}', opacity: 0 }), animate('{{transition}}')]);

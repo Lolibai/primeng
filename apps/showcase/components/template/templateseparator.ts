@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, NgModule, ViewEncapsulation } from '@angular/core';
-import { SharedModule } from 'primeng/api';
-import { DividerModule } from 'primeng/divider';
+import { SharedModule } from '@pixel/primeng/api';
+import { DividerModule } from '@pixel/primeng/divider';
 
 @Component({
     selector: 'template-separator',

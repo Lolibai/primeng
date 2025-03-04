@@ -126,8 +126,8 @@ export class LongContentDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { Dialog } from 'primeng/dialog';
-import { ButtonModule } from 'primeng/button';
+import { Dialog } from '@pixel/primeng/dialog';
+import { ButtonModule } from '@pixel/primeng/button';
 
 @Component({
     selector: 'dialog-long-content-demo',

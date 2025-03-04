@@ -22,7 +22,7 @@ export class BasicDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { Image } from 'primeng/image';
+import { Image } from '@pixel/primeng/image';
 
 @Component({
     selector: 'image-basic-demo',

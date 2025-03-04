@@ -38,8 +38,8 @@ export class LifeDoc {
 </div>`,
 
         typescript: `import { Component, signal } from '@angular/core';
-import { Message } from 'primeng/message';
-import { ButtonModule } from 'primeng/button';
+import { Message } from '@pixel/primeng/message';
+import { ButtonModule } from '@pixel/primeng/button';
 
 @Component({
     selector: 'message-life-demo',

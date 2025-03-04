@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { DrawerModule } from 'primeng/drawer';`
+        typescript: `import { DrawerModule } from '@pixel/primeng/drawer';`
     };
 }

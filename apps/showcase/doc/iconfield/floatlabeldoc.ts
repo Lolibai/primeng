@@ -94,11 +94,11 @@ export class FloatLabelDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { InputIconModule } from 'primeng/inputicon';
-import { IconFieldModule } from 'primeng/iconfield';
-import { InputTextModule } from 'primeng/inputtext';
+import { InputIconModule } from '@pixel/primeng/inputicon';
+import { IconFieldModule } from '@pixel/primeng/iconfield';
+import { InputTextModule } from '@pixel/primeng/inputtext';
 import { FormsModule } from '@angular/forms';
-import { FloatLabelModule } from 'primeng/floatlabel';
+import { FloatLabelModule } from '@pixel/primeng/floatlabel';
 
 @Component({
     selector: 'iconfield-float-label-demo',

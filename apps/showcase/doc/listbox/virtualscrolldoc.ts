@@ -56,7 +56,7 @@ export class VirtualScrollDoc {
 
         typescript: `import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { Listbox } from 'primeng/listbox';
+import { Listbox } from '@pixel/primeng/listbox';
 
 @Component({
     selector: 'listbox-virtual-scroll-demo',

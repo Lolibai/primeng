@@ -1,19 +1,19 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { AvatarModule } from 'primeng/avatar';
-import { ButtonModule } from 'primeng/button';
-import { Checkbox } from 'primeng/checkbox';
-import { DividerModule } from 'primeng/divider';
-import { IconField } from 'primeng/iconfield';
-import { InputIcon } from 'primeng/inputicon';
-import { InputTextModule } from 'primeng/inputtext';
-import { MenuModule } from 'primeng/menu';
-import { OverlayBadgeModule } from 'primeng/overlaybadge';
-import { ProgressBar } from 'primeng/progressbar';
-import { TableModule } from 'primeng/table';
-import { Tag } from 'primeng/tag';
+import { AvatarModule } from '@pixel/primeng/avatar';
+import { ButtonModule } from '@pixel/primeng/button';
+import { Checkbox } from '@pixel/primeng/checkbox';
+import { DividerModule } from '@pixel/primeng/divider';
+import { IconField } from '@pixel/primeng/iconfield';
+import { InputIcon } from '@pixel/primeng/inputicon';
+import { InputTextModule } from '@pixel/primeng/inputtext';
+import { MenuModule } from '@pixel/primeng/menu';
+import { OverlayBadgeModule } from '@pixel/primeng/overlaybadge';
+import { ProgressBar } from '@pixel/primeng/progressbar';
+import { TableModule } from '@pixel/primeng/table';
+import { Tag } from '@pixel/primeng/tag';
 
 @Component({
     selector: 'inbox-app',

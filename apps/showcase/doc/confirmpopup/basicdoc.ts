@@ -1,6 +1,6 @@
 import { Code } from '@/domain/code';
 import { Component } from '@angular/core';
-import { ConfirmationService, MessageService } from 'primeng/api';
+import { ConfirmationService, MessageService } from '@pixel/primeng/api';
 
 @Component({
     selector: 'confirm-popup-basic-demo',
@@ -83,10 +83,10 @@ export class BasicDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { ConfirmationService, MessageService } from 'primeng/api';
-import { ButtonModule } from 'primeng/button';
-import { ToastModule } from 'primeng/toast';
-import { ConfirmPopupModule } from 'primeng/confirmpopup';
+import { ConfirmationService, MessageService } from '@pixel/primeng/api';
+import { ButtonModule } from '@pixel/primeng/button';
+import { ToastModule } from '@pixel/primeng/toast';
+import { ConfirmPopupModule } from '@pixel/primeng/confirmpopup';
 
 @Component({
     selector: 'confirm-popup-basic-demo',

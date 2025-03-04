@@ -57,8 +57,8 @@ export class MaximizableDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
-import { Dialog } from 'primeng/dialog';
+import { ButtonModule } from '@pixel/primeng/button';
+import { Dialog } from '@pixel/primeng/dialog';
 
 @Component({
     selector: 'dialog-maximizable-demo',

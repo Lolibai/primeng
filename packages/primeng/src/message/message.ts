@@ -1,10 +1,10 @@
 import { animate, style, transition, trigger } from '@angular/animations';
 import { CommonModule } from '@angular/common';
 import { AfterContentInit, booleanAttribute, ChangeDetectionStrategy, Component, ContentChild, ContentChildren, EventEmitter, inject, Input, NgModule, Output, QueryList, signal, TemplateRef, ViewEncapsulation } from '@angular/core';
-import { PrimeTemplate, SharedModule } from 'primeng/api';
-import { BaseComponent } from 'primeng/basecomponent';
-import { TimesIcon } from 'primeng/icons';
-import { Ripple } from 'primeng/ripple';
+import { PrimeTemplate, SharedModule } from '@pixel/primeng/api';
+import { BaseComponent } from '@pixel/primeng/basecomponent';
+import { TimesIcon } from '@pixel/primeng/icons';
+import { Ripple } from '@pixel/primeng/ripple';
 import { MessageStyle } from './style/messagestyle';
 
 /**

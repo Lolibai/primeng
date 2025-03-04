@@ -357,11 +357,11 @@ export class LayoutDoc {
         typescript: `import { Component } from '@angular/core';
 import { Product } from '@/domain/product';
 import { ProductService } from '@/service/productservice';
-import { DataView } from 'primeng/dataview';
-import { Tag } from 'primeng/tag';
-import { Rating } from 'primeng/rating';
-import { ButtonModule } from 'primeng/button';
-import { SelectButton } from 'primeng/selectbutton';
+import { DataView } from '@pixel/primeng/dataview';
+import { Tag } from '@pixel/primeng/tag';
+import { Rating } from '@pixel/primeng/rating';
+import { ButtonModule } from '@pixel/primeng/button';
+import { SelectButton } from '@pixel/primeng/selectbutton';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { signal } from '@angular/core';

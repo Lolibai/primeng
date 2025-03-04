@@ -2,8 +2,8 @@ import { Code } from '@/domain/code';
 import { NodeService } from '@/service/nodeservice';
 import { PhotoService } from '@/service/photoservice';
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { MenuItem, MessageService } from 'primeng/api';
-import { TerminalService } from 'primeng/terminal';
+import { MenuItem, MessageService } from '@pixel/primeng/api';
+import { TerminalService } from '@pixel/primeng/terminal';
 import { Subscription } from 'rxjs';
 
 @Component({
@@ -529,19 +529,19 @@ export class AdvancedDoc implements OnInit, OnDestroy {
 </div>`,
 
         typescript: `import { Component, OnDestroy, OnInit } from '@angular/core';
-import { MenuItem, MessageService } from 'primeng/api';
-import { TerminalModule } from 'primeng/terminal';
-import { TerminalService } from 'primeng/terminal';
+import { MenuItem, MessageService } from '@pixel/primeng/api';
+import { TerminalModule } from '@pixel/primeng/terminal';
+import { TerminalService } from '@pixel/primeng/terminal';
 import { Subscription } from 'rxjs';
 import { NodeService } from '@/service/nodeservice';
 import { PhotoService } from '@/service/photoservice';
-import { DockModule } from 'primeng/dock';
-import { MenubarModule } from 'primeng/menubar';
-import { ToastModule } from 'primeng/toast';
-import { DialogModule } from 'primeng/dialog';
-import { TreeModule } from 'primeng/tree';
-import { GalleriaModule } from 'primeng/galleria';
-import { TooltipModule } from 'primeng/tooltip';
+import { DockModule } from '@pixel/primeng/dock';
+import { MenubarModule } from '@pixel/primeng/menubar';
+import { ToastModule } from '@pixel/primeng/toast';
+import { DialogModule } from '@pixel/primeng/dialog';
+import { TreeModule } from '@pixel/primeng/tree';
+import { GalleriaModule } from '@pixel/primeng/galleria';
+import { TooltipModule } from '@pixel/primeng/tooltip';
 
 @Component({
     selector: 'dock-advanced-demo',

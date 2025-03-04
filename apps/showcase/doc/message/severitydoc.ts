@@ -35,7 +35,7 @@ export class SeverityDoc {
     <p-message severity="contrast">Contrast Message</p-message>
 </div>`,
         typescript: `import { Component } from '@angular/core';
-import { Message } from 'primeng/message';
+import { Message } from '@pixel/primeng/message';
 
 @Component({
     selector: 'message-severity-demo',

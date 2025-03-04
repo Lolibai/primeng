@@ -126,7 +126,7 @@ export class TemplateDoc {
         typescript: `import { Component, ChangeDetectorRef } from '@angular/core';
 import { Product } from '@/domain/product';
 import { ProductService } from '@/service/productservice';
-import { PickListModule } from 'primeng/picklist';
+import { PickListModule } from '@pixel/primeng/picklist';
 import { CommonModule } from '@angular/common';
 
 @Component({

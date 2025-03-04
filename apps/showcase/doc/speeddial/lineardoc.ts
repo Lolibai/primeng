@@ -1,6 +1,6 @@
 import { Code } from '@/domain/code';
 import { Component, OnInit } from '@angular/core';
-import { MenuItem, MessageService } from 'primeng/api';
+import { MenuItem, MessageService } from '@pixel/primeng/api';
 
 @Component({
     selector: 'linear-doc',
@@ -75,9 +75,9 @@ export class LinearDoc implements OnInit {
 </div>`,
 
         typescript: `import { Component, OnInit } from '@angular/core';
-import { MenuItem, MessageService } from 'primeng/api';
-import { SpeedDial } from 'primeng/speeddial';
-import { ToastModule } from 'primeng/toast';
+import { MenuItem, MessageService } from '@pixel/primeng/api';
+import { SpeedDial } from '@pixel/primeng/speeddial';
+import { ToastModule } from '@pixel/primeng/toast';
 
 @Component({
     selector: 'speed-dial-linear-demo',

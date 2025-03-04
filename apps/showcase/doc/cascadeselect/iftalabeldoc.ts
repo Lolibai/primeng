@@ -36,8 +36,8 @@ export class IftaLabelDoc {
 
         typescript: `import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { CascadeSelectModule } from 'primeng/cascadeselect';
-import { IftaLabelModule } from 'primeng/iftalabel';
+import { CascadeSelectModule } from '@pixel/primeng/cascadeselect';
+import { IftaLabelModule } from '@pixel/primeng/iftalabel';
 
 @Component({
     selector: 'cascade-select-ifta-label-demo',

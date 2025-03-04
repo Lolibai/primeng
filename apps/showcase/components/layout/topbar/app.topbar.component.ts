@@ -6,8 +6,8 @@ import { afterNextRender, booleanAttribute, Component, computed, ElementRef, Inj
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import docsearch from '@docsearch/js';
-import { DomHandler } from 'primeng/dom';
-import { StyleClass } from 'primeng/styleclass';
+import { DomHandler } from '@pixel/primeng/dom';
+import { StyleClass } from '@pixel/primeng/styleclass';
 
 @Component({
     selector: 'app-topbar',

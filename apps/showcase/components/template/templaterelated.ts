@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Input, NgModule, ViewEncapsulation } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { SharedModule } from 'primeng/api';
+import { SharedModule } from '@pixel/primeng/api';
 
 @Component({
     selector: 'template-related',

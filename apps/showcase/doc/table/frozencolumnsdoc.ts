@@ -144,8 +144,8 @@ export class FrozenColumnsDoc {
         typescript: `import { Component, OnInit } from '@angular/core';
 import { Customer } from '@/domain/customer';
 import { CustomerService } from '@/service/customerservice';
-import { TableModule } from 'primeng/table';
-import { ToggleButton } from 'primeng/togglebutton';
+import { TableModule } from '@pixel/primeng/table';
+import { ToggleButton } from '@pixel/primeng/togglebutton';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 

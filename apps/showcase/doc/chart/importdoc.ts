@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { ChartModule } from 'primeng/chart';`
+        typescript: `import { ChartModule } from '@pixel/primeng/chart';`
     };
 }

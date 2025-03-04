@@ -25,17 +25,17 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { BlockableUI, PrimeTemplate, ScrollerOptions, SharedModule, TranslationKeys, TreeDragDropService, TreeNode } from '@pixel/primeng/api';
+import { BaseComponent } from '@pixel/primeng/basecomponent';
+import { Checkbox } from '@pixel/primeng/checkbox';
+import { IconField } from '@pixel/primeng/iconfield';
+import { ChevronDownIcon, ChevronRightIcon, SearchIcon, SpinnerIcon } from '@pixel/primeng/icons';
+import { InputIcon } from '@pixel/primeng/inputicon';
+import { InputText } from '@pixel/primeng/inputtext';
+import { Ripple } from '@pixel/primeng/ripple';
+import { Scroller } from '@pixel/primeng/scroller';
+import { Nullable } from '@pixel/primeng/ts-helpers';
 import { find, findSingle, focus, hasClass, removeAccents, resolveFieldData } from '@primeuix/utils';
-import { BlockableUI, PrimeTemplate, ScrollerOptions, SharedModule, TranslationKeys, TreeDragDropService, TreeNode } from 'primeng/api';
-import { BaseComponent } from 'primeng/basecomponent';
-import { Checkbox } from 'primeng/checkbox';
-import { IconField } from 'primeng/iconfield';
-import { ChevronDownIcon, ChevronRightIcon, SearchIcon, SpinnerIcon } from 'primeng/icons';
-import { InputIcon } from 'primeng/inputicon';
-import { InputText } from 'primeng/inputtext';
-import { Ripple } from 'primeng/ripple';
-import { Scroller } from 'primeng/scroller';
-import { Nullable } from 'primeng/ts-helpers';
 import { Subscription } from 'rxjs';
 import { TreeStyle } from './style/treestyle';
 import {

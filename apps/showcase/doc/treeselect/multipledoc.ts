@@ -45,7 +45,7 @@ export class MultipleDoc {
         typescript: `import { Component } from '@angular/core';
 import { NodeService } from '@/service/nodeservice';
 import { FormsModule } from '@angular/forms';
-import { TreeSelect } from 'primeng/treeselect';
+import { TreeSelect } from '@pixel/primeng/treeselect';
 
 @Component({
     selector: 'tree-select-multiple-demo',

@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { DragDropModule } from 'primeng/dragdrop';`
+        typescript: `import { DragDropModule } from '@pixel/primeng/dragdrop';`
     };
 }

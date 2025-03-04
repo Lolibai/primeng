@@ -4,13 +4,13 @@ import { AppConfigService } from '@/service/appconfigservice';
 import { CustomerService } from '@/service/customerservice';
 import { CommonModule } from '@angular/common';
 import { Component, Inject, PLATFORM_ID, ViewChild } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
-import { IconField } from 'primeng/iconfield';
-import { InputIcon } from 'primeng/inputicon';
-import { InputTextModule } from 'primeng/inputtext';
-import { ProgressBar } from 'primeng/progressbar';
-import { Table, TableModule } from 'primeng/table';
-import { Tag } from 'primeng/tag';
+import { ButtonModule } from '@pixel/primeng/button';
+import { IconField } from '@pixel/primeng/iconfield';
+import { InputIcon } from '@pixel/primeng/inputicon';
+import { InputTextModule } from '@pixel/primeng/inputtext';
+import { ProgressBar } from '@pixel/primeng/progressbar';
+import { Table, TableModule } from '@pixel/primeng/table';
+import { Tag } from '@pixel/primeng/tag';
 
 @Component({
     selector: 'theme-section',

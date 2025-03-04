@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { MultiSelectModule } from 'primeng/multiselect';`
+        typescript: `import { MultiSelectModule } from '@pixel/primeng/multiselect';`
     };
 }

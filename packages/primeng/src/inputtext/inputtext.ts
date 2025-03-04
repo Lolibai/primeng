@@ -1,8 +1,8 @@
 import { AfterViewInit, booleanAttribute, Directive, DoCheck, HostListener, inject, Input, NgModule, Optional } from '@angular/core';
 import { NgModel } from '@angular/forms';
+import { BaseComponent } from '@pixel/primeng/basecomponent';
+import { Nullable } from '@pixel/primeng/ts-helpers';
 import { isEmpty } from '@primeuix/utils';
-import { BaseComponent } from 'primeng/basecomponent';
-import { Nullable } from 'primeng/ts-helpers';
 import { InputTextStyle } from './style/inputtextstyle';
 
 /**

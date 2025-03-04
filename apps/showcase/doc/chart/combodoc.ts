@@ -117,7 +117,7 @@ export class ComboDoc implements OnInit {
         typescript: `import { isPlatformBrowser } from '@angular/common';
 import { Component, OnInit, PLATFORM_ID, ChangeDetectorRef, inject, effect } from '@angular/core';
 import { AppConfigService } from '@/service/appconfigservice';
-import { ChartModule } from 'primeng/chart';
+import { ChartModule } from '@pixel/primeng/chart';
 
 @Component({
     selector: 'chart-combo-demo',

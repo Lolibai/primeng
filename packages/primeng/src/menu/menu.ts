@@ -30,15 +30,15 @@ import {
 } from '@angular/core';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
+import { MenuItem, OverlayService, PrimeTemplate, SharedModule } from '@pixel/primeng/api';
+import { BadgeModule } from '@pixel/primeng/badge';
+import { BaseComponent } from '@pixel/primeng/basecomponent';
+import { ConnectedOverlayScrollHandler } from '@pixel/primeng/dom';
+import { Ripple } from '@pixel/primeng/ripple';
+import { TooltipModule } from '@pixel/primeng/tooltip';
+import { Nullable, VoidListener } from '@pixel/primeng/ts-helpers';
+import { ZIndexUtils } from '@pixel/primeng/utils';
 import { absolutePosition, appendChild, find, findSingle, focus, isTouchDevice, relativePosition, uuid } from '@primeuix/utils';
-import { MenuItem, OverlayService, PrimeTemplate, SharedModule } from 'primeng/api';
-import { BadgeModule } from 'primeng/badge';
-import { BaseComponent } from 'primeng/basecomponent';
-import { ConnectedOverlayScrollHandler } from 'primeng/dom';
-import { Ripple } from 'primeng/ripple';
-import { TooltipModule } from 'primeng/tooltip';
-import { Nullable, VoidListener } from 'primeng/ts-helpers';
-import { ZIndexUtils } from 'primeng/utils';
 import { MenuStyle } from './style/menustyle';
 
 @Pipe({

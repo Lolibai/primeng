@@ -57,8 +57,8 @@ export class TimeDoc {
 
         typescript: `import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { DatePicker } from 'primeng/datepicker';
-import { Fluid } from 'primeng/fluid';
+import { DatePicker } from '@pixel/primeng/datepicker';
+import { Fluid } from '@pixel/primeng/fluid';
 
 @Component({
     selector: 'datepicker-time-demo',

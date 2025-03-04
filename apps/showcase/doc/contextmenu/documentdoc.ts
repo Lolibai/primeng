@@ -1,6 +1,6 @@
 import { Code } from '@/domain/code';
 import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
+import { MenuItem } from '@pixel/primeng/api';
 
 @Component({
     selector: 'context-menu-document-demo',
@@ -57,8 +57,8 @@ export class DocumentDoc implements OnInit {
 </div>`,
 
         typescript: `import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
-import { ContextMenu } from 'primeng/contextmenu';
+import { MenuItem } from '@pixel/primeng/api';
+import { ContextMenu } from '@pixel/primeng/contextmenu';
 
 @Component({
     selector: 'context-menu-document-demo',
@@ -103,7 +103,7 @@ export class ContextMenuDocumentDemo implements OnInit {
         module: `
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { ContextMenu } from 'primeng/contextmenu';
+import { ContextMenu } from '@pixel/primeng/contextmenu';
 import { ContextMenuDemo } from './contextmenudemo';
 
 @NgModule({

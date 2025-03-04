@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { BaseIcon } from 'primeng/icons/baseicon';
+import { BaseIcon } from '@pixel/primeng/icons/baseicon';
 
 @Component({
     selector: 'AngleDoubleUpIcon',

@@ -43,7 +43,7 @@ export class RoundedDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
+import { ButtonModule } from '@pixel/primeng/button';
 
 @Component({
     selector: 'button-rounded-demo',

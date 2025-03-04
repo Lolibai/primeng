@@ -1,6 +1,6 @@
 import { Code } from '@/domain/code';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { TreeNode } from 'primeng/api';
+import { TreeNode } from '@pixel/primeng/api';
 
 @Component({
     selector: 'column-group-doc',
@@ -387,8 +387,8 @@ export class ColumnGroupDoc {
 </div>`,
 
         typescript: `import { Component, OnInit } from '@angular/core';
-import { TreeNode } from 'primeng/api';
-import { TreeTableModule } from 'primeng/treetable';
+import { TreeNode } from '@pixel/primeng/api';
+import { TreeTableModule } from '@pixel/primeng/treetable';
 
 @Component({
     selector: 'tree-table-column-group-demo',

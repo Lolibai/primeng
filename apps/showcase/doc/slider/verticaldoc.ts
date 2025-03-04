@@ -25,7 +25,7 @@ export class VerticalDoc {
 
         typescript: `import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { Slider } from 'primeng/slider';
+import { Slider } from '@pixel/primeng/slider';
 
 @Component({
     selector: 'slider-vertical-demo',

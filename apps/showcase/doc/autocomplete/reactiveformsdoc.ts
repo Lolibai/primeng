@@ -37,7 +37,7 @@ export class ReactiveFormsDoc {
         typescript: `import { Component, OnInit } from '@angular/core';
 import { CountryService } from '@/service/countryservice';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
-import { AutoComplete } from 'primeng/autocomplete';
+import { AutoComplete } from '@pixel/primeng/autocomplete';
 
 interface AutoCompleteCompleteEvent {
     originalEvent: Event;

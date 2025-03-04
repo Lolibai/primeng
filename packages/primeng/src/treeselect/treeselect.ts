@@ -20,15 +20,15 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
+import { OverlayOptions, PrimeTemplate, ScrollerOptions, SharedModule, TreeNode } from '@pixel/primeng/api';
+import { AutoFocus } from '@pixel/primeng/autofocus';
+import { BaseComponent } from '@pixel/primeng/basecomponent';
+import { Chip } from '@pixel/primeng/chip';
+import { ChevronDownIcon, TimesIcon } from '@pixel/primeng/icons';
+import { Overlay } from '@pixel/primeng/overlay';
+import { Tree, TreeFilterEvent, TreeNodeSelectEvent, TreeNodeUnSelectEvent } from '@pixel/primeng/tree';
+import { Nullable } from '@pixel/primeng/ts-helpers';
 import { focus, getFirstFocusableElement, getFocusableElements, getLastFocusableElement, hasClass, isNotEmpty, uuid } from '@primeuix/utils';
-import { OverlayOptions, PrimeTemplate, ScrollerOptions, SharedModule, TreeNode } from 'primeng/api';
-import { AutoFocus } from 'primeng/autofocus';
-import { BaseComponent } from 'primeng/basecomponent';
-import { Chip } from 'primeng/chip';
-import { ChevronDownIcon, TimesIcon } from 'primeng/icons';
-import { Overlay } from 'primeng/overlay';
-import { Tree, TreeFilterEvent, TreeNodeSelectEvent, TreeNodeUnSelectEvent } from 'primeng/tree';
-import { Nullable } from 'primeng/ts-helpers';
 import { TreeSelectStyle } from './style/treeselectstyle';
 import { TreeSelectNodeCollapseEvent, TreeSelectNodeExpandEvent } from './treeselect.interface';
 

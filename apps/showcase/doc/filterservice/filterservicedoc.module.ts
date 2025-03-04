@@ -3,7 +3,7 @@ import { AppDocModule } from '@/components/doc/app.doc.module';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { TableModule } from 'primeng/table';
+import { TableModule } from '@pixel/primeng/table';
 import { ApiDoc } from './apidoc';
 import { BuiltInConstraintsDoc } from './builtinconstraintsdoc';
 import { CustomConstraintsDoc } from './customconstraintsdoc';

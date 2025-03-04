@@ -3,7 +3,7 @@ import { AppConfigService } from '@/service/appconfigservice';
 import { CommonModule } from '@angular/common';
 import { afterNextRender, ChangeDetectionStrategy, ChangeDetectorRef, Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { StyleClass } from 'primeng/styleclass';
+import { StyleClass } from '@pixel/primeng/styleclass';
 
 @Component({
     selector: 'app-news',
