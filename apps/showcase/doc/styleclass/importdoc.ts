@@ -3,10 +3,11 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'style-class-import-doc',
+    standalone: false,
     template: ` <app-code [code]="code" [hideToggleCode]="true"></app-code> `
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { StyleClass } from '@pixel/primeng/styleclass';`
+        typescript: `import { StyleClassModule } from '@pixel/primeng/styleclass';`
     };
 }

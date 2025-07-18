@@ -94,19 +94,21 @@ export interface PanelHeaderIconsTemplateContext {
                         (keydown)="onKeyDown($event)"
                         [buttonProps]="toggleButtonProps"
                     >
-                        <ng-container *ngIf="!headerIconsTemplate && !_headerIconsTemplate && !toggleButtonProps?.icon">
-                            <ng-container *ngIf="!collapsed">
-                                <span *ngIf="expandIcon" [class]="expandIcon"></span>
-                                <MinusIcon *ngIf="!expandIcon" />
+                        <ng-template #icon>
+                            <ng-container *ngIf="!headerIconsTemplate && !_headerIconsTemplate && !toggleButtonProps?.icon">
+                                <ng-container *ngIf="!collapsed">
+                                    <span *ngIf="expandIcon" [class]="expandIcon"></span>
+                                    <MinusIcon *ngIf="!expandIcon" />
+                                </ng-container>
+
+                                <ng-container *ngIf="collapsed">
+                                    <span *ngIf="collapseIcon" [class]="collapseIcon"></span>
+                                    <PlusIcon *ngIf="!collapseIcon" />
+                                </ng-container>
                             </ng-container>
 
-                            <ng-container *ngIf="collapsed">
-                                <span *ngIf="collapseIcon" [class]="collapseIcon"></span>
-                                <PlusIcon *ngIf="!collapseIcon" />
-                            </ng-container>
-                        </ng-container>
-
-                        <ng-template *ngTemplateOutlet="headerIconsTemplate || _headerIconsTemplate; context: { $implicit: collapsed }"></ng-template>
+                            <ng-template *ngTemplateOutlet="headerIconsTemplate || _headerIconsTemplate; context: { $implicit: collapsed }"></ng-template>
+                        </ng-template>
                     </p-button>
                 </div>
             </div>
@@ -226,7 +228,6 @@ export class Panel extends BaseComponent implements AfterContentInit, BlockableU
     /**
      * Specifies if header of panel cannot be displayed.
      * @group Props
-     * @deprecated since v15.4.2, use `headericons` template instead.
      */
     @Input({ transform: booleanAttribute }) showHeader: boolean = true;
     /**
@@ -279,7 +280,7 @@ export class Panel extends BaseComponent implements AfterContentInit, BlockableU
      * ```
      * @group Templates
      */
-    @ContentChild('icon', { descendants: false }) iconTemplate: TemplateRef<any> | undefined;
+    @ContentChild('icons', { descendants: false }) iconTemplate: TemplateRef<any> | undefined;
 
     /**
      * Defines template option for content.

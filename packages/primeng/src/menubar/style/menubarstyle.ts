@@ -129,7 +129,7 @@ const theme = ({ dt }) => `
     z-index: 1;
     background: ${dt('menubar.submenu.background')};
     border: 1px solid ${dt('menubar.submenu.border.color')};
-    border-radius: ${dt('menubar.border.radius')};
+    border-radius: ${dt('menubar.submenu.border.radius')};
     box-shadow: ${dt('menubar.submenu.shadow')};
     color: ${dt('menubar.submenu.color')};
     flex-direction: column;

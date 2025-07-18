@@ -6,6 +6,7 @@ import { Table } from '@pixel/primeng/table';
 
 @Component({
     selector: 'customers-doc',
+    standalone: false,
     template: ` <app-docsectiontext>
             <p>DataTable with selection, pagination, filtering, sorting and templating.</p>
         </app-docsectiontext>
@@ -717,7 +718,7 @@ export class TableCustomersDemo implements OnInit{
                 return 'info';
 
             case 'negotiation':
-                return 'warning';
+                return 'warn';
 
             case 'renewal':
                 return null;
@@ -764,7 +765,7 @@ export class TableCustomersDemo implements OnInit{
                 return 'info';
 
             case 'negotiation':
-                return 'warning';
+                return 'warn';
 
             case 'renewal':
                 return null;

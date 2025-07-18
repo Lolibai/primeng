@@ -5,6 +5,7 @@ import { ButtonModule } from '@pixel/primeng/button';
 
 @Component({
     selector: 'template-license',
+    standalone: false,
     template: `
         <div class="px-6 py-6 sm:px-10 sm:py-10 lg:py-20 lg:px-8 rounded-3xl bg-surface-0 dark:bg-surface-900">
             <div class="template-license max-w-3xl mx-auto">
@@ -28,8 +29,8 @@ import { ButtonModule } from '@pixel/primeng/button';
                     </ng-container>
                 </div>
                 <p class="text-muted-color text-center mt-6 mb-0">{{ license?.description }}</p>
-                <p class="text-muted-color text-center mt-6 mb-0">
-                    Visit the 
+                <p *ngIf="license.documentLink" class="text-muted-color text-center mt-6 mb-0">
+                    Visit the
                     <a [href]="license?.documentLink" class="text-primary cursor-pointer transition-all hover:underline" target="_blank"> official documentation </a>
                      for more information.
                 </p>

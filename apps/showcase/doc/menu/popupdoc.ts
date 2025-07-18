@@ -4,6 +4,7 @@ import { MenuItem, MessageService } from '@pixel/primeng/api';
 
 @Component({
     selector: 'popup-doc',
+    standalone: false,
     template: `
         <app-docsectiontext>
             <p>Popup mode is enabled by setting <i>popup</i> property to <i>true</i> and calling <i>toggle</i> method with an event of the target.</p>
@@ -37,7 +38,7 @@ export class PopupDoc implements OnInit {
         ];
     }
     code: Code = {
-        basic: `<p-toast />
+        basic: `
 <p-menu #menu [model]="items" [popup]="true" />
 <p-button (click)="menu.toggle($event)" icon="pi pi-ellipsis-v"/>`,
 

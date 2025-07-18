@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'zindex-doc',
+    standalone: false,
     template: `
         <app-docsectiontext>
             <p>
@@ -16,24 +17,13 @@ import { Component } from '@angular/core';
 })
 export class ZIndexDoc {
     code: Code = {
-        typescript: `import { PrimeNG } from '@pixel/primeng/config';
-
-@Component({
-    selector: 'app-root',
-    templateUrl: './app.component.html'
-})
-export class AppComponent implements OnInit {
-
-    constructor(private primeng: PrimeNG) {}
-
-    ngOnInit() {
-        this.primeng.zIndex = {
-            modal: 1100,    // dialog, sidebar
-            overlay: 1000,  // dropdown, overlaypanel
-            menu: 1000,     // overlay menus
-            tooltip: 1100   // tooltip
-        };
+        typescript: `providePrimeNG({
+    zIndex: {
+        modal: 1100,    // dialog, sidebar
+        overlay: 1000,  // dropdown, overlaypanel
+        menu: 1000,     // overlay menus
+        tooltip: 1100   // tooltip
     }
-}`
+})`
     };
 }

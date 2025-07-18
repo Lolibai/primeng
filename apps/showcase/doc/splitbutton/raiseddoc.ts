@@ -4,6 +4,7 @@ import { MenuItem, MessageService } from '@pixel/primeng/api';
 
 @Component({
     selector: 'raised-doc',
+    standalone: false,
     template: `
         <app-docsectiontext>
             <p>Raised buttons display a shadow to indicate elevation.</p>

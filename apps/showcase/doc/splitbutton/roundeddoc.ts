@@ -4,6 +4,7 @@ import { MenuItem, MessageService } from '@pixel/primeng/api';
 
 @Component({
     selector: 'rounded-doc',
+    standalone: false,
     template: `
         <app-docsectiontext>
             <p>Rounded buttons have a circular border radius.</p>

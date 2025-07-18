@@ -18,6 +18,7 @@ interface ExportColumn {
 
 @Component({
     selector: 'products-doc',
+    standalone: false,
     template: ` <app-docsectiontext>
             <p>CRUD implementation example with a Dialog.</p>
         </app-docsectiontext>
@@ -500,7 +501,7 @@ export class ProductsDoc {
 
     <p-confirmDialog [style]="{ width: '450px' }" />
 </div>`,
-        typescript: `import { Component, OnInit } from '@angular/core';
+        typescript: `import { ChangeDetectorRef, Component, OnInit, ViewChild } from '@angular/core';
 import { ConfirmationService, MessageService } from '@pixel/primeng/api';
 import { Product } from '@/domain/product';
 import { ProductService } from '@/service/productservice';
@@ -580,6 +581,10 @@ export class TableProductsDemo implements OnInit{
         this.dt.exportCSV();
     }
 
+    ngOnInit() {
+        this.loadDemoData();
+    }
+    
     loadDemoData() {
         this.productService.getProducts().then((data) => {
             this.products = data;
@@ -681,7 +686,7 @@ export class TableProductsDemo implements OnInit{
             case 'INSTOCK':
                 return 'success';
             case 'LOWSTOCK':
-                return 'warning';
+                return 'warn';
             case 'OUTOFSTOCK':
                 return 'danger';
         }
@@ -888,7 +893,7 @@ export interface Product {
             case 'INSTOCK':
                 return 'success';
             case 'LOWSTOCK':
-                return 'warning';
+                return 'warn';
             case 'OUTOFSTOCK':
                 return 'danger';
         }

@@ -4,6 +4,7 @@ import { TreeNode } from '@pixel/primeng/api';
 
 @Component({
     selector: 'lazy-demo',
+    standalone: false,
     template: `
         <app-docsectiontext>
             <p>

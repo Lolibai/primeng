@@ -5,6 +5,7 @@ import { Component, inject, signal } from '@angular/core';
 
 @Component({
     selector: 'data-view-basic-demo',
+    standalone: false,
     template: `
         <app-docsectiontext>
             <p>DataView requires a value to display along with a <i>list</i> template that receives an object in the collection to return content.</p>
@@ -13,7 +14,7 @@ import { Component, inject, signal } from '@angular/core';
             <p-dataview #dv [value]="products()">
                 <ng-template #list let-items>
                     <div class="grid grid-cols-12 gap-4 grid-nogutter">
-                        <div class="col-span-12" *ngFor="let item of items; let first = first" class="col-span-12">
+                        <div class="col-span-12" *ngFor="let item of items; let first = first">
                             <div class="flex flex-col sm:flex-row sm:items-center p-6 gap-4" [ngClass]="{ 'border-t border-surface-200 dark:border-surface-700': !first }">
                                 <div class="md:w-40 relative">
                                     <img class="block xl:block mx-auto rounded-border w-full" [src]="'https://primefaces.org/cdn/primeng/images/demo/product/' + item.image" [alt]="item.name" />
@@ -183,14 +184,14 @@ export class BasicDoc {
     </p-dataview>
 </div>`,
 
-        typescript: `import { Component } from '@angular/core';
+        typescript: `import { Component, inject, signal } from '@angular/core';
 import { Product } from '@/domain/product';
 import { ProductService } from '@/service/productservice';
 import { DataView } from '@pixel/primeng/dataview';
 import { ButtonModule } from '@pixel/primeng/button';
 import { Tag } from '@pixel/primeng/tag';
 import { CommonModule } from '@angular/common';
-import { signal } from '@angular/core';
+
 
 @Component({
     selector: 'data-view-basic-demo',
@@ -203,6 +204,7 @@ export class DataViewBasicDemo {
     products = signal<any>([]);
 
     productService = inject(ProductService);
+    
     ngOnInit() {
         this.productService.getProducts().then((data) => {
             const d = data.slice(0, 5);

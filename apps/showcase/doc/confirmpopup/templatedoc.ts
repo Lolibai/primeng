@@ -4,20 +4,21 @@ import { ConfirmationService, MessageService } from '@pixel/primeng/api';
 
 @Component({
     selector: 'confirm-popup-template-demo',
+    standalone: false,
     template: `
         <app-docsectiontext>
             <p>Content section can be customized using <i>content</i> template.</p>
         </app-docsectiontext>
         <div class="card flex justify-center">
             <p-toast />
-            <p-confirmPopup>
+            <p-confirmpopup>
                 <ng-template #content let-message>
                     <div class="flex flex-col items-center w-full gap-4 border-b border-surface-200 dark:border-surface-700 p-4 mb-4 pb-0">
                         <i [class]="message.icon" class="!text-6xl text-primary-500"></i>
                         <p>{{ message.message }}</p>
                     </div>
                 </ng-template>
-            </p-confirmPopup>
+            </p-confirmpopup>
             <p-button (click)="confirm($event)" label="Save" />
         </div>
         <app-code [code]="code" selector="confirm-popup-template-demo"></app-code>
@@ -65,7 +66,7 @@ export class TemplateDoc {
 
     code: Code = {
         basic: `<p-toast />
-<p-confirmPopup>
+<p-confirmpopup>
     <ng-template #content let-message>
         <div
             class="flex flex-col items-center w-full gap-4 border-b border-surface-200 dark:border-surface-700 p-4 mb-4 pb-0"
@@ -74,12 +75,12 @@ export class TemplateDoc {
             <p>{{ message.message }}</p>
         </div>
     </ng-template>
-</p-confirmPopup>
+</p-confirmpopup>
 <p-button (click)="confirm($event)" label="Save" />`,
 
         html: `<div class="card flex justify-center">
     <p-toast />
-    <p-confirmPopup>
+    <p-confirmpopup>
         <ng-template #content let-message>
             <div
                 class="flex flex-col items-center w-full gap-4 border-b border-surface-200 dark:border-surface-700 p-4 mb-4 pb-0"
@@ -88,7 +89,7 @@ export class TemplateDoc {
                 <p>{{ message.message }}</p>
             </div>
         </ng-template>
-    </p-confirmPopup>
+    </p-confirmpopup>
     <p-button (click)="confirm($event)" label="Save" />
 </div>`,
 

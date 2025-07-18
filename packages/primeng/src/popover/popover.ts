@@ -27,6 +27,7 @@ import { BaseComponent } from '@pixel/primeng/basecomponent';
 import { ConnectedOverlayScrollHandler } from '@pixel/primeng/dom';
 import { Nullable, VoidListener } from '@pixel/primeng/ts-helpers';
 import { ZIndexUtils } from '@pixel/primeng/utils';
+import { $dt } from '@primeuix/styled';
 import { absolutePosition, addClass, appendChild, findSingle, getOffset, isIOS, isTouchDevice } from '@primeuix/utils';
 import { Subscription } from 'rxjs';
 import { PopoverStyle } from './style/popoverstyle';
@@ -59,7 +60,7 @@ import { PopoverStyle } from './style/popoverstyle';
         >
             <div class="p-popover-content" (click)="onContentClick($event)" (mousedown)="onContentClick($event)">
                 <ng-content></ng-content>
-                <ng-container *ngTemplateOutlet="contentTemplate || _contentTemplate"></ng-container>
+                <ng-template *ngTemplateOutlet="contentTemplate || _contentTemplate; context: { closeCallback: onCloseClick.bind(this) }"></ng-template>
             </div>
         </div>
     `,
@@ -109,11 +110,6 @@ export class Popover extends BaseComponent implements AfterContentInit, OnDestro
      * @group Props
      */
     @Input({ transform: booleanAttribute }) dismissable: boolean = true;
-    /**
-     * When enabled, displays a close icon at top right corner.
-     * @group Props
-     */
-    @Input({ transform: booleanAttribute }) showCloseIcon: boolean | undefined;
     /**
      * Inline style of the component.
      * @group Props
@@ -339,20 +335,18 @@ export class Popover extends BaseComponent implements AfterContentInit, OnDestro
         if (containerOffset.left < targetOffset.left) {
             arrowLeft = targetOffset.left - containerOffset.left - parseFloat(borderRadius!) * 2;
         }
-        this.container?.style.setProperty('--overlayArrowLeft', `${arrowLeft}px`);
+        this.container?.style.setProperty($dt('popover.arrow.left').name, `${arrowLeft}px`);
 
         if (containerOffset.top < targetOffset.top) {
+            this.container.setAttribute('data-p-popover-flipped', 'true');
             addClass(this.container, 'p-popover-flipped');
-
-            if (this.showCloseIcon) {
-                this.renderer.setStyle(this.container, 'margin-top', '-30px');
-            }
         }
     }
 
     onAnimationStart(event: AnimationEvent) {
         if (event.toState === 'open') {
             this.container = event.element;
+            this.container?.setAttribute(this.attrSelector, '');
             this.appendContainer();
             this.align();
             this.bindDocumentClickListener();

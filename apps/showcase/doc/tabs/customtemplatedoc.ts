@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'template-doc',
+    standalone: false,
     template: `
         <app-docsectiontext>
             <p>Custom content for a tab is defined with the default ng-content.</p>
@@ -13,16 +14,16 @@ import { Component } from '@angular/core';
                     <ng-template #previcon>
                         <i class="pi pi-minus"></i>
                     </ng-template>
-                    <p-tab value="0">
-                        <p-avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" shape="circle" />
+                    <p-tab value="0" class="flex items-center !gap-2">
+                        <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" shape="circle" />
                         <span class="font-bold whitespace-nowrap">Amy Elsner</span>
                     </p-tab>
-                    <p-tab value="1">
-                        <p-avatar image="https://primefaces.org/cdn/primevue/images/avatar/onyamalimba.png" shape="circle" />
+                    <p-tab value="1" class="flex items-center !gap-2">
+                        <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/onyamalimba.png" shape="circle" />
                         <span class="font-bold whitespace-nowrap">Onyama Limba</span>
                     </p-tab>
-                    <p-tab value="2">
-                        <p-avatar image="https://primefaces.org/cdn/primevue/images/avatar/ionibowcher.png" shape="circle" />
+                    <p-tab value="2" class="flex items-center !gap-2">
+                        <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/ionibowcher.png" shape="circle" />
                         <span class="font-bold whitespace-nowrap">Ioni Bowcher</span>
                         <p-badge value="2" />
                     </p-tab>
@@ -63,16 +64,16 @@ export class TemplateDoc {
         <ng-template #previcon>
             <i class="pi pi-minus"></i>
         </ng-template>
-        <p-tab value="0">
-            <p-avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" shape="circle"/>
+        <p-tab value="0" class="flex items-center !gap-2">
+            <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" shape="circle"/>
             <span class="font-bold whitespace-nowrap">Amy Elsner</span>
         </p-tab>
-        <p-tab value="1">
-            <p-avatar image="https://primefaces.org/cdn/primevue/images/avatar/onyamalimba.png" shape="circle" />
+        <p-tab value="1" class="flex items-center !gap-2">
+            <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/onyamalimba.png" shape="circle" />
             <span class="font-bold whitespace-nowrap">Onyama Limba</span>
         </p-tab>
-        <p-tab value="2">
-            <p-avatar image="https://primefaces.org/cdn/primevue/images/avatar/ionibowcher.png" shape="circle" />
+        <p-tab value="2" class="flex items-center !gap-2">
+            <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/ionibowcher.png" shape="circle" />
             <span class="font-bold whitespace-nowrap">Ioni Bowcher</span>
             <p-badge value="2" />
         </p-tab>
@@ -117,16 +118,16 @@ export class TemplateDoc {
             <ng-template #previcon>
                 <i class="pi pi-minus"></i>
             </ng-template>
-            <p-tab value="0">
-                <p-avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" shape="circle"/>
+            <p-tab value="0" class="flex items-center !gap-2">
+                <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" shape="circle"/>
                 <span class="font-bold whitespace-nowrap">Amy Elsner</span>
             </p-tab>
-            <p-tab value="1">
-                <p-avatar image="https://primefaces.org/cdn/primevue/images/avatar/onyamalimba.png" shape="circle" />
+            <p-tab value="1" class="flex items-center !gap-2">
+                <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/onyamalimba.png" shape="circle" />
                 <span class="font-bold whitespace-nowrap">Onyama Limba</span>
             </p-tab>
-            <p-tab value="2">
-                <p-avatar image="https://primefaces.org/cdn/primevue/images/avatar/ionibowcher.png" shape="circle" />
+            <p-tab value="2" class="flex items-center !gap-2">
+                <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/ionibowcher.png" shape="circle" />
                 <span class="font-bold whitespace-nowrap">Ioni Bowcher</span>
                 <p-badge value="2" />
             </p-tab>

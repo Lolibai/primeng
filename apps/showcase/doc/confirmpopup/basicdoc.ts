@@ -4,6 +4,7 @@ import { ConfirmationService, MessageService } from '@pixel/primeng/api';
 
 @Component({
     selector: 'confirm-popup-basic-demo',
+    standalone: false,
     template: `
         <app-docsectiontext>
             <p>ConfirmPopup is defined using <i>p-confirmPopup</i> tag and an instance of <i>ConfirmationService</i> is required to display it bycalling confirm method.</p>
@@ -26,7 +27,7 @@ export class BasicDoc {
 
     confirm1(event: Event) {
         this.confirmationService.confirm({
-            target: event.target as EventTarget,
+            target: event.currentTarget as EventTarget,
             message: 'Are you sure you want to proceed?',
             icon: 'pi pi-exclamation-triangle',
             rejectButtonProps: {
@@ -48,7 +49,7 @@ export class BasicDoc {
 
     confirm2(event: Event) {
         this.confirmationService.confirm({
-            target: event.target as EventTarget,
+            target: event.currentTarget as EventTarget,
             message: 'Do you want to delete this record?',
             icon: 'pi pi-info-circle',
             rejectButtonProps: {
@@ -100,7 +101,7 @@ export class ConfirmPopupBasicDemo {
 
     confirm1(event: Event) {
         this.confirmationService.confirm({
-            target: event.target as EventTarget,
+            target: event.currentTarget as EventTarget,
             message: 'Are you sure you want to proceed?',
             icon: 'pi pi-exclamation-triangle',
             rejectButtonProps: {
@@ -122,7 +123,7 @@ export class ConfirmPopupBasicDemo {
 
     confirm2(event: Event) {
         this.confirmationService.confirm({
-            target: event.target as EventTarget,
+            target: event.currentTarget as EventTarget,
             message: 'Do you want to delete this record?',
             icon: 'pi pi-info-circle',
             rejectButtonProps: {

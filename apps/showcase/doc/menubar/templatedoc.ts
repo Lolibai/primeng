@@ -4,6 +4,7 @@ import { MenuItem } from '@pixel/primeng/api';
 
 @Component({
     selector: 'menubar-template-demo',
+    standalone: false,
     template: `
         <app-docsectiontext>
             <p>Custom content can be placed inside the menubar using the <i>start</i> and <i>end</i> templates.</p>
@@ -195,7 +196,6 @@ export class TemplateDoc implements OnInit {
 
         typescript: `import { Component, OnInit } from '@angular/core';
 import { MenuItem } from '@pixel/primeng/api';
-import { Menubar } from '@pixel/primeng/menubar';
 import { BadgeModule } from '@pixel/primeng/badge';
 import { AvatarModule } from '@pixel/primeng/avatar';
 import { InputTextModule } from '@pixel/primeng/inputtext';
@@ -209,8 +209,6 @@ import { Ripple } from '@pixel/primeng/ripple';
     imports: [Menubar, BadgeModule, AvatarModule, InputTextModule, Ripple, CommonModule]
 })
 export class MenubarTemplateDemo implements OnInit {
-    items: MenuItem[] | undefined;
-
     items: MenuItem[] | undefined;
 
     ngOnInit() {

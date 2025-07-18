@@ -5,6 +5,7 @@ import { TreeNode } from '@pixel/primeng/api';
 
 @Component({
     selector: 'filter-doc',
+    standalone: false,
     template: `
         <app-docsectiontext>
             <p>

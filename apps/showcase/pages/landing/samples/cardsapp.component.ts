@@ -36,7 +36,6 @@ import { TooltipModule } from '@pixel/primeng/tooltip';
         InputNumber,
         Select,
         RadioButton,
-        Chip,
         InputSwitchModule,
         SelectButton,
         Slider,

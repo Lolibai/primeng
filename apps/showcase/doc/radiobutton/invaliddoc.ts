@@ -3,12 +3,13 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'invalid-doc',
+    standalone: false,
     template: `
         <app-docsectiontext>
             <p>Invalid state style is added using the <i>ng-invalid</i> and <i>ng-dirty</i> class to indicate a failed validation.</p>
         </app-docsectiontext>
         <div class="card flex justify-center">
-            <p-radiobutton styleClass="ng-invalid ng-dirty" [(ngModel)]="checked" />
+            <p-radiobutton [(ngModel)]="checked" class="ng-invalid ng-dirty" />
         </div>
         <app-code [code]="code" selector="radio-button-invalid-demo"></app-code>
     `

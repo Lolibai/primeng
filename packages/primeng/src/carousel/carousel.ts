@@ -22,9 +22,8 @@ import {
 } from '@angular/core';
 import { Footer, Header, PrimeTemplate, SharedModule } from '@pixel/primeng/api';
 import { BaseComponent } from '@pixel/primeng/basecomponent';
-import { Button, ButtonProps } from '@pixel/primeng/button';
+import { ButtonModule, ButtonProps } from '@pixel/primeng/button';
 import { ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon, ChevronUpIcon } from '@pixel/primeng/icons';
-import { Ripple } from '@pixel/primeng/ripple';
 import { find, findSingle, getAttribute, setAttribute, uuid } from '@primeuix/utils';
 import { CarouselPageEvent, CarouselResponsiveOptions } from './carousel.interface';
 import { CarouselStyle } from './style/carouselstyle';
@@ -36,7 +35,7 @@ import { CarouselStyle } from './style/carouselstyle';
 @Component({
     selector: 'p-carousel',
     standalone: true,
-    imports: [CommonModule, Ripple, ChevronRightIcon, ChevronLeftIcon, ChevronDownIcon, ChevronUpIcon, Button, SharedModule],
+    imports: [CommonModule, ChevronRightIcon, ButtonModule, ChevronLeftIcon, ChevronDownIcon, ChevronUpIcon, SharedModule],
     template: `
         <div [attr.id]="id" [ngClass]="{ 'p-carousel p-component': true, 'p-carousel-vertical': isVertical(), 'p-carousel-horizontal': !isVertical() }" [ngStyle]="style" [class]="styleClass" role="region">
             <div class="p-carousel-header" *ngIf="headerFacet || headerTemplate">
@@ -88,7 +87,7 @@ import { CarouselStyle } from './style/carouselstyle';
                                     'p-carousel-item-start': firstIndex() === index,
                                     'p-carousel-item-end': lastIndex() === index
                                 }"
-                                [attr.aria-hidden]="!(totalShiftedItems * -1 === value.length)"
+                                [attr.aria-hidden]="!(firstIndex() <= index && lastIndex() >= index)"
                                 [attr.aria-label]="ariaSlideNumber(index)"
                                 [attr.aria-roledescription]="ariaSlideLabel()"
                             >
@@ -113,18 +112,19 @@ import { CarouselStyle } from './style/carouselstyle';
                         [ngClass]="{ 'p-carousel-next-button': true, 'p-disabled': isForwardNavDisabled() }"
                         [disabled]="isForwardNavDisabled()"
                         (click)="navForward($event)"
-                        pRipple
                         [attr.aria-label]="ariaNextButtonLabel()"
                         [buttonProps]="nextButtonProps"
                         [text]="true"
                     >
-                        <ng-container *ngIf="!nextIconTemplate && !_nextIconTemplate && !nextButtonProps?.icon">
-                            <ChevronRightIcon *ngIf="!isVertical()" [styleClass]="'carousel-prev-icon'" />
-                            <ChevronDownIcon *ngIf="isVertical()" [styleClass]="'carousel-prev-icon'" />
-                        </ng-container>
-                        <span *ngIf="nextIconTemplate || (_nextIconTemplate && !nextButtonProps?.icon)" class="p-carousel-prev-icon">
-                            <ng-template *ngTemplateOutlet="nextIconTemplate || _nextIconTemplate"></ng-template>
-                        </span>
+                        <ng-template #icon>
+                            <ng-container *ngIf="!nextIconTemplate && !_nextIconTemplate && !nextButtonProps?.icon">
+                                <ChevronRightIcon *ngIf="!isVertical()" [styleClass]="'carousel-next-icon'" />
+                                <ChevronDownIcon *ngIf="isVertical()" [styleClass]="'carousel-next-icon'" />
+                            </ng-container>
+                            <span *ngIf="nextIconTemplate || (_nextIconTemplate && !nextButtonProps?.icon)" class="next">
+                                <ng-template *ngTemplateOutlet="nextIconTemplate || _nextIconTemplate"></ng-template>
+                            </span>
+                        </ng-template>
                     </p-button>
                 </div>
                 <ul #indicatorContent [ngClass]="'p-carousel-indicator-list'" [class]="indicatorsContentClass" [ngStyle]="indicatorsContentStyle" *ngIf="showIndicators" (keydown)="onIndicatorKeydown($event)">
@@ -293,12 +293,20 @@ export class Carousel extends BaseComponent implements AfterContentInit {
      * Used to pass all properties of the ButtonProps to the Button component.
      * @group Props
      */
-    @Input() prevButtonProps: ButtonProps;
+    @Input() prevButtonProps: ButtonProps = {
+        severity: 'secondary',
+        text: true,
+        rounded: true
+    };
     /**
      * Used to pass all properties of the ButtonProps to the Button component.
      * @group Props
      */
-    @Input() nextButtonProps: ButtonProps;
+    @Input() nextButtonProps: ButtonProps = {
+        severity: 'secondary',
+        text: true,
+        rounded: true
+    };
     /**
      * Callback to invoke after scroll.
      * @param {CarouselPageEvent} event - Custom page event.
@@ -580,8 +588,9 @@ export class Carousel extends BaseComponent implements AfterContentInit {
         if (!this.carouselStyle) {
             this.carouselStyle = this.renderer.createElement('style');
             this.carouselStyle.type = 'text/css';
-            setAttribute(this.carouselStyle, 'nonce', this.config?.csp()?.nonce);
+
             this.renderer.appendChild(this.document.head, this.carouselStyle);
+            setAttribute(this.carouselStyle, 'nonce', this.config?.csp()?.nonce);
         }
 
         let innerHTML = `

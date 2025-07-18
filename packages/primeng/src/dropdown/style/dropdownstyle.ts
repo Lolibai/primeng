@@ -218,12 +218,12 @@ const classes = {
         'p-dropdown p-select p-component p-inputwrapper',
         {
             'p-disabled': instance.disabled,
-            'p-variant-filled': instance.variant ? instance.variant === 'filled' : instance.config.inputStyle() === 'filled',
+            'p-variant-filled': instance.variant === 'filled' || instance.config.inputVariant() === 'filled' || instance.config.inputStyle() === 'filled',
             'p-focus': instance.focused,
             'p-inputwrapper-filled': instance.modelValue() !== undefined && instance.modelValue() !== null && !instance.modelValue().length,
             'p-inputwrapper-focus': instance.focused || instance.overlayVisible,
             'p-select-open': instance.overlayVisible,
-            'p-select-fluid': instance.fluid,
+            'p-select-fluid': instance.hasFluid,
             'p-select-sm p-inputfield-sm': instance.size === 'small',
             'p-select-lg p-inputfield-lg': instance.size === 'large'
         }

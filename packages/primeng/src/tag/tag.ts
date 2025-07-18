@@ -51,7 +51,7 @@ export class Tag extends BaseComponent implements AfterContentInit {
      * Severity type of the tag.
      * @group Props
      */
-    @Input() severity: 'success' | 'secondary' | 'info' | 'warn' | 'danger' | 'contrast' | undefined;
+    @Input() severity: string | 'success' | 'secondary' | 'info' | 'warn' | 'danger' | 'contrast' | undefined | null;
     /**
      * Value to display inside the tag.
      * @group Props
@@ -60,7 +60,6 @@ export class Tag extends BaseComponent implements AfterContentInit {
     /**
      * Icon of the tag to display next to the value.
      * @group Props
-     * @deprecated since 15.4.2. Use 'icon' template.
      */
     @Input() icon: string | undefined;
     /**

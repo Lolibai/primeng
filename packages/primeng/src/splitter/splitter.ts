@@ -1,5 +1,23 @@
 import { CommonModule, isPlatformBrowser } from '@angular/common';
-import { AfterContentInit, ChangeDetectionStrategy, Component, computed, contentChild, ContentChildren, ElementRef, EventEmitter, inject, Input, NgModule, numberAttribute, Output, QueryList, ViewChild, ViewEncapsulation } from '@angular/core';
+import {
+    AfterContentInit,
+    ChangeDetectionStrategy,
+    Component,
+    computed,
+    contentChild,
+    ContentChildren,
+    ElementRef,
+    EventEmitter,
+    forwardRef,
+    inject,
+    Input,
+    NgModule,
+    numberAttribute,
+    Output,
+    QueryList,
+    ViewChild,
+    ViewEncapsulation
+} from '@angular/core';
 import { PrimeTemplate, SharedModule } from '@pixel/primeng/api';
 import { BaseComponent } from '@pixel/primeng/basecomponent';
 import { Nullable, VoidListener } from '@pixel/primeng/ts-helpers';
@@ -18,7 +36,7 @@ import { SplitterStyle } from './style/splitterstyle';
     }
 })
 export class SplitterPanel extends BaseComponent {
-    splitter = contentChild(Splitter);
+    splitter = contentChild(forwardRef(() => Splitter));
 
     nestedState = computed(() => this.splitter());
 }
@@ -169,6 +187,8 @@ export class Splitter extends BaseComponent implements AfterContentInit {
 
     @ContentChildren(PrimeTemplate) templates!: QueryList<PrimeTemplate>;
 
+    @ContentChildren('panel', { descendants: false }) panelChildren!: QueryList<ElementRef>;
+
     nested: boolean = false;
 
     panels: any[] = [];
@@ -213,16 +233,23 @@ export class Splitter extends BaseComponent implements AfterContentInit {
     }
 
     ngAfterContentInit() {
-        this.templates.forEach((item) => {
-            switch (item.getType()) {
-                case 'panel':
-                    this.panels.push(item.template);
-                    break;
-                default:
-                    this.panels.push(item.template);
-                    break;
-            }
-        });
+        if (this.templates && this.templates.toArray().length > 0) {
+            this.templates.forEach((item) => {
+                switch (item.getType()) {
+                    case 'panel':
+                        this.panels.push(item.template);
+                        break;
+                    default:
+                        this.panels.push(item.template);
+                        break;
+                }
+            });
+        }
+        if (this.panelChildren && this.panelChildren.toArray().length > 0) {
+            this.panelChildren.forEach((item) => {
+                this.panels.push(item);
+            });
+        }
     }
 
     ngAfterViewInit() {

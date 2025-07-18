@@ -6,6 +6,7 @@ import { Dialog } from '@pixel/primeng/dialog';
 
 @Component({
     selector: 'template-youtube',
+    standalone: false,
     template: `
         <div class="template-youtube-wrapper">
             <div class="template-youtube">

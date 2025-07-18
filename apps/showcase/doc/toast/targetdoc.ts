@@ -4,6 +4,7 @@ import { MessageService } from '@pixel/primeng/api';
 
 @Component({
     selector: 'target-doc',
+    standalone: false,
     template: `
         <app-docsectiontext>
             <p>
@@ -15,7 +16,7 @@ import { MessageService } from '@pixel/primeng/api';
             <p-toast key="toast1" />
             <p-toast key="toast2" />
             <p-button (click)="showToast1()" label="Show Success" />
-            <p-button (click)="showToast2()" label="Show Warning" severity="warning" />
+            <p-button (click)="showToast2()" label="Show Warning" severity="warn" />
         </div>
         <app-code [code]="code" selector="toast-target-demo"></app-code>
     `,
@@ -45,7 +46,7 @@ export class TargetDoc {
 
     (click)="showToast2()"
     label="Show Warning"
-    severity="warning" />`,
+    severity="warn" />`,
         html: `<div class="card flex justify-center gap-2">
     <p-toast key="toast1" />
     <p-toast key="toast2" />
@@ -57,7 +58,7 @@ export class TargetDoc {
 
         (click)="showToast2()"
         label="Show Warning"
-        severity="warning" />
+        severity="warn" />
 </div>`,
         typescript: `import { Component } from '@angular/core';
 import { MessageService } from '@pixel/primeng/api';

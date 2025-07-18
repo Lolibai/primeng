@@ -5,6 +5,7 @@ import { Subscription } from 'rxjs';
 
 @Component({
     selector: 'basic-doc',
+    standalone: false,
     template: `
         <app-docsectiontext>
             <p>Commands are processed using observables via the <i>TerminalService</i>. Import this service into your component and subscribe to <i>commandHandler</i> to process commands by sending replies with <i>sendResponse</i> function.</p>
@@ -21,8 +22,27 @@ export class BasicDoc implements OnDestroy {
     subscription: Subscription;
 
     constructor(private terminalService: TerminalService) {
-        this.subscription = this.terminalService.commandHandler.subscribe((command) => {
-            let response = command === 'date' ? new Date().toDateString() : 'Unknown command: ' + command;
+        this.subscription = this.terminalService.commandHandler.subscribe((text) => {
+            let response;
+            let argsIndex = text.indexOf(' ');
+            let command = argsIndex !== -1 ? text.substring(0, argsIndex) : text;
+
+            switch (command) {
+                case 'date':
+                    response = 'Today is ' + new Date().toDateString();
+                    break;
+
+                case 'greet':
+                    response = 'Hola ' + text.substring(argsIndex + 1);
+                    break;
+
+                case 'random':
+                    response = Math.floor(Math.random() * 100);
+                    break;
+
+                default:
+                    response = 'Unknown command: ' + command;
+            }
             this.terminalService.sendResponse(response);
         });
     }

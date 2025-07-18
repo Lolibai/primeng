@@ -4,6 +4,7 @@ import { MessageService } from '@pixel/primeng/api';
 
 @Component({
     selector: 'clear-doc',
+    standalone: false,
     template: `
         <app-docsectiontext>
             <p>

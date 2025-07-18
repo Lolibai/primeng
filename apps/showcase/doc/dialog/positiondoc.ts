@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'dialog-position-demo',
+    standalone: false,
     template: `
         <app-docsectiontext>
             <p>The <i>position</i> property is used to display a Dialog at all edges and corners of the screen.</p>
@@ -44,9 +45,9 @@ import { Component } from '@angular/core';
 export class PositionDoc {
     visible: boolean = false;
 
-    position: string = 'center';
+    position: 'left' | 'right' | 'top' | 'bottom' | 'center' | 'topleft' | 'topright' | 'bottomleft' | 'bottomright' = 'center';
 
-    showDialog(position: string) {
+    showDialog(position: 'left' | 'right' | 'top' | 'bottom' | 'center' | 'topleft' | 'topright' | 'bottomleft' | 'bottomright') {
         this.position = position;
         this.visible = true;
     }
@@ -128,9 +129,9 @@ import { InputTextModule } from '@pixel/primeng/inputtext';
 export class DialogPositionDemo {
     visible: boolean = false;
 
-    position: string = 'center';
+    position: 'left' | 'right' | 'top' | 'bottom' | 'center' | 'topleft' | 'topright' | 'bottomleft' | 'bottomright' = 'center';
 
-    showDialog(position: string) {
+    showDialog(position: 'left' | 'right' | 'top' | 'bottom' | 'center' | 'topleft' | 'topright' | 'bottomleft' | 'bottomright') {
         this.position = position;
         this.visible = true;
     }

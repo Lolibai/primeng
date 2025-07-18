@@ -6,6 +6,7 @@ import { ChangeDetectorRef, Component, effect, inject, OnInit, PLATFORM_ID } fro
 
 @Component({
     selector: 'chart-basic-demo',
+    standalone: false,
     template: `
         <app-docsectiontext>
             <p>
@@ -65,6 +66,8 @@ export class BasicDoc implements OnInit {
             };
 
             this.basicOptions = {
+                maintainAspectRatio: false,
+                aspectRatio: 0.8,
                 plugins: {
                     legend: {
                         labels: {

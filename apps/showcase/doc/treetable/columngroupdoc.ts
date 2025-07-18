@@ -4,11 +4,12 @@ import { TreeNode } from '@pixel/primeng/api';
 
 @Component({
     selector: 'column-group-doc',
+    standalone: false,
     template: `
         <div class="card">
             <p-deferred-demo (load)="loadDemoData()">
                 <p-treetable [value]="sales" [scrollable]="true" [tableStyle]="{ 'min-width': '50rem' }">
-                    <ng-template pTemplate="header">
+                    <ng-template #header>
                         <tr>
                             <th rowspan="3">Brand</th>
                             <th colspan="4">Sale Rate</th>
@@ -24,10 +25,10 @@ import { TreeNode } from '@pixel/primeng/api';
                             <th>This Year</th>
                         </tr>
                     </ng-template>
-                    <ng-template pTemplate="body" let-rowNode let-rowData="rowData">
+                    <ng-template #body let-rowNode let-rowData="rowData">
                         <tr [ttRow]="rowNode">
                             <td>
-                                <p-treeTableToggler [rowNode]="rowNode" />
+                                <p-treetable-toggler [rowNode]="rowNode" />
                                 {{ rowData.brand }}
                             </td>
                             <td>{{ rowData.lastYearSale }}</td>
@@ -36,7 +37,7 @@ import { TreeNode } from '@pixel/primeng/api';
                             <td>{{ rowData.thisYearProfit }}</td>
                         </tr>
                     </ng-template>
-                    <ng-template pTemplate="footer">
+                    <ng-template #footer>
                         <tr>
                             <td colspan="3">Totals</td>
                             <td>$3,283,772</td>
@@ -309,7 +310,7 @@ export class ColumnGroupDoc {
     }
     code: Code = {
         basic: `<p-treetable [value]="sales" [scrollable]="true" [tableStyle]="{'min-width':'50rem'}">
-    <ng-template pTemplate="header">
+    <ng-template #header>
         <tr>
             <th rowspan="3">Brand</th>
             <th colspan="4">Sale Rate</th>
@@ -325,10 +326,10 @@ export class ColumnGroupDoc {
             <th>This Year</th>
         </tr>
     </ng-template>
-    <ng-template pTemplate="body" let-rowNode let-rowData="rowData">
+    <ng-template #body let-rowNode let-rowData="rowData">
         <tr>
             <td>
-                <p-treeTableToggler [rowNode]="rowNode" />
+                <p-treetable-toggler [rowNode]="rowNode" />
                 {{ rowData.brand }}
             </td>
             <td>{{ rowData.lastYearSale }}</td>
@@ -337,7 +338,7 @@ export class ColumnGroupDoc {
             <td>{{ rowData.thisYearProfit }}</td>
         </tr>
     </ng-template>
-    <ng-template pTemplate="footer">
+    <ng-template #footer>
         <tr>
             <td colspan="3">Totals</td>
             <td>$3,283,772</td>
@@ -348,7 +349,7 @@ export class ColumnGroupDoc {
 
         html: `<div class="card">
     <p-treetable [value]="sales" [scrollable]="true" [tableStyle]="{'min-width':'50rem'}">
-        <ng-template pTemplate="header">
+        <ng-template #header>
             <tr>
                 <th rowspan="3">Brand</th>
                 <th colspan="4">Sale Rate</th>
@@ -364,10 +365,10 @@ export class ColumnGroupDoc {
                 <th>This Year</th>
             </tr>
         </ng-template>
-        <ng-template pTemplate="body" let-rowNode let-rowData="rowData">
+        <ng-template #body let-rowNode let-rowData="rowData">
             <tr [ttRow]="rowNode">
                 <td>
-                    <p-treeTableToggler [rowNode]="rowNode" />
+                    <p-treetable-toggler [rowNode]="rowNode" />
                     {{ rowData.brand }}
                 </td>
                 <td>{{ rowData.lastYearSale }}</td>
@@ -376,7 +377,7 @@ export class ColumnGroupDoc {
                 <td>{{ rowData.thisYearProfit }}</td>
             </tr>
         </ng-template>
-        <ng-template pTemplate="footer">
+        <ng-template #footer>
             <tr>
                 <td colspan="3">Totals</td>
                 <td>$3,283,772</td>

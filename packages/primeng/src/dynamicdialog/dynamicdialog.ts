@@ -71,19 +71,19 @@ const hideAnimation = animation([animate('{{transition}}', style({ transform: '{
                     <ng-container *ngIf="!headerTemplate">
                         <span [ngClass]="'p-dialog-title'" [id]="ariaLabelledBy">{{ ddconfig.header }}</span>
                         <div [ngClass]="'p-dialog-header-actions'">
-                            <p-button *ngIf="ddconfig.maximizable" [styleClass]="'p-dialog-maximize-button'" (onClick)="maximize()" (keydown.enter)="maximize()" [tabindex]="maximizable ? '0' : '-1'">
+                            <p-button *ngIf="ddconfig.maximizable" [styleClass]="'p-dialog-maximize-button'" (onClick)="maximize()" (keydown.enter)="maximize()" rounded text [tabindex]="maximizable ? '0' : '-1'">
                                 <ng-container *ngIf="!maximizeIcon">
                                     <WindowMaximizeIcon *ngIf="!maximized && !maximizeIconTemplate" />
                                     <WindowMinimizeIcon *ngIf="maximized && !minimizeIconTemplate" />
                                 </ng-container>
                                 <ng-container *ngIf="!maximized">
-                                    <ng-template *ngTemplateOutlet="_maximizeIconTemplate"></ng-template>
+                                    <ng-template *ngTemplateOutlet="maximizeIconTemplate"></ng-template>
                                 </ng-container>
                                 <ng-container *ngIf="maximized">
-                                    <ng-template *ngTemplateOutlet="_minimizeIconTemplate"></ng-template>
+                                    <ng-template *ngTemplateOutlet="minimizeIconTemplate"></ng-template>
                                 </ng-container>
                             </p-button>
-                            <p-button *ngIf="closable" [styleClass]="'p-dialog-close-button'" [ariaLabel]="closeAriaLabel" (onClick)="hide()" (keydown.enter)="hide()" rounded text severity="secondary">
+                            <p-button *ngIf="closable" [styleClass]="'p-dialog-close-button'" [ariaLabel]="ddconfig.closeAriaLabel || defaultCloseAriaLabel" (onClick)="hide()" (keydown.enter)="hide()" rounded text severity="secondary">
                                 <ng-container *ngIf="!closeIconTemplate">
                                     <TimesIcon />
                                 </ng-container>
@@ -151,6 +151,8 @@ export class DynamicDialogComponent extends BaseComponent implements AfterViewIn
 
     childComponentType: Nullable<Type<any>>;
 
+    inputValues: Record<string, any>;
+
     container: Nullable<HTMLDivElement>;
 
     wrapper: Nullable<HTMLElement>;
@@ -209,7 +211,7 @@ export class DynamicDialogComponent extends BaseComponent implements AfterViewIn
         return this.ddconfig.position!;
     }
 
-    get closeAriaLabel(): string {
+    get defaultCloseAriaLabel(): string {
         return this.config.getTranslation(TranslationKeys.ARIA)['close'];
     }
 
@@ -259,11 +261,11 @@ export class DynamicDialogComponent extends BaseComponent implements AfterViewIn
         return this.ddconfig?.templates?.content;
     }
 
-    get minimizeIconTemplate() {
+    get minimizeIconTemplate(): any {
         return this.ddconfig?.templates?.minimizeicon;
     }
 
-    get maximizeIconTemplate() {
+    get maximizeIconTemplate(): any {
         return this.ddconfig?.templates?.maximizeicon;
     }
 
@@ -285,6 +287,8 @@ export class DynamicDialogComponent extends BaseComponent implements AfterViewIn
     get dialogId() {
         return this.attrSelector;
     }
+
+    private zIndexForLayering?: number;
 
     constructor(
         public renderer: Renderer2,
@@ -340,7 +344,12 @@ export class DynamicDialogComponent extends BaseComponent implements AfterViewIn
     }
 
     getAriaLabelledBy() {
-        return this.header !== null ? uuid('pn_id_') + '_header' : null;
+        const { header, showHeader } = this.ddconfig;
+
+        if (header === null || showHeader === false) {
+            return null;
+        }
+        return uuid('pn_id_') + '_header';
     }
 
     loadChildComponent(componentType: Type<any>) {
@@ -348,6 +357,13 @@ export class DynamicDialogComponent extends BaseComponent implements AfterViewIn
         viewContainerRef?.clear();
 
         this.componentRef = viewContainerRef?.createComponent(componentType);
+
+        if (this.inputValues) {
+            Object.entries(this.inputValues).forEach(([key, value]) => {
+                this.componentRef.setInput(key, value);
+            });
+        }
+
         this.dialogRef.onChildComponentLoaded.next(this.componentRef!.instance);
     }
 
@@ -355,6 +371,8 @@ export class DynamicDialogComponent extends BaseComponent implements AfterViewIn
         if (this.ddconfig.autoZIndex !== false) {
             ZIndexUtils.set('modal', this.container, (this.ddconfig.baseZIndex || 0) + this.config.zIndex.modal);
             (this.wrapper as HTMLElement).style.zIndex = String(parseInt((this.container as HTMLDivElement).style.zIndex, 10) - 1);
+        } else {
+            this.zIndexForLayering = ZIndexUtils.generateZIndex('modal', (this.ddconfig.baseZIndex || 0) + this.config.zIndex.modal);
         }
     }
 
@@ -402,6 +420,9 @@ export class DynamicDialogComponent extends BaseComponent implements AfterViewIn
 
         if (this.container && this.ddconfig.autoZIndex !== false) {
             ZIndexUtils.clear(this.container);
+        }
+        if (this.zIndexForLayering) {
+            ZIndexUtils.revertZIndex(this.zIndexForLayering);
         }
 
         if (this.ddconfig.modal !== false) {
@@ -686,7 +707,8 @@ export class DynamicDialogComponent extends BaseComponent implements AfterViewIn
 
         this.documentEscapeListener = this.renderer.listen(documentTarget, 'keydown', (event) => {
             if (event.which == 27) {
-                if (parseInt((this.container as HTMLDivElement).style.zIndex) == ZIndexUtils.getCurrent()) {
+                const currentZIndex = ZIndexUtils.getCurrent();
+                if (parseInt((this.container as HTMLDivElement).style.zIndex) == currentZIndex || this.zIndexForLayering == currentZIndex) {
                     this.hide();
                 }
             }
@@ -722,4 +744,4 @@ export class DynamicDialogComponent extends BaseComponent implements AfterViewIn
     imports: [DynamicDialogComponent, SharedModule],
     exports: [DynamicDialogComponent, SharedModule]
 })
-export class DynamicDialog {}
+export class DynamicDialogModule {}

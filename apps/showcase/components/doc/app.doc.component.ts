@@ -7,6 +7,7 @@ import { AppDocService } from './app.doc.service';
 
 @Component({
     selector: 'app-doc',
+    standalone: false,
     template: ` <div class="doc-component">
         <ul class="doc-tabmenu">
             @if (docs && apiDocs) {
@@ -32,7 +33,7 @@ import { AppDocService } from './app.doc.service';
             }
 
             @if (themeDocs) {
-                <app-docthemingsection [header]="header" [docs]="themeDocs" class="doc-tabpanel" [ngStyle]="{ display: docService.activeTab() === 2 ? 'flex' : 'none' }" />
+                <app-docthemingsection [header]="header" [docs]="themeDocs" [componentName]="themeDocs" class="doc-tabpanel" [ngStyle]="{ display: docService.activeTab() === 2 ? 'flex' : 'none' }" />
             }
         </div>
     </div>`,

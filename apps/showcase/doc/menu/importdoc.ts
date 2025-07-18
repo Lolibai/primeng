@@ -3,10 +3,11 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'menu-import-doc',
+    standalone: false,
     template: ` <app-code [code]="code" [hideToggleCode]="true"></app-code> `
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { Menu } from '@pixel/primeng/menu';`
+        typescript: `import { MenuModule } from '@pixel/primeng/menu';`
     };
 }

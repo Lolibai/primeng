@@ -4,6 +4,7 @@ import { MenuItem, MessageService } from '@pixel/primeng/api';
 
 @Component({
     selector: 'command-doc',
+    standalone: false,
     template: `
         <app-docsectiontext>
             <p>The function to invoke when an item is clicked is defined using the <i>command</i> property.</p>

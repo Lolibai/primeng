@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'datepicker-sizes-demo',
+    standalone: false,
     template: `
         <app-docsectiontext>
             <p>DatePicker provides <i>small</i> and <i>large</i> sizes as alternatives to the base.</p>
@@ -38,12 +39,12 @@ import { DatePicker } from '@pixel/primeng/datepicker';
 import { FormsModule } from '@angular/forms';
 
 @Component({
-    selector: 'datepicker-basic-demo',
-    templateUrl: './datepicker-basic-demo.html',
+    selector: 'datepicker-sizes-demo',
+    templateUrl: './datepicker-sizes-demo.html',
     standalone: true,
     imports: [FormsModule, DatePicker]
 })
-export class DatePickerBasicDemo {
+export class DatePickerSizesDemo {
     value1: Date | undefined;
 
     value2: Date | undefined;

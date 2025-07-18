@@ -4,6 +4,7 @@ import { MenuItem, MessageService } from '@pixel/primeng/api';
 
 @Component({
     selector: 'text-doc',
+    standalone: false,
     template: `
         <app-docsectiontext>
             <p>Text buttons are displayed as textual elements.</p>

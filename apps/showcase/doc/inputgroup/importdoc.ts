@@ -3,11 +3,12 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'input-group-import-doc',
+    standalone: false,
     template: ` <app-code [code]="code" [hideToggleCode]="true"></app-code> `
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { InputGroup } from '@pixel/primeng/inputgroup';
+        typescript: `import { InputGroupModule } from '@pixel/primeng/inputgroup';
 import { InputGroupAddonModule } from '@pixel/primeng/inputgroupaddon';`
     };
 }

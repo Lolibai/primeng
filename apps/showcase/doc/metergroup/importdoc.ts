@@ -3,10 +3,11 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'meter-group-import-doc',
+    standalone: false,
     template: ` <app-code [code]="code" [hideToggleCode]="true"></app-code> `
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { MeterGroup } from '@pixel/primeng/metergroup';`
+        typescript: `import { MeterGroupModule } from '@pixel/primeng/metergroup';`
     };
 }

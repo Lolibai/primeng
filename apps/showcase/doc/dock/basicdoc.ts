@@ -4,6 +4,7 @@ import { MenuItem } from '@pixel/primeng/api';
 
 @Component({
     selector: 'dock-basic-demo',
+    standalone: false,
     template: `
         <app-docsectiontext>
             <p>
@@ -50,7 +51,7 @@ import { MenuItem } from '@pixel/primeng/api';
 export class BasicDoc implements OnInit {
     items: MenuItem[] | undefined;
 
-    position: string = 'bottom';
+    position: 'left' | 'right' | 'top' | 'bottom' = 'bottom';
 
     positionOptions = [
         {
@@ -152,7 +153,7 @@ import { TooltipModule } from '@pixel/primeng/tooltip';
 export class DockBasicDemo implements OnInit {
     items: MenuItem[] | undefined;
 
-    position: string = 'bottom';
+    position: 'left' | 'right' | 'top' | 'bottom' = 'bottom';
 
     positionOptions = [
         {

@@ -9,18 +9,24 @@ import { AppCodeModule } from './app.code.component';
 import { AppDevelopmentSection } from './app.developmentsection.component';
 import { AppDoc } from './app.doc.component';
 import { AppDocService } from './app.doc.service';
-import { AppDocApiSection } from './app.docapisection.component';
-import { AppDocApiTable } from './app.docapitable.component';
-import { AppDocFeaturesSection } from './app.docfeaturessection.component';
-import { AppDocSectionNavComponent } from './app.docsection-nav.component';
-import { AppDocSectionsComponent } from './app.docsection.component';
-import { AppDocSectionTextComponent } from './app.docsectiontext.component';
-import { AppDocThemingSectionComponent } from './app.docthemingsection.component';
+import { AppDocStyledPresetComponent } from '@/components/doc/app.docstyledpreset.component';
 
 @NgModule({
     imports: [CommonModule, FormsModule, ButtonModule, InputTextModule, TooltipModule, AppCodeModule, RouterModule],
-    exports: [AppDocSectionTextComponent, AppDocApiSection, AppDocFeaturesSection, AppDocSectionNavComponent, AppDocSectionsComponent, AppDevelopmentSection, AppDoc, AppDocApiTable, AppDocThemingSectionComponent],
-    declarations: [AppDocFeaturesSection, AppDocSectionTextComponent, AppDocApiSection, AppDocSectionNavComponent, AppDocSectionsComponent, AppDevelopmentSection, AppDoc, AppDocApiTable, AppDocThemingSectionComponent],
+    exports: [
+        AppDocSectionTextComponent,
+        AppDocStyledPresetComponent,
+        CommonModule,
+        AppDocApiSection,
+        AppDocFeaturesSection,
+        AppDocSectionNavComponent,
+        AppDocSectionsComponent,
+        AppDevelopmentSection,
+        AppDoc,
+        AppDocApiTable,
+        AppDocThemingSectionComponent
+    ],
+    declarations: [AppDocFeaturesSection, AppDocApiSection, AppDocStyledPresetComponent, AppDocSectionNavComponent, AppDocSectionsComponent, AppDocSectionTextComponent, AppDevelopmentSection, AppDoc, AppDocApiTable, AppDocThemingSectionComponent],
     providers: [AppDocService]
 })
 export class AppDocModule {}

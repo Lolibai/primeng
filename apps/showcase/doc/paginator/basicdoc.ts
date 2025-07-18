@@ -1,15 +1,10 @@
 import { Code } from '@/domain/code';
 import { Component } from '@angular/core';
-
-interface PageEvent {
-    first: number;
-    rows: number;
-    page: number;
-    pageCount: number;
-}
+import { PaginatorState } from '@pixel/primeng/paginator';
 
 @Component({
     selector: 'basic-doc',
+    standalone: false,
     template: `
         <app-docsectiontext>
             <p>
@@ -28,9 +23,9 @@ export class BasicDoc {
 
     rows: number = 10;
 
-    onPageChange(event: PageEvent) {
-        this.first = event.first;
-        this.rows = event.rows;
+    onPageChange(event: PaginatorState) {
+        this.first = event.first ?? 0;
+        this.rows = event.rows ?? 10;
     }
 
     code: Code = {
@@ -41,14 +36,7 @@ export class BasicDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { PaginatorModule } from '@pixel/primeng/paginator';
-
-interface PageEvent {
-    first: number;
-    rows: number;
-    page: number;
-    pageCount: number;
-}
+import { PaginatorModule, PaginatorState } from '@pixel/primeng/paginator';
 
 @Component({
     selector: 'paginator-basic-demo',
@@ -61,9 +49,9 @@ export class PaginatorBasicDemo {
 
     rows: number = 10;
 
-    onPageChange(event: PageEvent) {
-        this.first = event.first;
-        this.rows = event.rows;
+    onPageChange(event: PaginatorState) {
+        this.first = event.first ?? 0;
+        this.rows = event.rows ?? 10;
     }
 }`
     };

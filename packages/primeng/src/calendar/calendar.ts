@@ -227,10 +227,10 @@ export const CALENDAR_VALUE_ACCESSOR: any = {
                                     [ngStyle]="{ visibility: i === months.length - 1 ? 'visible' : 'hidden' }"
                                     [attr.aria-label]="nextIconAriaLabel"
                                 >
-                                    <ChevronRightIcon *ngIf="!decadeTemplate && !_decadeTemplate" />
+                                    <ChevronRightIcon *ngIf="!nextIconTemplate && !_nextIconTemplate" />
 
                                     <span *ngIf="nextIconTemplate || !_nextIconTemplate">
-                                        <ng-template *ngTemplateOutlet="nextIconTemplate || !_nextIconTemplate"></ng-template>
+                                        <ng-template *ngTemplateOutlet="nextIconTemplate || _nextIconTemplate"></ng-template>
                                     </span>
                                 </p-button>
                             </div>
@@ -3173,8 +3173,8 @@ export class Calendar extends BaseComponent implements OnInit, AfterContentInit,
                 if (!this.inline) {
                     this.overlay = event.element;
                     this.overlay?.setAttribute(this.attributeSelector as string, '');
-                    const styles = !this.inline ? { position: 'absolute', top: '0', left: '0' } : undefined;
 
+                    const styles = !this.inline ? { position: 'absolute', top: '0', left: '0' } : undefined;
                     addStyle(this.overlay, styles);
 
                     this.appendOverlay();

@@ -1,15 +1,10 @@
 import { Code } from '@/domain/code';
 import { Component } from '@angular/core';
-
-interface PageEvent {
-    first: number;
-    rows: number;
-    page: number;
-    pageCount: number;
-}
+import { PaginatorState } from '@pixel/primeng/paginator';
 
 @Component({
     selector: 'images-doc',
+    standalone: false,
     template: `
         <app-docsectiontext>
             <p>Sample image gallery implementation using paginator.</p>
@@ -26,9 +21,9 @@ export class ImagesDoc {
 
     rows: number = 10;
 
-    onPageChange(event: PageEvent) {
-        this.first = event.first;
-        this.rows = event.rows;
+    onPageChange(event: PaginatorState) {
+        this.first = event.first ?? 0;
+        this.rows = event.rows ?? 10;
     }
 
     code: Code = {
@@ -43,13 +38,7 @@ export class ImagesDoc {
 
         typescript: `
 import { Component } from '@angular/core';
-
-interface PageEvent {
-    first: number;
-    rows: number;
-    page: number;
-    pageCount: number;
-}
+import { PaginatorState } from '@pixel/primeng/paginator';
 
 @Component({
     selector: 'paginator-images-demo',
@@ -60,9 +49,9 @@ export class PaginatorImagesDemo {
 
     rows: number = 10;
 
-    onPageChange(event: PageEvent) {
-        this.first = event.first;
-        this.rows = event.rows;
+    onPageChange(event: PaginatorState) {
+        this.first = event.first ?? 0;
+        this.rows = event.rows ?? 10;
     }
 }`
     };

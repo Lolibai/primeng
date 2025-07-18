@@ -4,6 +4,7 @@ import { ConfirmationService, MessageService } from '@pixel/primeng/api';
 
 @Component({
     selector: 'confirm-dialog-position-demo',
+    standalone: false,
     template: `
         <app-docsectiontext>
             <p>The <i>position</i> property of the confirm options is used to display a Dialog at all edges and corners of the screen.</p>
@@ -31,14 +32,14 @@ import { ConfirmationService, MessageService } from '@pixel/primeng/api';
     providers: [ConfirmationService, MessageService]
 })
 export class PositionDoc {
-    position: string = 'center';
+    position: 'left' | 'right' | 'top' | 'bottom' | 'center' | 'topleft' | 'topright' | 'bottomleft' | 'bottomright' = 'center';
 
     constructor(
         private confirmationService: ConfirmationService,
         private messageService: MessageService
     ) {}
 
-    confirmPosition(position: string) {
+    confirmPosition(position: 'left' | 'right' | 'top' | 'bottom' | 'center' | 'topleft' | 'topright' | 'bottomleft' | 'bottomright') {
         this.position = position;
 
         this.confirmationService.confirm({
@@ -72,134 +73,38 @@ export class PositionDoc {
 
     code: Code = {
         basic: `<p-toast />
-<p-confirmdialog key="positionDialog" [position]="position"/>
-    <div class="flex flex-wrap justify-center gap-2 mb-4">
-        <p-button
-            (click)="confirmPosition('left')"
-            icon="pi pi-arrow-right"
-            label="Left"
-            severity="secondary"
-            styleClass="min-w-40"
-        />
-        <p-button
-            (click)="confirmPosition('right')"
-            icon="pi pi-arrow-left"
-            label="Right"
-            severity="secondary"
-            styleClass="min-w-40"
-        />
-    </div>
-    <div class="flex flex-wrap justify-center gap-2 mb-4">
-        <p-button
-            (click)="confirmPosition('topleft')"
-            icon="pi pi-arrow-down"
-            label="TopLeft"
-            severity="secondary"
-            styleClass="min-w-40"
-        />
-        <p-button
-            (click)="confirmPosition('top')"
-            icon="pi pi-arrow-down"
-            label="Top"
-            severity="secondary"
-            styleClass="min-w-40"
-        />
-        <p-button
-            (click)="confirmPosition('topright')"
-            icon="pi pi-arrow-down"
-            label="TopRight"
-            severity="secondary"
-            styleClass="min-w-40"
-        />
-    </div>
-    <div class="flex flex-wrap justify-center gap-2">
-        <p-button
-            (click)="confirmPosition('bottomleft')"
-            icon="pi pi-arrow-up"
-            label="BottomLeft"
-            severity="secondary"
-            styleClass="min-w-40"
-        />
-        <p-button
-            (click)="confirmPosition('bottom')"
-            icon="pi pi-arrow-up"
-            label="Bottom"
-            severity="secondary"
-            styleClass="min-w-40"
-        />
-        <p-button
-            (click)="confirmPosition('bottomright')"
-            icon="pi pi-arrow-up"
-            label="BottomRight"
-            severity="secondary"
-            styleClass="min-w-40"
-        />
+<p-confirmdialog key="positionDialog" [position]="position" />
+<div class="flex flex-wrap justify-center gap-2 mb-4">
+    <p-button (click)="confirmPosition('left')" icon="pi pi-arrow-right" label="Left" severity="secondary" styleClass="min-w-40" />
+    <p-button (click)="confirmPosition('right')" icon="pi pi-arrow-left" label="Right" severity="secondary" styleClass="min-w-40" />
+</div>
+<div class="flex flex-wrap justify-center gap-2 mb-4">
+    <p-button (click)="confirmPosition('topleft')" icon="pi pi-arrow-down" label="TopLeft" severity="secondary" styleClass="min-w-40" />
+    <p-button (click)="confirmPosition('top')" icon="pi pi-arrow-down" label="Top" severity="secondary" styleClass="min-w-40" />
+    <p-button (click)="confirmPosition('topright')" icon="pi pi-arrow-down" label="TopRight" severity="secondary" styleClass="min-w-40" />
+</div>
+<div class="flex flex-wrap justify-center gap-2">
+    <p-button (click)="confirmPosition('bottomleft')" icon="pi pi-arrow-up" label="BottomLeft" severity="secondary" styleClass="min-w-40" />
+    <p-button (click)="confirmPosition('bottom')" icon="pi pi-arrow-up" label="Bottom" severity="secondary" styleClass="min-w-40" />
+    <p-button (click)="confirmPosition('bottomright')" icon="pi pi-arrow-up" label="BottomRight" severity="secondary" styleClass="min-w-40" />
 </div>`,
 
         html: `<div class="card">
     <p-toast />
-    <p-confirmdialog key="positionDialog" [position]="position"/>
+    <p-confirmdialog key="positionDialog" [position]="position" />
     <div class="flex flex-wrap justify-center gap-2 mb-4">
-        <p-button
-            (click)="confirmPosition('left')"
-            icon="pi pi-arrow-right"
-            label="Left"
-            severity="secondary"
-            styleClass="min-w-40"
-        />
-        <p-button
-            (click)="confirmPosition('right')"
-            icon="pi pi-arrow-left"
-            label="Right"
-            severity="secondary"
-            styleClass="min-w-40"
-        />
+        <p-button (click)="confirmPosition('left')" icon="pi pi-arrow-right" label="Left" severity="secondary" styleClass="min-w-40" />
+        <p-button (click)="confirmPosition('right')" icon="pi pi-arrow-left" label="Right" severity="secondary" styleClass="min-w-40" />
     </div>
     <div class="flex flex-wrap justify-center gap-2 mb-4">
-        <p-button
-            (click)="confirmPosition('topleft')"
-            icon="pi pi-arrow-down"
-            label="TopLeft"
-            severity="secondary"
-            styleClass="min-w-40"
-        />
-        <p-button
-            (click)="confirmPosition('top')"
-            icon="pi pi-arrow-down"
-            label="Top"
-            severity="secondary"
-            styleClass="min-w-40"
-        />
-        <p-button
-            (click)="confirmPosition('topright')"
-            icon="pi pi-arrow-down"
-            label="TopRight"
-            severity="secondary"
-            styleClass="min-w-40"
-        />
+        <p-button (click)="confirmPosition('topleft')" icon="pi pi-arrow-down" label="TopLeft" severity="secondary" styleClass="min-w-40" />
+        <p-button (click)="confirmPosition('top')" icon="pi pi-arrow-down" label="Top" severity="secondary" styleClass="min-w-40" />
+        <p-button (click)="confirmPosition('topright')" icon="pi pi-arrow-down" label="TopRight" severity="secondary" styleClass="min-w-40" />
     </div>
     <div class="flex flex-wrap justify-center gap-2">
-        <p-button
-            (click)="confirmPosition('bottomleft')"
-            icon="pi pi-arrow-up"
-            label="BottomLeft"
-            severity="secondary"
-            styleClass="min-w-40"
-        />
-        <p-button
-            (click)="confirmPosition('bottom')"
-            icon="pi pi-arrow-up"
-            label="Bottom"
-            severity="secondary"
-            styleClass="min-w-40"
-        />
-        <p-button
-            (click)="confirmPosition('bottomright')"
-            icon="pi pi-arrow-up"
-            label="BottomRight"
-            severity="secondary"
-            styleClass="min-w-40"
-        />
+        <p-button (click)="confirmPosition('bottomleft')" icon="pi pi-arrow-up" label="BottomLeft" severity="secondary" styleClass="min-w-40" />
+        <p-button (click)="confirmPosition('bottom')" icon="pi pi-arrow-up" label="Bottom" severity="secondary" styleClass="min-w-40" />
+        <p-button (click)="confirmPosition('bottomright')" icon="pi pi-arrow-up" label="BottomRight" severity="secondary" styleClass="min-w-40" />
     </div>
 </div>`,
 
@@ -217,11 +122,11 @@ import { ToastModule } from '@pixel/primeng/toast';
     providers: [ConfirmationService, MessageService]
 })
 export class ConfirmDialogPositionDemo {
-    position: string = 'center';
+    position: 'left' | 'right' | 'top' | 'bottom' | 'center' | 'topleft' | 'topright' | 'bottomleft' | 'bottomright' = 'center';
 
     constructor(private confirmationService: ConfirmationService, private messageService: MessageService) {}
 
-    confirmPosition(position: string) {
+    confirmPosition(position: 'left' | 'right' | 'top' | 'bottom' | 'center' | 'topleft' | 'topright' | 'bottomleft' | 'bottomright') {
         this.position = position;
 
         this.confirmationService.confirm({

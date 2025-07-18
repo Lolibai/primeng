@@ -24,7 +24,6 @@ import {
 } from '@angular/core';
 import { MessageService, PrimeTemplate, SharedModule, ToastMessageOptions } from '@pixel/primeng/api';
 import { BaseComponent } from '@pixel/primeng/basecomponent';
-import { Button } from '@pixel/primeng/button';
 import { CheckIcon, ExclamationTriangleIcon, InfoCircleIcon, TimesCircleIcon, TimesIcon } from '@pixel/primeng/icons';
 import { ZIndexUtils } from '@pixel/primeng/utils';
 import { isEmpty, setAttribute, uuid } from '@primeuix/utils';
@@ -35,7 +34,7 @@ import { ToastCloseEvent, ToastItemCloseEvent, ToastPositionType } from './toast
 @Component({
     selector: 'p-toastItem',
     standalone: true,
-    imports: [CommonModule, CheckIcon, ExclamationTriangleIcon, InfoCircleIcon, TimesIcon, TimesCircleIcon, Button, SharedModule],
+    imports: [CommonModule, CheckIcon, ExclamationTriangleIcon, InfoCircleIcon, TimesIcon, TimesCircleIcon, SharedModule],
     template: `
         <div
             #container
@@ -93,13 +92,15 @@ import { ToastCloseEvent, ToastItemCloseEvent, ToastPositionType } from './toast
                     </ng-container>
                     <ng-container *ngTemplateOutlet="template; context: { $implicit: message }"></ng-container>
                     @if (message?.closable !== false) {
-                        <p-button [styleClass]="cx('closeButton')" (onClick)="onCloseIconClick($event)" (keydown.enter)="onCloseIconClick($event)" [attr.ariaLabel]="closeAriaLabel" [attr.data-pc-section]="'closebutton'" rounded text>
-                            @if (message.closeIcon) {
-                                <span *ngIf="message.closeIcon" [ngClass]="cx('closeIcon')"></span>
-                            } @else {
-                                <TimesIcon [ngClass]="cx('closeIcon')" [attr.aria-hidden]="true" [attr.data-pc-section]="'closeicon'" />
-                            }
-                        </p-button>
+                        <div>
+                            <button type="button" [attr.class]="cx('closeButton')" (click)="onCloseIconClick($event)" (keydown.enter)="onCloseIconClick($event)" [ariaLabel]="closeAriaLabel" [attr.data-pc-section]="'closebutton'" autofocus>
+                                @if (message.closeIcon) {
+                                    <span *ngIf="message.closeIcon" [ngClass]="cx('closeIcon')"></span>
+                                } @else {
+                                    <TimesIcon [ngClass]="cx('closeIcon')" [attr.aria-hidden]="true" [attr.data-pc-section]="'closeicon'" />
+                                }
+                            </button>
+                        </div>
                     }
                 </div>
             }

@@ -4,13 +4,14 @@ import { MessageService } from '@pixel/primeng/api';
 
 @Component({
     selector: 'toast-multiple-demo',
+    standalone: false,
     template: `
         <app-docsectiontext>
             <p>Multiple toasts are displayed by passing an array to the <i>showAll</i> method of the <i>messageService</i>.</p>
         </app-docsectiontext>
         <div class="card flex justify-center">
             <p-toast />
-            <p-button pRipple (click)="show()" label="Multiple" severity="warning" />
+            <p-button pRipple (click)="show()" label="Multiple" severity="warn" />
         </div>
         <app-code [code]="code" selector="toast-multiple-demo"></app-code>
     `,
@@ -30,10 +31,10 @@ export class MultipleDoc {
 
     code: Code = {
         basic: `<p-toast />
-<p-button pRipple (click)="show()" label="Multiple" severity="warning" />`,
+<p-button pRipple (click)="show()" label="Multiple" severity="warn" />`,
         html: `<div class="card flex justify-center">
     <p-toast />
-    <p-button pRipple (click)="show()" label="Multiple" severity="warning" />
+    <p-button pRipple (click)="show()" label="Multiple" severity="warn" />
 </div>`,
         typescript: `import { Component } from '@angular/core';
 import { MessageService } from '@pixel/primeng/api';

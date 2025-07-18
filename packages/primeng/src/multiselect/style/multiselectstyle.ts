@@ -68,9 +68,6 @@ const theme = ({ dt }) => `
 }
 
 .p-multiselect-label {
-    display: flex;
-    align-items-center;
-    gap: calc(${dt('multiselect.padding.y')} / 2);
     white-space: nowrap;
     cursor: pointer;
     overflow: hidden;
@@ -79,10 +76,18 @@ const theme = ({ dt }) => `
     color: ${dt('multiselect.color')};
 }
 
+.p-multiselect-display-chip .p-multiselect-label {
+    display: flex;
+    align-items: center;
+    gap: calc(dt('multiselect.padding.y') / 2);
+}
+
 .p-multiselect-label.p-placeholder {
     color: ${dt('multiselect.placeholder.color')};
 }
 
+p-multiSelect.ng-invalid.ng-dirty .p-multiselect-label.p-placeholder,
+p-multi-select.ng-invalid.ng-dirty .p-multiselect-label.p-placeholder,
 p-multiselect.ng-invalid.ng-dirty .p-multiselect-label.p-placeholder {
     color: ${dt('multiselect.invalid.placeholder.color')};
 }

@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'tabmenu-doc',
+    standalone: false,
     template: `
         <app-docsectiontext>
             <p>
@@ -14,7 +15,7 @@ import { Component } from '@angular/core';
             <p-tabs value="dashboard">
                 <p-tablist>
                     @for (tab of tabs; track tab.route) {
-                        <p-tab [value]="tab.route">
+                        <p-tab [value]="tab.route" class="flex items-center !gap-2 text-inherit">
                             <i [class]="tab.icon"></i>
                             <span>{{ tab.label }}</span>
                         </p-tab>
@@ -38,7 +39,7 @@ export class TabmenuDoc {
         basic: `<p-tabs value="/dashboard">
     <p-tablist>
         @for(tab of tabs; track tab.route){
-            <p-tab [value]="tab.route" [routerLink]="tab.route">
+            <p-tab [value]="tab.route" [routerLink]="tab.route" class="flex items-center !gap-2 text-inherit">
                 <i [class]="tab.icon"></i>
                 <span>{{ tab.label }}</span>
             </p-tab>
@@ -51,7 +52,7 @@ export class TabmenuDoc {
     <p-tabs value="/dashboard">
         <p-tablist>
             @for(tab of tabs; track tab.route){
-                <p-tab [value]="tab.route" [routerLink]="tab.route">
+                <p-tab [value]="tab.route" [routerLink]="tab.route" class="flex items-center !gap-2 text-inherit">
                     <i [class]="tab.icon"></i>
                     <span>{{ tab.label }}</span>
                 </p-tab>
@@ -72,6 +73,13 @@ import { TabsModule } from '@pixel/primeng/tabs';
     standalone: true,
     imports: [TabsModule, RouterModule, CommonModule]
 })
-export class TabsTabmenuDemo {}`
+export class TabsTabmenuDemo {
+    tabs = [
+        { route: 'dashboard', label: 'Dashboard', icon: 'pi pi-home' },
+        { route: 'transactions', label: 'Transactions', icon: 'pi pi-chart-line' },
+        { route: 'products', label: 'Products', icon: 'pi pi-list' },
+        { route: 'messages', label: 'Messages', icon: 'pi pi-inbox' }
+    ];
+}`
     };
 }

@@ -2,10 +2,11 @@ import { Code } from '@/domain/code';
 import { Customer, Representative } from '@/domain/customer';
 import { CustomerService } from '@/service/customerservice';
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit } from '@angular/core';
-import { LazyLoadEvent } from '@pixel/primeng/api';
+import { TableLazyLoadEvent } from '@pixel/primeng/table';
 
 @Component({
     selector: 'lazy-load-doc',
+    standalone: false,
     template: ` <app-docsectiontext>
             <p>
                 Lazy mode is handy to deal with large datasets, instead of loading the entire data, small chunks of data is loaded by invoking onLazyLoad callback everytime <i>paging</i>, <i>sorting</i> and <i>filtering</i> happens. Sample here loads
@@ -122,7 +123,7 @@ export class LazyLoadDoc implements OnInit {
         ];
     }
 
-    loadCustomers(event: LazyLoadEvent) {
+    loadCustomers(event: TableLazyLoadEvent) {
         this.loading = true;
 
         setTimeout(() => {
@@ -296,7 +297,7 @@ export class LazyLoadDoc implements OnInit {
     </p-table>
 </div>`,
         typescript: `import { Component, OnInit } from '@angular/core';
-import { LazyLoadEvent } from '@pixel/primeng/api';
+import { TableLazyLoadEvent } from '@pixel/primeng/table';
 import { Customer, Representative } from '@/domain/customer';
 import { CustomerService } from '@/service/customerservice';
 import { TableModule } from '@pixel/primeng/table';
@@ -308,7 +309,7 @@ import { HttpClientModule } from '@angular/common/http';
     templateUrl: 'table-lazy-load-demo.html',
     standalone: true,
     imports: [TableModule, MultiSelectModule, HttpClientModule],
-    providers: [CustomerService]
+    providers: [CustomerService]
 })
 export class TableLazyLoadDemo implements OnInit{
     customers!: Customer[];
@@ -342,7 +343,7 @@ export class TableLazyLoadDemo implements OnInit{
         this.loading = true;
     }
 
-    loadCustomers(event: LazyLoadEvent) {
+    loadCustomers(event: TableLazyLoadEvent) {
         this.loading = true;
 
         setTimeout(() => {

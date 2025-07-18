@@ -3,10 +3,11 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'tag-import-doc',
+    standalone: false,
     template: ` <app-code [code]="code" [hideToggleCode]="true"></app-code> `
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { Tag } from '@pixel/primeng/tag';`
+        typescript: `import { TagModule } from '@pixel/primeng/tag';`
     };
 }
